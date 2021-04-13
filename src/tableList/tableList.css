@@ -1,0 +1,12 @@
+.Button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: dodgerblue;
+}
+.ant-table {
+    min-height: 150px !important;
+}
