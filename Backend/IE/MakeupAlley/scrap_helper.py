@@ -95,13 +95,25 @@ def fetch_mua_product(product_links):
             img_url = img_source['href']
 
         #rating
-        rating = float(soup.find('h3',class_='rating-value').text)
+        rating = soup.find('h3',class_='rating-value').text
+        if rating =='':
+            rating = None
+        else:
+            rating = float(rating)
         #review_cnt
-        review_cnt = int(re.search(r'(\d+)',soup.find('a',class_='overall-rating').text).group(0))
+        review_cnt = re.search(r'(\d+)',soup.find('a',class_='overall-rating').text)
+        if review_cnt is not None:
+            review_cnt = int(review_cnt.group(0))
         #repurchase_pct
-        repurchase_pct =float(re.search(r'(\d+)',soup.find('span',class_='buyagain').text).group(0))
+        repurchase_pct = re.search(r'(\d+)',soup.find('span',class_='buyagain').text)
+        if repurchase_pct is not None:
+            repurchase_pct =float(repurchase_pct.group(0))
         #packaging_rate
-        packaging_rate = float(soup.find('span',class_='packaging').text)
+        packaging_rate = soup.find('span',class_='packaging').text
+        if packaging_rate =='':
+            packaging_rate = None
+        else:
+            packaging_rate = float(packaging_rate)
         #product_description
         product_description = soup.find('p',class_='product-description')
         if product_description is not None:
@@ -149,6 +161,7 @@ def fetch_mua_product(product_links):
             json.dump(record,f)
             f.write('\n')
         time.sleep(2)
+
 
 #category_links = get_category_links('https://www.makeupalley.com/product/searching')
 #product_links = get_mua_product_links(category_links)
