@@ -20,7 +20,7 @@ def get_pst_time():
 class Spider(scrapy.Spider):
     name = "EWG"
     count = 0
-
+    base_url = 'https://www.ewg.org'
     output_file = 'ewg_data.jl'
     output = open(output_file, 'w')
 
@@ -38,6 +38,27 @@ class Spider(scrapy.Spider):
     def parse_product(self, response):
         site = Selector(response)
         result = response.meta['result']
+
+        raw_name = site.xpath('//section[@id="product"]//h2[@class="product-name text-block"]/text()').extract()[0]
+        brand = site.xpath('//section[@class="browse-more"]//ul[@class="mb40"]/li/a[@href]/div/text()').extract()
+        if brand:
+            brand_name = brand[0].strip()
+            brand_url = self.base_url + site.xpath('//section[@class="browse-more"]//'
+                                                   'ul[@class="mb40"]/li/a/@href').extract()[0]
+        else:
+            brand_name = ''
+            brand_url = ''
+
+        if ',' in raw_name:
+            color = raw_name.split(', ')[1].strip()
+            name = raw_name.split(', ')[0].replace(brand_name + ' ', '').strip()
+        else:
+            color = ''
+            name = raw_name.replace(brand_name + ' ', '')
+
+        res = {'Name': name, 'Color': color, 'Brand Name': brand_name, 'Brand URL': brand_url}
+        result.update(res)
+
         concerns = site.xpath('//section[@class="gauges grid"]//div[@class="gauge-img-wrapper"]/'
                               'img[@class="gauge-img"]/@alt').extract()[0:3]
         concerns_dict = dict([concern.split(' concern is ') for concern in concerns])

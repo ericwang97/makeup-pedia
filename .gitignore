@@ -1,2 +1,10 @@
 /node_modules/
 /build/
+/Backend/data/agg_ewg_data.jl
+/Backend/data/beautypedia.jl
+/Backend/data/bp_mua_pairs_result.txt
+/Backend/data/ewg_data.jl
+/Backend/data/ewg_mua_pairs_result.txt
+/Backend/data/mua_bp_id.json
+/Backend/data/mua_ewg_id.json
+/Backend/data/mua_meta_data.jl
