@@ -170,6 +170,15 @@ def get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua):
             cleaned_data[bp_id].update({'colors': colors, 'overall_concerns': overall_concerns,
                                         'other_concerns': other_concerns})
 
+            # Add Where to purchase
+            buy_url = ''
+            cleaned_data[bp_id]['buy_url'].append(buy_url)
+
+            """
+            @TODO: ADD Where to purchase END
+
+            """
+
             # Replace
             ingredient = ewg_data['Ingredient']
             cleaned_data[bp_id]['ewg_ingredient'] = ingredient
