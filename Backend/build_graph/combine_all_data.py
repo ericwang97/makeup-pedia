@@ -14,49 +14,75 @@ ewg_file = '../data_raw/agg_ewg_data.jl'
 all_output_file = '../data/all_data.json'
 cleaned_output_file = '../data/cleaned_data.json'
 
+age_list = ['19-24', '30-35', '25-29', '44-55', '56 & Over', 'Under 18', '36-43']
+eyes_color_list = ['Blue', 'Brown', 'Black', 'Violet', 'Other', 'Gray', 'Hazel', 'Green']
+skin_type_list = ['Very Dry', 'Dry', 'Medium', 'Fair-Medium', 'Fair', 'Combination', 'Oily', 'Very Oily',
+                  'Sensitive', 'Acne-prone', 'Normal', 'Neutral']
+skin_color_list = ['Tan', 'Olive', 'Deep Dark', 'Warm', 'Dark', 'Medium Brown', 'Normal']
+hair_style_list = ['Coarse', 'Straight', 'Kinky', 'Medium', 'Fine', 'Wavy', 'Curly', 'Relaxed']
+hair_color_list = ['Red', 'Grey', 'Brown', 'Black', 'Silver', 'Brunette', 'Blond']
+
+
+def deleteDuplicate(reviews):
+    temp_list = list(set([str(i) for i in reviews]))
+    reviews = [eval(i) for i in temp_list]
+    return reviews
+
 
 def agg_mua_reviews(data):
     reviews = data['reviews']
     age_counter = {}
     skin_type_counter = {}
+    skin_color_counter = {}
     hair_style_counter = {}
+    hair_color_counter = {}
     eyes_counter = {}
-    for review in reviews:
+    deduplicate_reviews = deleteDuplicate(reviews)
+    for review in deduplicate_reviews:
         score = review['user_rating']
         if score is None:
             continue
         review = review['user_details']
         age, skin_list, hair_list, eye = review['user_age'], review['user_skin_type'], review['user_hair_style'], \
                                          review['user_eyes']
-        if age not in age_counter:
+        if age in age_list and age not in age_counter:
             age_counter[age] = 0
         for skin in skin_list:
-            if skin not in skin_type_counter:
+            if skin in skin_type_list and skin not in skin_type_counter:
                 skin_type_counter[skin] = 0
+            elif skin in skin_color_list and skin not in skin_color_counter:
+                skin_color_counter[skin] = 0
         for hair in hair_list:
-            if hair not in hair_style_counter:
+            if hair in hair_style_list and hair not in hair_style_counter:
                 hair_style_counter[hair] = 0
-        if eye not in eyes_counter:
+            elif hair in hair_color_list and hair not in hair_color_counter:
+                hair_color_counter[hair] = 0
+        if eye in eyes_color_list and eye not in eyes_counter:
             eyes_counter[eye] = 0
 
         # Positive review, +1
         if score > 3.0:
-            age_counter[age] += 1
-            for skin in skin_list:
-                skin_type_counter[skin] += 1
-            for hair in hair_list:
-                hair_style_counter[hair] += 1
-            eyes_counter[eye] += 1
+            add_on = 1
         else:
-            age_counter[age] -= 1
-            for skin in skin_list:
-                skin_type_counter[skin] -= 1
-            for hair in hair_list:
-                hair_style_counter[hair] -= 1
-            eyes_counter[eye] -= 1
+            add_on = -1
+        if age in age_list:
+            age_counter[age] += add_on
+        for skin in skin_list:
+            if skin in skin_type_list:
+                skin_type_counter[skin] += add_on
+            elif skin in skin_color_list:
+                skin_color_counter[skin] += add_on
+        for hair in hair_list:
+            if hair in hair_style_list:
+                hair_style_counter[hair] += add_on
+            elif hair in hair_color_list:
+                hair_color_counter[hair] += add_on
+        if eye in eyes_color_list:
+            eyes_counter[eye] += add_on
 
     reviews_agg_res = {'age_counter': age_counter, 'skin_type_counter': skin_type_counter,
-                       'hair_style_counter': hair_style_counter, 'eyes_counter': eyes_counter}
+                       'skin_color_counter': skin_color_counter, 'hair_style_counter': hair_style_counter,
+                       'hair_color_counter': hair_color_counter, 'eyes_counter': eyes_counter}
 
     data['reviews'] = reviews_agg_res
 
@@ -67,7 +93,7 @@ def agg_mua_reviews(data):
 def rebuild_file(file_name):
     json_res = {}
     with open(file_name, 'r') as file:
-        for line in file:
+        for line in tqdm(file):
             result = json.loads(line)
             product_id = str(result['product_id'])
             if file_name == mua_file:
@@ -206,7 +232,9 @@ def get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua, bp_ewg_ingre):
 
             total_age_counter = {}
             total_skin_counter = {}
+            total_skin_color_counter = {}
             total_hair_counter = {}
+            total_hair_color_counter = {}
             total_eyes_counter = {}
 
             for mua_id in mua_id_list:
@@ -234,7 +262,9 @@ def get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua, bp_ewg_ingre):
 
                     age_counter = mua_data['reviews']['age_counter']
                     skin_type_counter = mua_data['reviews']['skin_type_counter']
+                    skin_color_counter = mua_data['reviews']['skin_color_counter']
                     hair_style_counter = mua_data['reviews']['hair_style_counter']
+                    hair_color_counter = mua_data['reviews']['hair_color_counter']
                     eyes_counter = mua_data['reviews']['eyes_counter']
 
                     for k, v in age_counter.items():
@@ -247,10 +277,20 @@ def get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua, bp_ewg_ingre):
                             total_skin_counter[k] = 0
                         total_skin_counter[k] += v
 
+                    for k, v in skin_color_counter.items():
+                        if k not in total_skin_color_counter:
+                            total_skin_color_counter[k] = 0
+                        total_skin_color_counter[k] += v
+
                     for k, v in hair_style_counter.items():
                         if k not in total_hair_counter:
                             total_hair_counter[k] = 0
                         total_hair_counter[k] += v
+
+                    for k, v in hair_color_counter.items():
+                        if k not in total_hair_color_counter:
+                            total_hair_color_counter[k] = 0
+                        total_hair_color_counter[k] += v
 
                     for k, v in eyes_counter.items():
                         if k not in total_eyes_counter:
@@ -278,7 +318,10 @@ def get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua, bp_ewg_ingre):
                                         'repurchase_pct': avg_repurchase_pct})
 
             cleaned_data[bp_id].update({'age_counter': total_age_counter, 'skin_type_counter': total_skin_counter,
-                                        'hair_style_counter': total_hair_counter, 'eyes_counter': total_eyes_counter})
+                                        'skin_color_counter': total_skin_color_counter,
+                                        'hair_style_counter': total_hair_counter,
+                                        'hair_color_counter': total_hair_color_counter,
+                                        'eyes_counter': total_eyes_counter})
 
         cleaned_data[bp_id]['ingredient'] = list(set(cleaned_data[bp_id]['ingredient']))
         cleaned_data[bp_id]['buy_url'] = list(set(cleaned_data[bp_id]['buy_url']))

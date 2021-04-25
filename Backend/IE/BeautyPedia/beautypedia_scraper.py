@@ -311,7 +311,7 @@ def fetch_product(mega_data):
             f.write('\n')
 
         browser.close()
-    return mega_data,Ingredents
+    return mega_data, Ingredents
 
 
 if __name__ == "__main__":
@@ -322,12 +322,12 @@ if __name__ == "__main__":
     excluded_category = ['Best & Worst Makeup Products']
     mega_data = get_product_by_category(makeup_cat, excluded_category)
 
-    with open('./bp_product_links.jl','w',encoding="utf8") as f:
+    with open('./bp_product_links.jl', 'w', encoding="utf8") as f:
         for i in mega_data:
             json.dump(i, f)
             f.write('\n')
 
-    results,ingredients = fetch_product(mega_data)
+    results, ingredients = fetch_product(mega_data)
 
     # Generate Ingredient File
     index = 0
