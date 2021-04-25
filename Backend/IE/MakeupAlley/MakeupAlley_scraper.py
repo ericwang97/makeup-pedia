@@ -65,7 +65,7 @@ def get_mua_product_links(category_links):
 
 def fetch_mua_product(product_links):
     product_details = []
-    for p in tqdm(range(26343,30000)):
+    for p in tqdm(range(len(product_links))):
         r = requests.get(product_links[p]['product_url'])
         soup = BeautifulSoup(r.text,"html5lib")
         #product_name
@@ -162,7 +162,7 @@ def fetch_mua_product(product_links):
         
         record = {'product_name':product_name,'product_id':product_links[p]['product_id'],'product_url':product_links[p]['product_url'],'brand_name':brand_name,'brand_url':brand_url,'brand_id':brand_id,'category':product_links[p]['category'],'sub_category':product_links[p]['sub_category'],'img_url':img_url,'rating':rating,'review_cnt':review_cnt,'repurchase_pct':repurchase_pct,'packaging_rate':packaging_rate,'product_description':product_description,'reviews':reviews}
         product_details.append(record)
-        with open('mua_25k_30k.jl','a+',encoding='utf8') as f:
+        with open('../../data_raw/bp_ingredient.jl','a+',encoding='utf8') as f:
             json.dump(record,f)
             f.write('\n')
         time.sleep(2)
@@ -170,4 +170,8 @@ def fetch_mua_product(product_links):
 if __name__ == "__main__":
     category_links = get_category_links('https://www.makeupalley.com/product/searching')
     product_links = get_mua_product_links(category_links)
+    with open('./mua_product_links.jl','w',encoding="utf8") as f:
+        for i in product_links:
+            json.dump(i, f)
+            f.write('\n')
     fetch_mua_product(product_links)

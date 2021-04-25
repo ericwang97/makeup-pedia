@@ -67,6 +67,7 @@ def get_product_by_category(category_list, excluded_category):
 
 
 def fetch_product(mega_data):
+    Ingredents = set()
     for i in tqdm(range(4082, len(mega_data))):
         mega_data[i]['product_id'] = i
         mega_data[i]['product_links'] = mega_data[i]['product_links'].split('?archive_search')[0]
@@ -96,9 +97,18 @@ def fetch_product(mega_data):
             mega_data[i]['brand'] = brand.text
 
         # ingredient
+        ## Entity Extraction
         ingredient = soup.find('div', class_=re.compile("content-item ingredients"))
         if ingredient is not None:
-            mega_data[i]['ingredient'] = ingredient.text.strip()
+            mega_data[i]['ingredient'] = []
+            record_ingredients = re.split(',  |, |,', ingredient)
+            for term in record_ingredients:
+                # ingre_text = ', '.join(record_ingredients)
+                for i in Document(term).cems:
+                    chemical_name = i.text.replace('\n', '')
+                    mega_data[i]['ingredient'].append(chemical_name)
+                    if chemical_name not in Ingredents:
+                        Ingredents.add(chemical_name)
 
         # size
         size = soup.find('span', class_=re.compile("size"))
@@ -296,11 +306,12 @@ def fetch_product(mega_data):
         mega_data[i]['user_reviews'] = {'usr_review_summary': usr_review_summary,
                                         'usr_review_details': usr_review_details}
 
-        with open('./bp_makeup_mega_data.jl', 'a+', encoding="utf8") as f:
+        with open('../../data_raw/beautypedia.jl', 'a+', encoding="utf8") as f:
             json.dump(mega_data[i], f)
             f.write('\n')
 
         browser.close()
+    return mega_data,Ingredents
 
 
 if __name__ == "__main__":
@@ -310,33 +321,18 @@ if __name__ == "__main__":
     makeup_cat = soup.find_all('a', class_="submenu-item", href=re.compile('/makeup/'))[:30]
     excluded_category = ['Best & Worst Makeup Products']
     mega_data = get_product_by_category(makeup_cat, excluded_category)
-    fetch_product(mega_data)
 
-    # BP Ingredient Extraction
-    ingredent = set()
-    with open('bp_makeup_mega_data.jl', 'r', encoding='utf8') as f:
-        bp_data = f.readlines()
-        for r in bp_data:
-            record = json.loads(r)
-            cleaned_record = copy.deepcopy(record)
-            cleaned_record['ingredient'] = []
-            if record['ingredient'] is not None:
-                record_ingredients = re.split(',  |, |,', record['ingredient'])
-                for term in record_ingredients:
-                    # ingre_text = ', '.join(record_ingredients)
-                    for i in Document(term).cems:
-                        chemical_name = i.text.replace('\n', '')
-                        cleaned_record['ingredient'].append(chemical_name)
-                        if chemical_name not in ingredent:
-                            ingredent.add(chemical_name)
-            with open('beautypedia_clean_ingr.jl', 'a+', encoding='utf8') as of:
-                json.dump(cleaned_record, of)
-                of.write('\n')
+    with open('./bp_product_links.jl','w',encoding="utf8") as f:
+        for i in mega_data:
+            json.dump(i, f)
+            f.write('\n')
+
+    results,ingredients = fetch_product(mega_data)
 
     # Generate Ingredient File
     index = 0
-    with open('bp_ingredient.jl', 'w', encoding="utf8") as f:
-        for ing in ingredent:
+    with open('../../data_raw/bp_ingredient.jl', 'w', encoding="utf8") as f:
+        for ing in ingredients:
             json.dump({'id': index, 'ingredient': ing}, f)
             f.write('\n')
             index += 1

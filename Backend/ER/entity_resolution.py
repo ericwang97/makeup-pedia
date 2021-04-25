@@ -109,11 +109,11 @@ class BeautyPedia(rltk.Record):
             return ""
 
 
-ewg_data = rltk.Dataset(reader=rltk.JsonLinesReader('agg_ewg_data.jl'), record_class=EWG,
+ewg_data = rltk.Dataset(reader=rltk.JsonLinesReader('../raw_data/agg_ewg_data.jl'), record_class=EWG,
                         adapter=rltk.MemoryKeyValueAdapter())
-mua_data = rltk.Dataset(reader=rltk.JsonLinesReader('mua_meta_data.jl'), record_class=MakeupAlley,
+mua_data = rltk.Dataset(reader=rltk.JsonLinesReader('../raw_data/mua_meta_data.jl'), record_class=MakeupAlley,
                         adapter=rltk.MemoryKeyValueAdapter())
-bp_data = rltk.Dataset(reader=rltk.JsonLinesReader('beautypedia.jl'), record_class=BeautyPedia,
+bp_data = rltk.Dataset(reader=rltk.JsonLinesReader('../raw_data/beautypedia.jl'), record_class=BeautyPedia,
                        adapter=rltk.MemoryKeyValueAdapter())
 
 
@@ -178,26 +178,19 @@ for r_ewg, r_mua in pairs:
             candidates[r_mua.id] = [
                 [r_ewg.id, r_ewg.name, r_ewg.colors, r_ewg.brand, r_mua.id, r_mua.name, r_mua.brand, confidence]]
 
-constraint = {}
+mua_ewg_id = {}
 for muaid, content in candidates.items():
     if len(content) > 1:
         max_conf = 0
         for match in content:
             if match[7] > max_conf:
                 max_conf = match[7]
-                max_record = match
-        constraint[muaid] = max_record
+                max_record = match[0]
+        mua_ewg_id[int(muaid)] = int(max_record)
     else:
-        constraint[muaid] = content[0]
+        mua_ewg_id[int(muaid)] = int(content[0][0])
 
-mua_ewg_id = {}
-with open('ewg_mua_pairs_result.txt', 'w', encoding="utf8") as f:
-    for muaid, content in constraint.items():
-        f.write(str(content))
-        f.write('\n')
-        mua_ewg_id[int(muaid)] = int(content[0])
-
-with open('mua_ewg_id.json', 'w', encoding="utf8") as f:
+with open('./mua_ewg_id.json', 'w', encoding="utf8") as f:
     json.dump(mua_ewg_id, f)
 
 
@@ -262,32 +255,25 @@ for r_mua, r_bp in pairs:
         else:
             candidates[r_mua.id] = [[r_mua.id, r_mua.name, r_mua.brand, r_bp.id, r_bp.name, r_bp.brand, confidence]]
 
-constraint = {}
+mua_bp_id = {}
 for muaid, content in candidates.items():
     if len(content) > 1:
         max_conf = 0
         for match in content:
-            if match[6] > max_conf:
-                max_conf = match[6]
-                max_record = match
-        constraint[muaid] = max_record
+            if match[7] > max_conf:
+                max_conf = match[7]
+                max_record = match[3]
+        mua_bp_id[int(muaid)] = int(max_record)
     else:
-        constraint[muaid] = content[0]
+        mua_bp_id[int(muaid)] = int(content[0][3])
 
-mua_bp_id = {}
-with open('bp_mua_pairs_result.txt', 'w', encoding="utf8") as f:
-    for muaid, content in constraint.items():
-        f.write(str(content))
-        f.write('\n')
-        mua_bp_id[int(muaid)] = int(content[3])
-
-with open('mua_bp_id.json', 'w', encoding="utf8") as f:
+with open('./mua_bp_id.json', 'w', encoding="utf8") as f:
     json.dump(mua_bp_id, f)
 
 ############## Ingredient ER ##############
 
 ewg_ingredent = set()
-with open('agg_ewg_data.jl', 'r', encoding='utf8') as f:
+with open('../data_raw/agg_ewg_data.jl', 'r', encoding='utf8') as f:
     ewg_data = f.readlines()
     for r in ewg_data:
         record = json.loads(r)
@@ -296,7 +282,7 @@ with open('agg_ewg_data.jl', 'r', encoding='utf8') as f:
                 ewg_ingredent.add(chemical_name)
 
 ewg_index = 0
-with open('ewg_ingredient.jl', 'w', encoding="utf8") as f:
+with open('../data_raw/ewg_ingredient.jl', 'w', encoding="utf8") as f:
     for ing in ewg_ingredent:
         json.dump({'id': ewg_index, 'ingredient': ing}, f)
         f.write('\n')
@@ -314,9 +300,9 @@ class Ingredient(rltk.Record):
         return self.raw_object['ingredient']
 
 
-bp_data = rltk.Dataset(reader=rltk.JsonLinesReader('bp_ingredient.jl'), record_class=Ingredient,
+bp_data = rltk.Dataset(reader=rltk.JsonLinesReader('../data_raw/bp_ingredient.jl'), record_class=Ingredient,
                        adapter=rltk.MemoryKeyValueAdapter())
-ewg_data = rltk.Dataset(reader=rltk.JsonLinesReader('ewg_ingredient.jl'), record_class=Ingredient,
+ewg_data = rltk.Dataset(reader=rltk.JsonLinesReader('../data_raw/ewg_ingredient.jl'), record_class=Ingredient,
                         adapter=rltk.MemoryKeyValueAdapter())
 
 
@@ -341,5 +327,5 @@ for r_bp, r_ewg in pairs:
 for bp_name, ewg_name in bp_ingre_2_ewg_ingre.items():
     bp_ingre_2_ewg_ingre[bp_name] = ewg_name[0]
 
-with open('bp_ewg_ingre_name.json', 'w', encoding='utf8') as f:
+with open('./bp_ewg_ingre_name.json', 'w', encoding='utf8') as f:
     json.dump(bp_ingre_2_ewg_ingre, f)
