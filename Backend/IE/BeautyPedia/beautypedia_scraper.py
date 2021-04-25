@@ -321,4 +321,11 @@ if __name__ == "__main__":
             with open('beautypedia_clean_ingr.jl','a+',encoding='utf8') as of:
                 json.dump(cleaned_record,of)
                 of.write('\n')
-
+    
+    #Generate Ingredient File
+    index = 0
+    with open('bp_ingredient.jl','w',encoding="utf8") as f:
+        for ing in ingredent:
+            json.dump({'id':index,'ingredient':ing},f)
+            f.write('\n')
+            index += 1
