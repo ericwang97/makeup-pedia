@@ -23,7 +23,7 @@ def create_relationship():
 
 def main():
 
-    input_file = './data/cleaned_data.json'
+    input_file = '../data/cleaned_data.json'
 
     input_data = json.load(open(input_file, 'r', encoding='utf-8'))
     print(input_data)

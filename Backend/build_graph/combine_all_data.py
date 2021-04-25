@@ -4,15 +4,15 @@ import copy
 import json
 from tqdm import tqdm
 
-mua_bp_file = './ER/mua_bp_id.json'
-mua_ewg_file = './ER/mua_ewg_id.json'
-bp_ewg_ingre_file = './ER/bp_ewg_ingre_name.json'
-bp_file = './data_raw/beautypedia.jl'
-mua_file = './data_raw/mua_meta_data.jl'
-ewg_file = './data_raw/agg_ewg_data.jl'
+mua_bp_file = '../ER/mua_bp_id.json'
+mua_ewg_file = '../ER/mua_ewg_id.json'
+bp_ewg_ingre_file = '../ER/bp_ewg_ingre_name.json'
+bp_file = '../data_raw/beautypedia.jl'
+mua_file = '../data_raw/mua_meta_data.jl'
+ewg_file = '../data_raw/agg_ewg_data.jl'
 
-all_output_file = './data/all_data.json'
-cleaned_output_file = './data/cleaned_data.json'
+all_output_file = '../data/all_data.json'
+cleaned_output_file = '../data/cleaned_data.json'
 
 
 def agg_mua_reviews(data):
