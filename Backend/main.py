@@ -11,7 +11,7 @@ def reco_execution(request):
     result = reco_main(request)
 
     if result:
-        return {'status': 0, 'response': result}
+        result = {'status': 0, 'response': result}
     else:
         result = {'status': 1, 'msg': 'Sorry, no recommend results here.'}
 

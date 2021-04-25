@@ -14,7 +14,7 @@ class NavTop extends React.Component{
         return(
             <div className="navbar navbar-default top-navbar">
                 <div className="navbar-header">
-                    <Link className="navbar-brand" to="/"><b>My</b>News</Link>
+                    <Link className="navbar-brand" to="/"><b>Makeup</b>Pedia</Link>
                 </div>
 
                 <ul className="nav navbar-top-links navbar-left">
@@ -26,9 +26,6 @@ class NavTop extends React.Component{
                     </li>
                     <li className="nav-item">
                         <Link className="top-navbar" to="/rate"><b>Rate it</b></Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="top-navbar" to="/rating-rating"><b>See my Rate!</b></Link>
                     </li>
                     <li className="nav-item">
                         <Link className="top-navbar disabled">To be continued</Link>

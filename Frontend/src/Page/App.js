@@ -24,343 +24,206 @@ class App extends React.Component {
         super(props);
 
         this.state = {
-            database: null,
-            table: "",
-            searchwords: null,
-            searchNews: null,
+            category: null,
+            subcategory: null,
+            age: null,
+            skin_type: null,
+            skin_color: null,
+            hair_style: null,
+            hair_color: null,
+            eye_color: null,
+            top_k: null,
+
             loading: true,
-            queryData: null,
-            queryDataKey: null,
-            recommendation: "",
-            clickPK: false,
-            history: []
+            response_data: null
+
         };
         this.handleSearchClick = this.handleSearchClick.bind(this);
-        this.handleDatabaseChange = this.handleDatabaseChange.bind(this);
-        this.handleTableChange = this.handleTableChange.bind(this);
-        this.handleSearchwordsChange = this.handleSearchwordsChange.bind(this);
-        this.handleSearchNewsChange = this.handleSearchNewsChange.bind(this);
         this.handleResetClick = this.handleResetClick.bind(this);
-        this.handleGoBackClick = this.handleGoBackClick.bind(this);
-        this.handleHyperLinkClick = this.handleHyperLinkClick.bind(this);
+
+        this.handleCategoryChange = this.handleCategoryChange.bind(this);
+        this.handleSubCategoryChange = this.handleSubCategoryChange.bind(this);
+        this.handleAgeChange = this.handleAgeChange.bind(this);
+        this.handleSkinTypeChange = this.handleSkinTypeChange.bind(this);
+        this.handleSkinColorChange = this.handleSkinColorChange.bind(this);
+        this.handleHairStyleChange = this.handleHairStyleChange.bind(this);
+        this.handleHairColorChange = this.handleHairColorChange.bind(this);
+        this.handleEyeColorChange = this.handleEyeColorChange.bind(this);
+        this.handleTopKChange = this.handleTopKChange.bind(this);
     }
 
     handleSearchClick() {
         let currentComponent = this;
         // let base_url = "http://13.57.28.139:8000/";
-        let base_url = "http://localhost:8000/";
-        if (currentComponent.state.clickPK === false) {
-            let url = base_url + "search?databasename=" + currentComponent.state.database +
-                "&tablelist=" + currentComponent.state.table +
-                "&searchwords=" + currentComponent.state.searchwords;
-            let firebaseurl = "https://inf551-a79f9.firebaseio.com/" + currentComponent.state.database + "Node/" +
-                ".json?orderBy=\"$key\"&limitToFirst=1";
+        let url = "http://localhost:8000/recommend";
 
-            axios.get(firebaseurl).then(function (response) {
-                let data = response.data;
-                if (data === null)
-                    alert("Index file doesn't exist, Initializing will take a while..");
+        axios.post(url,{
+            category: currentComponent.state.category,
+            subcategory: currentComponent.state.subcategory,
+            age: currentComponent.state.age,
+            skin: currentComponent.state.skin_type,
+            skin_color: currentComponent.state.skin_color,
+            hair: currentComponent.state.hair_style,
+            hair_color: currentComponent.state.hair_color,
+            eye: currentComponent.state.eye_color,
+            top_k: currentComponent.state.top_k
+        })
+            .then(function (response) {
+                let status = response.data.status;
+                if (status === 0) {
+                    let response_data = response.data.response
+                    currentComponent.setState({
+                        loading: false, response_data: response_data
+                    });
+
+                } else {
+                    alert(response.data.msg);
+                }
+            })
+            .catch(function (error) {
+                alert("error");
+                console.log(error);
+
             });
 
-            axios.get(url)
-                .then(function (response) {
-                    let data = response.data.data;
-                    let status = response.data.status;
-                    let dataKey = response.data.tableKey;
-                    let recommendation = response.data.Recommendation;
-
-                    if (status === 0) {
-                        currentComponent.setState({
-                            loading: false, queryDataKey: dataKey,
-                            recommendation: recommendation, queryData: data
-                        });
-
-                        let history = currentComponent.state.history;
-                        history.push(currentComponent.state)
-                        currentComponent.setState({history:history})
-
-                    } else {
-                        alert(response.data.msg);
-                    }
-                })
-                .catch(function (error) {
-                    alert("error");
-                    console.log(error);
-
-                });
-        } else {
-            let url = base_url + "query?databasename=" + currentComponent.state.database +
-                "&tablelist=" + currentComponent.state.table +
-                "&value=" + currentComponent.state.searchwords;
-
-            axios.get(url)
-                .then(function (response) {
-                    let data = response.data;
-                    let status = response.data.status;
-
-                    //console.log(data);
-                    if (status === 0) {
-                        currentComponent.setState({loading: false, queryData: data});
-
-                        let history = currentComponent.state.history;
-                        history.push(currentComponent.state)
-                        currentComponent.setState({history:history})
-
-                    } else {
-                        alert(response.data.msg);
-                    }
-                })
-                .catch(function (error) {
-                    alert("error");
-                    console.log(error);
-
-                });
-        }
     }
 
     handleResetClick() {
         this.setState({
-            database: "",
-            table: "",
-            searchwords: "",
+            category: null,
+            subcategory: null,
+            age: null,
+            skin_type: null,
+            skin_color: null,
+            hair_style: null,
+            hair_color: null,
+            eye_color: null,
+            top_k: null,
             loading: true,
-            queryData: null,
-            queryDataKey: null,
-            recommendation: "",
-            clickPK: false,
-            history: []
+            response_data: null
         })
     }
 
-    handleGoBackClick() {
-        let currentComponent = this;
-        //window.location.reload();
-        //console.log(this.props.history.goBack);
-        //console.log(window.history.back());
-
-        let historyList = currentComponent.state.history;
-
-        if(historyList.length >1) {
-            let history = historyList[historyList.length-2];
-            this.setState(history);
-            historyList.pop();
-        }
-        else{
-            alert("Can't go back any more!");
-        }
-
+    handleCategoryChange(value) {
+        this.setState({category: value, loading: true, subcategory: null});
+    }
+    handleSubCategoryChange(value) {
+        this.setState({subcategory: value, loading: true});
+    }
+    handleAgeChange(value) {
+        this.setState({age: value, loading: true});
     }
 
-    handleHyperLinkClick(table,searchwords) {
-        let currentComponent = this;
-        currentComponent.setState({
-                table: table,
-                loading: true,
-                clickPK: true,
-                searchwords: searchwords},
-            this.handleSearchClick);
+    handleSkinTypeChange(value) {
+        this.setState({skin_type: value, loading: true});
     }
 
-    handleSearchNewsChange(value) {
-        this.setState({searchNews: value,loading:true, database: null, table: null});
+    handleSkinColorChange(value) {
+        this.setState({skin_color: value, loading: true});
     }
 
-    handleDatabaseChange(value) {
-        this.setState({database: value,loading:true, table: null});
+    handleHairStyleChange(value) {
+        this.setState({hair_style: value, loading: true});
     }
 
-    handleTableChange(value) {
-        this.setState({table:value,loading:true});
+    handleHairColorChange(value) {
+        this.setState({hair_color: value, loading: true});
     }
 
-    handleSearchwordsChange(event) {
-        this.setState({searchwords: event.target.value,loading:true});
+    handleEyeColorChange(value) {
+        this.setState({eye_color: value, loading: true});
+    }
+
+    handleTopKChange(event) {
+        this.setState({top_k: event.target.value, loading: true});
     }
 
     render() {
 
-        let selectDatabase = [];
-        if (this.state.searchNews === null) {
-            selectDatabase.push(
+        let select_subcategory = [];
+        if (this.state.category === null) {
+            select_subcategory.push(
                 <Select/>
             );
         }
-        else if (this.state.searchNews === 'news') {
-            this.state.database = 'news'
-            selectDatabase.push(
-                <Select/>
-                // <Select
-                //     style={{ width: 160 }}
-                //     placeholder="Select a person"
-                //     onChange={this.handleDatabaseChange}
-                //     value={this.state.database}>
-                //     <Option value="news">News</Option>
-                // </Select >
+        else if (this.state.category === "Face Makeup") {
+            select_subcategory.push(
+                <Select
+                    defaultValue="Face Powder"
+                    style={{ width: 160 }}
+                    placeholder="Select a Face Makeup!"
+                    onChange={this.handleSubCategoryChange}
+                    value={this.state.subcategory}>
+                    <Option value="Cushion Foundation">Cushion Foundation</Option>
+                    <Option value="Face Powder">Face Powder</Option>
+                    <Option value="Highlighter">Highlighter</Option>
+
+                    <Option value="Concealer">Concealer</Option>
+                    <Option value="Bronzer">Bronzer</Option>
+                    <Option value="BB & CC Cream">BB & CC Cream</Option>
+                    <Option value="Liquid Foundation">Liquid Foundation</Option>
+                    <Option value="Blush">Blush</Option>
+                    <Option value="Color Corrector">Color Corrector</Option>
+                </Select >
+            );
+        }
+        else if (this.state.category === "Lip Makeup") {
+            select_subcategory.push(
+                <Select
+                    defaultValue="Lip Balm"
+                    style={{ width: 160 }}
+                    placeholder="Select a Lip Makeup!"
+                    onChange={this.handleSubCategoryChange}
+                    value={this.state.subcategory}>
+                    <Option value="Lip Balm">Lip Balm</Option>
+                    <Option value="Lip Plumper">Lip Plumper</Option>
+                    <Option value="Lip Gloss">Lip Gloss</Option>
+                    <Option value="Lipstick">Lip Lipstick</Option>
+                    <Option value="Lip Liner">Lip Liner</Option>
+                    <Option value="Lip Palettes">Lip Palettes</Option>
+                </Select >
             );
         }
         else {
-            selectDatabase.push(
+            select_subcategory.push(
                     <Select
-                        defaultValue="world"
+                        defaultValue="Eyebrow Makeup"
                         style={{ width: 160 }}
-                        placeholder="Select a person"
-                        onChange={this.handleDatabaseChange}
-                        value={this.state.database}>
-                        <Option value="world">World</Option>
-                        <Option value="sakila">Film Dataset</Option>
-                        <Option value="customers_order">Customers Order</Option>
+                        placeholder="Select a Eye Makeup!"
+                        onChange={this.handleSubCategoryChange}
+                        value={this.state.subcategory}>
+                        <Option value="Eyebrow Makeup">Eyebrow</Option>
+                        <Option value="Eye Liner">Eye Liner</Option>
+                        <Option value="Eye Primer">Eye Primer</Option>
+                        <Option value="Mascara">Mascara</Option>
+                        <Option value="Eyeshadow Palette">Eyeshadow</Option>
+                        <Option value="Eyeshadow">Eyeshadow</Option>
+                        <Option value="Lash Serum">Lash Serum</Option>
+                        <Option value="Brow Liner">Brow Liner</Option>
+                        <Option value="Eyelash">Eyelash</Option>
                     </Select >
                 );
             }
 
-        let selectTable = [];
-        if (this.state.database === null) {
-            selectTable.push(
-                <Select/>
-            );
-        }
-        else if (this.state.database === "news") {
-            selectTable.push(
-                <Select
-                    name="table"
-                    defaultValue=""
-                    style={{ width: 160 }}
-                    onChange={this.handleTableChange}
-                    value={this.state.table}>
-                    <Option value="tweet">Tweet</Option>
-                    <Option value="tweet">Financial Times (TBD)</Option>
-                    <Option value="">All tables</Option>
-                </Select>
-            );
-        }
-        else if (this.state.database === "world") {
-            selectTable.push(
-                <Select
-                    name="table"
-                    defaultValue=""
-                    style={{ width: 160 }}
-                    onChange={this.handleTableChange}
-                    value={this.state.table}>
-                    <Option value="city">city</Option>
-                    <Option value="country">country</Option>
-                    <Option value="countrylanguage">country language</Option>
-                    <Option value="">All tables</Option>
-                </Select>
-            );
-        }
-        else if (this.state.database === "customers_order") {
-            selectTable.push(
-                <Select
-                    name="table"
-                    defaultValue=""
-                    style={{ width: 160 }}
-                    onChange={this.handleTableChange}
-                    value={this.state.table}>
-                    <Option value="customers">customers</Option>
-                    <Option value="employees">employees</Option>
-                    <Option value="offices">offices</Option>
-                    <Option value="orderdetails">order details</Option>
-                    <Option value="orders">orders</Option>
-                    <Option value="payments">payments</Option>
-                    <Option value="productlines">product lines</Option>
-                    <Option value="products">products</Option>
-                    <Option value="">All tables</Option>
-                </Select>
-            );
-        }
-        else if (this.state.database === "sakila") {
-            selectTable.push(
-                <Select
-                    name="table"
-                    defaultValue=""
-                    style={{ width: 160 }}
-                    onChange={this.handleTableChange}
-                    value={this.state.table}>
-                    <Option value="actor">actor</Option>
-                    <Option value="address">address</Option>
-                    <Option value="category">category</Option>
-                    <Option value="city">city</Option>
-                    <Option value="country">country</Option>
-                    <Option value="customer">customer</Option>
-                    <Option value="film">film</Option>
-                    <Option value="film_actor">film actor</Option>
-                    <Option value="film_category">film category</Option>
-                    <Option value="film_text">film text</Option>
-                    <Option value="inventory">inventory</Option>
-                    <Option value="language">language</Option>
-                    <Option value="payment">payment</Option>
-                    <Option value="rental">rental</Option>
-                    <Option value="staff">staff</Option>
-                    <Option value="store">store</Option>
-                    <Option value="">All tables</Option>
-                </Select>
-            );
-        }
 
-
-        let returnResult = [];
+        let return_result = [];
         if (this.state.loading === true) {
-            if (this.state.clickPK === false) {
-                returnResult.push(<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>)
-                returnResult.push(<div style={{"fontSize": "15px"}}>Please enter your search
-                    words... &nbsp;(*╹▽╹*)&nbsp;</div>);
-            } else {
-                let columnName = this.state.database + "_" + this.state.table;
-                returnResult.push(<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>)
-                returnResult.push(<div style={{"fontSize": "15px"}}>loading... &nbsp;(*╹▽╹*)&nbsp;</div>)
-                returnResult.push(<div>&nbsp;&nbsp;</div>);
-                returnResult.push(
-                    <TableList
-                               columnName={columnName}
-                               dataSource={null}
-                               loading={this.state.loading}
-                               handleHyperLinkClick = {this.handleHyperLinkClick}/>
-                );
-            }
+
+            return_result.push(<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>)
+            return_result.push(<div style={{"fontSize": "15px"}}>Please enter your information
+                    ... &nbsp;(*╹▽╹*)&nbsp;</div>);
         }
         else {
-            returnResult.push(<div>&nbsp;&nbsp;</div>);
-            if (this.state.clickPK === false) {
-                returnResult.push(<div style={{"font-size": "15px"}}>Searching results
-                    of: {this.state.searchwords} </div>);
-                returnResult.push(<div style={{"font-size": "15px"}}>Most relevant
-                    table:&nbsp; {this.state.recommendation} &nbsp;&nbsp;</div>);
-            } else {
-                returnResult.push(<div style={{"font-size": "15px"}}>Redirect to: {this.state.searchwords} </div>);
-            }
-            //returnResult.push(<div style={{"font-size":"15px"}}>Click PK:&nbsp; {this.state.clickPK} &nbsp;&nbsp;</div>);
-            returnResult.push(<div>&nbsp;&nbsp;</div>);
+            return_result.push(<div>&nbsp;&nbsp;</div>);
 
-            if (this.state.clickPK === true) {
+            return_result.push(<div style={{"font-size": "15px"}}>Searching results
+                of: {this.state.subcategory} </div>);
 
-                let columnName = this.state.database + "_" + this.state.table;
-                returnResult.push(<TableList tableName={this.state.table}
-                                             columnName={columnName}
-                                             dataSource={this.state.queryData.data}
-                                             handleHyperLinkClick = {this.handleHyperLinkClick}/>)
-            }
-            else {
-                if (this.state.recommendation !== "No recommended tables") {
-                    let recommendColumnName = this.state.database + "_" + this.state.recommendation;
-                    let recommedPK = this.state.queryDataKey[this.state.recommendation];
-
-                    returnResult.push(<TableList tableName={this.state.recommendation}
-                                                 columnName={recommendColumnName}
-                                                 dataSource={this.state.queryData[this.state.recommendation][recommedPK]}
-                                                 handleHyperLinkClick = {this.handleHyperLinkClick}/>);
-                }
-                for (let table in this.state.queryData) {
-                    let columnName = this.state.database + "_" + table;
-                    let PK = this.state.queryDataKey[table];
-                    if (table !== this.state.recommendation) {
-                        returnResult.push(<TableList tableName={table}
-                                                     columnName={columnName}
-                                                     dataSource={this.state.queryData[table][PK]}
-                                                     handleHyperLinkClick = {this.handleHyperLinkClick}/>);
-                    }
-                }
-            }
-            //if (data.hasOwnProperty("countrylanguage"))
+            return_result.push(<div>&nbsp;&nbsp;</div>);
+            // return_result.push(<TableList tableName={table}
+            //                              columnName={columnName}
+            //                              dataSource={this.state.response_data[table][PK]}
+            //                              handleHyperLinkClick = {this.handleHyperLinkClick}/>);
         }
 
         return (
@@ -368,58 +231,169 @@ class App extends React.Component {
             <div id="page-wrapper">
                 <div className="App-header">
                     {/*<img src={logo} className="App-logo" alt="logo"/>*/}
-                    <h1>Search Engine </h1>
+                    <h1>Guess What You Like! </h1>
 
                 </div>
                 <div className="App-search">
 
-                    <label htmlFor="ifNews">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search News? &nbsp;&nbsp;
+                    <label htmlFor="category">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category &nbsp;&nbsp;
                         <Select
-                            defaultValue="news"
+                            defaultValue="Face Makeup"
                             style={{ width: 160 }}
-                            placeholder="Select a person"
-                            onChange={this.handleSearchNewsChange}
-                            value={this.state.searchNews}>
-                            <Option value="news">Yes, search news</Option>
-                            <Option value="database">No, search database</Option>
+                            placeholder="Select a category"
+                            onChange={this.handleCategoryChange}
+                            value={this.state.category}>
+                            <Option value="Face Makeup">Face Makeup</Option>
+                            <Option value="Lip Makeup">Lip Makeup</Option>
+                            <Option value="Eye Makeup">Eye Makeup</Option>
 
                         </Select >
                     </label>
 
-                    <label htmlFor="database">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Database: &nbsp;&nbsp;
-                        {selectDatabase}
+                    <label htmlFor="subcategory">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sub Category: &nbsp;&nbsp;
+                        {select_subcategory}
                     </label>
 
-                    <label htmlFor="table">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table: &nbsp;&nbsp;
-                        {selectTable}
+                </div>
+
+                <div className="App-search">
+                    <label htmlFor="age">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Age &nbsp;&nbsp;
+                        <Select
+                            defaultValue="19-24"
+                            style={{ width: 160 }}
+                            placeholder="Select Your Age"
+                            onChange={this.handleAgeChange}
+                            value={this.state.age}>
+                            <Option value="Under 18">Under 18</Option>
+                            <Option value="19-24">19-24</Option>
+                            <Option value="25-29">25-29</Option>
+                            <Option value="30-35">30-35</Option>
+                            <Option value="36-43">36-43</Option>
+                            <Option value="44-55">44-55</Option>
+                            <Option value="56 & Over">56 & Over</Option>
+
+
+                        </Select >
                     </label>
 
-                    <label htmlFor="searchwords">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label htmlFor="skin_type">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skin Type &nbsp;&nbsp;
+                        <Select
+                            defaultValue="Combination"
+                            style={{ width: 160 }}
+                            placeholder="Select Skin Type"
+                            onChange={this.handleSkinTypeChange}
+                            value={this.state.skin_type}>
+                            <Option value="Very Dry">Very Dry</Option>
+                            <Option value="Dry">Dry</Option>
+                            <Option value="Medium">Medium</Option>
+                            <Option value="Fair-Medium">Fair Medium</Option>
+                            <Option value="Fair">Fair</Option>
+                            <Option value="Combination">Combination</Option>
+                            <Option value="Oily">Oily</Option>
+                            <Option value="Very Oily">Very Oily</Option>
+                            <Option value="Sensitive">Sensitive</Option>
+                            <Option value="Acne-prone">Acne Prone</Option>
+                            <Option value="Normal">Normal</Option>
+                            <Option value="Neutral">Neutral</Option>
+
+                        </Select >
+                    </label>
+
+                    <label htmlFor="skin_color">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skin Color &nbsp;&nbsp;
+                        <Select
+                            defaultValue="Normal"
+                            style={{ width: 160 }}
+                            placeholder="Select Skin Color"
+                            onChange={this.handleSkinColorChange}
+                            value={this.state.skin_color}>
+                            <Option value="Olive">Olive</Option>
+                            <Option value="Normal">Normal</Option>
+                            <Option value="Warm">Warm</Option>
+                            <Option value="Medium Brown">Medium Brown</Option>
+                            <Option value="Tan">Tan</Option>
+                            <Option value="Dark">Dark</Option>
+                            <Option value="Deep Dark">Deep Dark</Option>
+
+                        </Select >
+                    </label>
+
+                    <label htmlFor="hair_style">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hair Style &nbsp;&nbsp;
+                        <Select
+                            defaultValue="Straight"
+                            style={{ width: 160 }}
+                            placeholder="Select Hair Style"
+                            onChange={this.handleHairStyleChange}
+                            value={this.state.hair_style}>
+                            <Option value="Straight">Straight</Option>
+                            <Option value="Fine">Fine</Option>
+                            <Option value="Medium">Medium</Option>
+                            <Option value="Curly">Curly</Option>
+                            <Option value="Coarse">Coarse</Option>
+                            <Option value="Relaxed">Relaxed</Option>
+
+                        </Select >
+                    </label>
+
+                    <label htmlFor="hair_color">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hair Color &nbsp;&nbsp;
+                        <Select
+                            defaultValue="Black"
+                            style={{ width: 160 }}
+                            placeholder="Select Hair Color"
+                            onChange={this.handleHairColorChange}
+                            value={this.state.hair_color}>
+                            <Option value="Black">Black</Option>
+                            <Option value="Brown">Brown</Option>
+                            <Option value="Grey">Grey</Option>
+                            <Option value="Silver">Silver</Option>
+                            <Option value="Red">Red</Option>
+                            <Option value="Brunette">Brunette</Option>
+                            <Option value="Blond">Blond</Option>
+
+                        </Select >
+                    </label>
+
+                    <label htmlFor="eye_color">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eye Color &nbsp;&nbsp;
+                        <Select
+                            defaultValue="Black"
+                            style={{ width: 160 }}
+                            placeholder="Select Eye Color"
+                            onChange={this.handleEyeColorChange}
+                            value={this.state.eye_color}>
+                            <Option value="Black">Black</Option>
+                            <Option value="Brown">Brown</Option>
+                            <Option value="Blue">Blue</Option>
+                            <Option value="Violet">Violet</Option>
+                            <Option value="Gray">Gray</Option>
+                            <Option value="Green">Green</Option>
+                            <Option value="Hazel">Hazel</Option>
+                            <Option value="Other">Other</Option>
+
+                        </Select >
+                    </label>
+                </div>
+                <div className="App-search">
+                    <label htmlFor="topK">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Top K &nbsp;&nbsp;
                         <Input
-                            id="searchwords"
+                            id="topK"
                             style={{ width: 300 }}
-                            placeholder="Search words or a whole sentence"
-                            onChange={this.handleSearchwordsChange}
-                            value={this.state.searchwords}
+                            placeholder="Return TopK Results, 1 ~ 10"
+                            onChange={this.handleTopKChange}
+                            value={this.state.top_k}
                         />
                     </label>
 
-
                 </div>
                 <div className="App-header">
-                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
 
-                    <Button onClick={(e) => this.handleGoBackClick()}
-                    >Go Back</Button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <Button type="primary" icon={<SearchOutlined />}
                             onClick= {this.handleSearchClick}
                     >Search</Button>
@@ -427,10 +401,10 @@ class App extends React.Component {
                     <Button onClick=
                                 {this.handleResetClick}
                     >Reset</Button>
-                    <Divider/>
+
                 </div>
                 <div className="App-body">
-                    <div style={{"fontSize": "13px"}}>{returnResult}</div>
+                    <div style={{"fontSize": "13px"}}>{return_result}</div>
                 </div>
             </div>
 

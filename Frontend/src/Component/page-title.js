@@ -7,7 +7,7 @@ class PageTitle extends React.Component{
     }
 
     componentWillMount(){
-        document.title = this.props.title + ' - INF551';
+        document.title = this.props.title + ' - DSCI 558 Building Knowledge Graph';
     }
 
     render(){

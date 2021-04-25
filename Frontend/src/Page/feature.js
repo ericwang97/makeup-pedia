@@ -10,7 +10,7 @@ class Feature extends React.Component{
     render(){
         return(
             <div id="page-wrapper">
-                <PageTitle title="Description of Features"/>
+                <PageTitle title="Features Description"/>
                 <div className="row">
                     <Card title="1. Search Engine" >
                         <div className="col-md-12">

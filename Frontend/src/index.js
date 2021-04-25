@@ -25,46 +25,9 @@ class INF551DatabaseSearchEngine extends React.Component{
             <Layout>
                 <Switch>
                     <Route exact path="/" component = {Home}/>
-                    <Route path="/search" component = {App}/>
-                    <Route path="/recommendation" component = {Recommendation}/>
-                    <Route path="/crawler" component = {Crawler}/>
-                    <Route path="/word-cloud" component = {WordCloud}/>
-
+                    <Route path="/recommend" component = {App}/>
                     <Route path="/rate" component = {myRate}/>
-                    <Route path="/rating-rating" component = {QueryTable}/>
                     <Route path="/features" component = {Feature}/>
-
-                    <Route path="/news-tweet" component = {QueryTable}/>
-
-                    <Route path="/world-city" component = {QueryTable}/>
-                    <Route path="/world-country" component = {QueryTable}/>
-                    <Route path="/world-countrylanguage" component = {QueryTable}/>
-
-                    <Route path="/sakila-film" component = {QueryTable}/>
-                    <Route path="/sakila-actor" component = {QueryTable}/>
-                    <Route path="/sakila-film_actor" component = {QueryTable}/>
-                    <Route path="/sakila-category" component = {QueryTable}/>
-                    <Route path="/sakila-film_category" component = {QueryTable}/>
-                    <Route path="/sakila-film_text" component = {QueryTable}/>
-                    <Route path="/sakila-language" component = {QueryTable}/>
-                    <Route path="/sakila-address" component = {QueryTable}/>
-                    <Route path="/sakila-city" component = {QueryTable}/>
-                    <Route path="/sakila-country" component = {QueryTable}/>
-                    <Route path="/sakila-customer" component = {QueryTable}/>
-                    <Route path="/sakila-inventory" component = {QueryTable}/>
-                    <Route path="/sakila-payment" component = {QueryTable}/>
-                    <Route path="/sakila-rental" component = {QueryTable}/>
-                    <Route path="/sakila-staff" component = {QueryTable}/>
-                    <Route path="/sakila-store" component = {QueryTable}/>
-
-                    <Route path="/customers_order-orders" component = {QueryTable}/>
-                    <Route path="/customers_order-orderdetails" component = {QueryTable}/>
-                    <Route path="/customers_order-products" component = {QueryTable}/>
-                    <Route path="/customers_order-customers" component = {QueryTable}/>
-                    <Route path="/customers_order-payments" component = {QueryTable}/>
-                    <Route path="/customers_order-productlines" component = {QueryTable}/>
-                    <Route path="/customers_order-employees" component = {QueryTable}/>
-                    <Route path="/customers_order-offices" component = {QueryTable}/>
 
                     <Route component = {ErrorPage}/>
                 </Switch>
