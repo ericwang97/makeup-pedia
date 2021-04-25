@@ -156,6 +156,15 @@ def reco_main(request):
 if __name__ == "__main__":
 
     """
+    Input: Data, Request (see below, hard code the keys and the value choices)
+    Reco: 3 filters when doing Reco: Same category --> similar sub_category (string similarity) 
+        --> mua_reviews_cnt > 30
+    Output: Top K and the Least K results (Least K for comparing whether the result is reasonable)
+    """
+
+    """
+    Hard code list:
+    
     age_list = ['19-24', '30-35', '25-29', '44-55', '56 & Over', 'Under 18', '36-43']
     eyes_color_list = ['Blue', 'Brown', 'Black', 'Violet', 'Other', 'Gray', 'Hazel', 'Green']
     skin_type_list = ['Very Dry', 'Dry', 'Medium', 'Fair-Medium', 'Fair', 'Combination', 'Oily', 'Very Oily',
