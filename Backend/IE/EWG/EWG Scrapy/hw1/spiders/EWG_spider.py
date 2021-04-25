@@ -2,6 +2,7 @@ import scrapy
 import time
 import json
 import uuid
+import os
 import pytz
 from datetime import datetime
 from scrapy.selector import Selector
@@ -21,18 +22,19 @@ class Spider(scrapy.Spider):
     name = "EWG"
     count = 0
     base_url = 'https://www.ewg.org'
-    output_file = 'ewg_data.jl'
+    output_file = '../../../../data_raw/ewg_data.jl'
+    # print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     output = open(output_file, 'w')
 
     def start_requests(self):
 
-        input_file = './ewg_data_links.jl'
+        input_file = '../../ewg_data_links.jl'
 
         with open(input_file, 'r') as file:
             for line in file:
                 result = json.loads(line)
                 task1_url = result['product_url']
-                time.sleep(2)
+                time.sleep(0.5)
                 yield scrapy.Request(url=task1_url, callback=self.parse_product, meta={'result': result})
 
     def parse_product(self, response):
