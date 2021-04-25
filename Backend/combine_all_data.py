@@ -1,10 +1,12 @@
 import os
 import time
+import copy
 import json
 from tqdm import tqdm
 
 mua_bp_file = './data/mua_bp_id.json'
 mua_ewg_file = './data/mua_ewg_id.json'
+bp_ewg_ingre_file = './data/bp_ewg_ingre_name.json'
 bp_file = './data/beautypedia.jl'
 mua_file = './data/mua_meta_data.jl'
 ewg_file = './data/agg_ewg_data.jl'
@@ -127,7 +129,7 @@ def get_all_data(bp_ewg_mua_index, bp, ewg, mua):
     return all_data
 
 
-def get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua):
+def get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua,bp_ewg_ingre):
     """
     BP as MAIN DATASET
     1. COMBINE EWG TO BP
@@ -147,11 +149,20 @@ def get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua):
 
         # BP, Add new columns
         bp_data = bp[bp_id]
-        cleaned_data[bp_id] = bp_data
+        cleaned_data[bp_id] = copy.deepcopy(bp_data)
+        cleaned_data[bp_id]['ingredient'] = []
+        cleaned_data[bp_id]['buy_url'] = []
         cleaned_data[bp_id]['other_names'] = []
         cleaned_data[bp_id]['brand_url'] = []
         cleaned_data[bp_id]['sub_category'] = [cleaned_data[bp_id]['sub_category']]
         cleaned_data[bp_id]['image_url'] = [cleaned_data[bp_id]['image_url']]
+
+        # BP
+        for bp_ingr in bp_data['ingredient']:
+            if bp_ingr in bp_ewg_ingre:
+                cleaned_data[bp_id]['ingredient'].append(bp_ewg_ingre[bp_ingr])
+            else:
+                cleaned_data[bp_id]['ingredient'].append(bp_ingr)
 
         # EWG
         """
@@ -171,8 +182,9 @@ def get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua):
                                         'other_concerns': other_concerns})
 
             # Add Where to purchase
-            buy_url = ''
-            cleaned_data[bp_id]['buy_url'].append(buy_url)
+            buy_url = ewg_data["Buy URL"]
+            if buy_url not in cleaned_data[bp_id]['buy_url']:
+                cleaned_data[bp_id]['buy_url'].append(buy_url)
 
             """
             @TODO: ADD Where to purchase END
@@ -287,16 +299,17 @@ def main():
     # bp 1-1 agg_ewg, 1-* mua.
     mua_bp = json.load(open(mua_bp_file, 'r', encoding='utf-8'))
     mua_ewg = json.load(open(mua_ewg_file, 'r', encoding='utf-8'))
+    bp_ewg_ingre = json.load(open(bp_ewg_ingre_file, 'r', encoding='utf-8'))
 
     bp_ewg_mua_index = get_combined_index(mua_bp, mua_ewg)
-    print(bp_ewg_mua_index)
+    #print(bp_ewg_mua_index)
 
     bp = rebuild_file(bp_file)
     ewg = rebuild_file(ewg_file)
     mua = rebuild_file(mua_file)
 
     all_data = get_all_data(bp_ewg_mua_index, bp, ewg, mua)
-    clean_data = get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua)
+    clean_data = get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua,bp_ewg_ingre)
 
 
 if __name__ == "__main__":
