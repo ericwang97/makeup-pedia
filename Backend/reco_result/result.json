@@ -1,1315 +1,575 @@
 [
     {
-        "2332": {
-            "product_links": "https://www.beautypedia.com/products/face-powder/",
-            "product_names": "Face Powder",
-            "category": "Face Makeup",
-            "sub_category": [
-                "Face Powder",
-                "Loose Powder"
-            ],
-            "product_id": 2332,
-            "brand": "Marcelle",
-            "ingredient": [
-                "UREA",
-                "IMIDAZOLIDINYL UREA",
-                "POLYPARABEN",
-                "BHT",
-                "Iron Oxides",
-                "TALC",
-                "METHYLPARABEN"
-            ],
-            "size": "2.40 fl. oz.",
-            "price": "14.95",
-            "claims": "This loose powder is the perfect tool for setting your makeup or for making those little touch-ups during the day. Its texture ensures beautifully matte skin while micronized talc absorbs excess oil for extra-long-wearing comfort, giving you a perfectly evened-out skin tone. Its soft powdery texture leaves your skin feeling silky smooth.",
-            "image_url": [
-                "https://img.makeupalley.com/8/1/3/9/1225881.JPG",
-                "https://img.makeupalley.com/1/1/8/1/3539346.JPG",
-                "https://www.beautypedia.com/wp-content/uploads/2018/07/F93CBDD5-0738-41DA-9618-D5BA948AA97A_marcelleLogo.gif?w=212"
-            ],
-            "expert_rating": "5",
-            "expert_reviews": [
-                "Housed in a generous-size tub, Face Powder is a talc- and mineral oil based loose powder. It has a silky, almost creamy texture that makes skin look polished and satiny rather than flat and powdered. If one of the two translucent shades works for you, this is a great, affordable loose powder for those with normal to dry skin."
-            ],
-            "expert_pros": null,
-            "expert_cons": null,
-            "jar_package": "No",
-            "animal_test": "No",
-            "user_rating": 4.5,
-            "user_reviews": {
-                "usr_review_summary": {
-                    "usr_review_count": 4,
-                    "usr_pros_summary": [
-                        [
-                            "2",
-                            "Blends Well"
+        "product_links": "https://www.beautypedia.com/products/face-powder/",
+        "product_names": "Face Powder",
+        "category": "Face Makeup",
+        "sub_category": [
+            "Face Powder",
+            "Loose Powder"
+        ],
+        "product_id": 2332,
+        "brand": "Marcelle",
+        "ingredient": [
+            "UREA",
+            "IMIDAZOLIDINYL UREA",
+            "POLYPARABEN",
+            "BHT",
+            "Iron Oxides",
+            "TALC",
+            "METHYLPARABEN"
+        ],
+        "size": "2.40 fl. oz.",
+        "price": "14.95",
+        "claims": "This loose powder is the perfect tool for setting your makeup or for making those little touch-ups during the day. Its texture ensures beautifully matte skin while micronized talc absorbs excess oil for extra-long-wearing comfort, giving you a perfectly evened-out skin tone. Its soft powdery texture leaves your skin feeling silky smooth.",
+        "image_url": [
+            "https://img.makeupalley.com/8/1/3/9/1225881.JPG",
+            "https://img.makeupalley.com/1/1/8/1/3539346.JPG",
+            "https://www.beautypedia.com/wp-content/uploads/2018/07/F93CBDD5-0738-41DA-9618-D5BA948AA97A_marcelleLogo.gif?w=212"
+        ],
+        "expert_rating": "5",
+        "expert_reviews": [
+            "Housed in a generous-size tub, Face Powder is a talc- and mineral oil based loose powder. It has a silky, almost creamy texture that makes skin look polished and satiny rather than flat and powdered. If one of the two translucent shades works for you, this is a great, affordable loose powder for those with normal to dry skin."
+        ],
+        "expert_pros": null,
+        "expert_cons": null,
+        "jar_package": "No",
+        "animal_test": "No",
+        "user_rating": 4.5,
+        "user_reviews": {
+            "usr_review_summary": {
+                "usr_review_count": 4,
+                "usr_pros_summary": [
+                    [
+                        "2",
+                        "Blends Well"
+                    ],
+                    [
+                        "2",
+                        "Controls Shine"
+                    ],
+                    [
+                        "2",
+                        "Easy To Apply"
+                    ],
+                    [
+                        "2",
+                        "Long-Lasting"
+                    ],
+                    [
+                        "1",
+                        "Covers Well"
+                    ]
+                ],
+                "usr_cons_summary": [
+                    [
+                        "1",
+                        "Cakes Up"
+                    ],
+                    [
+                        "1",
+                        "Goes On Heavy"
+                    ],
+                    [
+                        "1",
+                        "Settles In Creases"
+                    ]
+                ]
+            },
+            "usr_review_details": {
+                "positive_reviews": [
+                    {
+                        "review_title": "Great finishing powder",
+                        "review_rating": "3",
+                        "review_content": "Great setting powder but cakes up easiy if not careful to assure foundation, primer or moisturizer is completely dry first especially creases under eye.",
+                        "review_cons": [
+                            "Cakes Up",
+                            "Goes On Heavy",
+                            "Settles In Creases"
                         ],
-                        [
-                            "2",
-                            "Controls Shine"
-                        ],
-                        [
-                            "2",
-                            "Easy To Apply"
-                        ],
-                        [
-                            "2",
+                        "review_pros": [
+                            "Blends Well",
+                            "Controls Shine",
+                            "Covers Well",
+                            "Easy To Apply",
                             "Long-Lasting"
                         ],
-                        [
-                            "1",
-                            "Covers Well"
-                        ]
-                    ],
-                    "usr_cons_summary": [
-                        [
-                            "1",
-                            "Cakes Up"
+                        "review_best_for": [
+                            "Normal Skin",
+                            "Oily Skin"
                         ],
-                        [
-                            "1",
-                            "Goes On Heavy"
+                        "usr_routine_time": null,
+                        "usr_def_tag": [
+                            "Brand Buyer"
                         ],
-                        [
-                            "1",
+                        "usr_age": null,
+                        "usr_skin_type": null
+                    },
+                    {
+                        "review_title": "Yes!",
+                        "review_rating": "5",
+                        "review_content": "I use this product to set my foundation and concealer. I have combination skin that is sensitive and somewhat prone to breakouts. This product has never caused any irritation. It does what it claims. I wear make-up about 1-3 times per week, and don't often leave it on for more than 8 hours. I find it barely needs retouching except occasionally I have touched up my forehead hours later if I'm looking a tad shiny. Lately I've been trying to reduce how much I spend on skincare and makeup, and this product gives you great bang for your buck.",
+                        "review_cons": [
+                            "Cakes Up",
+                            "Goes On Heavy",
                             "Settles In Creases"
-                        ]
-                    ]
-                },
-                "usr_review_details": {
-                    "positive_reviews": [
-                        {
-                            "review_title": "Great finishing powder",
-                            "review_rating": "3",
-                            "review_content": "Great setting powder but cakes up easiy if not careful to assure foundation, primer or moisturizer is completely dry first especially creases under eye.",
-                            "review_cons": [
-                                "Cakes Up",
-                                "Goes On Heavy",
-                                "Settles In Creases"
-                            ],
-                            "review_pros": [
-                                "Blends Well",
-                                "Controls Shine",
-                                "Covers Well",
-                                "Easy To Apply",
-                                "Long-Lasting"
-                            ],
-                            "review_best_for": [
-                                "Normal Skin",
-                                "Oily Skin"
-                            ],
-                            "usr_routine_time": null,
-                            "usr_def_tag": [
-                                "Brand Buyer"
-                            ],
-                            "usr_age": null,
-                            "usr_skin_type": null
-                        },
-                        {
-                            "review_title": "Yes!",
-                            "review_rating": "5",
-                            "review_content": "I use this product to set my foundation and concealer. I have combination skin that is sensitive and somewhat prone to breakouts. This product has never caused any irritation. It does what it claims. I wear make-up about 1-3 times per week, and don't often leave it on for more than 8 hours. I find it barely needs retouching except occasionally I have touched up my forehead hours later if I'm looking a tad shiny. Lately I've been trying to reduce how much I spend on skincare and makeup, and this product gives you great bang for your buck.",
-                            "review_cons": [
-                                "Cakes Up",
-                                "Goes On Heavy",
-                                "Settles In Creases"
-                            ],
-                            "review_pros": [
-                                "Blends Well",
-                                "Controls Shine",
-                                "Doesn't Settle In Creases",
-                                "Easy To Apply",
-                                "Lightweight",
-                                "Long-Lasting",
-                                "Silky Finish"
-                            ],
-                            "review_best_for": [
-                                "Normal Skin",
-                                "Oily Skin"
-                            ],
-                            "usr_routine_time": null,
-                            "usr_def_tag": [
-                                "Brand Buyer"
-                            ],
-                            "usr_age": null,
-                            "usr_skin_type": null
-                        }
-                    ],
-                    "negative_reviews": null,
-                    "reviews": [
-                        {
-                            "review_title": "Great for normal to oily skin too",
-                            "review_rating": "5",
-                            "review_content": "This is a fabulous powder. Best of all the many I have tried in trying to replace my discontinued HG, including Chanel, Armani, Laura Mercier, MAC. Very fine, stays true to color on my combo skin. Also u get 70 grams for $15, an incredible bargain. I find it works great on my normal to moderately oily skin.",
-                            "review_cons": [
-                                "Cakes Up",
-                                "Goes On Heavy",
-                                "Settles In Creases"
-                            ],
-                            "review_pros": [
-                                "Blends Well",
-                                "Controls Shine",
-                                "Doesn't Settle In Creases",
-                                "Easy To Apply",
-                                "Lightweight",
-                                "Long-Lasting",
-                                "Silky Finish"
-                            ],
-                            "review_best_for": [
-                                "Normal Skin",
-                                "Oily Skin"
-                            ],
-                            "usr_routine_time": null,
-                            "usr_def_tag": [
-                                "Brand Buyer"
-                            ],
-                            "usr_age": null,
-                            "usr_skin_type": null
-                        },
-                        {
-                            "review_title": "My favorite loose powder",
-                            "review_rating": "5",
-                            "review_content": "The translucent shade is perfect, packaging is convenient and adequate, and the price is right.  Blends with any foundation I have used, in any season.  I am super happy that Paula approves, too!",
-                            "review_cons": [
-                                "Cakes Up",
-                                "Goes On Heavy",
-                                "Settles In Creases"
-                            ],
-                            "review_pros": [
-                                "Blends Well",
-                                "Controls Shine",
-                                "Doesn't Settle In Creases",
-                                "Easy To Apply",
-                                "Lightweight",
-                                "Long-Lasting",
-                                "Silky Finish"
-                            ],
-                            "review_best_for": [
-                                "Normal Skin",
-                                "Oily Skin"
-                            ],
-                            "usr_routine_time": null,
-                            "usr_def_tag": [
-                                "Brand Buyer"
-                            ],
-                            "usr_age": null,
-                            "usr_skin_type": null
-                        }
-                    ]
-                }
-            },
-            "buy_url": [],
-            "other_names": [
-                "Face Powder - Translucent",
-                "Face Powder"
-            ],
-            "brand_url": [],
-            "mua_rating": 4.45,
-            "mua_review_cnt": 78,
-            "repurchase_pct": 89.5,
-            "age_counter": {
-                "Under 18": 9,
-                "19-24": 23,
-                "30-35": 13,
-                "25-29": 9,
-                "36-43": 3,
-                "44-55": 2
-            },
-            "skin_type_counter": {
-                "Combination": 29,
-                "Fair-Medium": 14,
-                "Neutral": 13,
-                "Fair": 30,
-                "Oily": 4,
-                "Medium": 4,
-                "Acne-prone": 12,
-                "Dry": 6,
-                "Normal": 1,
-                "Very Dry": 3,
-                "Sensitive": -1,
-                "Very Oily": 2
-            },
-            "skin_color_counter": {
-                "Tan": 3,
-                "Warm": 11,
-                "Normal": 0,
-                "Dark": 3,
-                "Olive": -1
-            },
-            "hair_style_counter": {
-                "Straight": 11,
-                "Medium": 17,
-                "Curly": 4,
-                "Fine": 13,
-                "Wavy": 13,
-                "Kinky": 2,
-                "Relaxed": 1,
-                "Coarse": 4
-            },
-            "hair_color_counter": {
-                "Brunette": 14,
-                "Black": 14,
-                "Brown": 16,
-                "Blond": 8,
-                "Red": 2
-            },
-            "eyes_counter": {
-                "Hazel": 13,
-                "Blue": 12,
-                "Black": 4,
-                "Other": 3,
-                "Brown": 18,
-                "Green": 8,
-                "Gray": 2
-            }
-        }
-    },
-    {
-        "2315": {
-            "product_links": "https://www.beautypedia.com/products/ideal-flawless-pressed-powder/",
-            "product_names": "Ideal Flawless Pressed Powder",
-            "category": "Face Makeup",
-            "sub_category": [
-                "Loose Powder",
-                "Face Powder",
-                "Pressed Powder"
-            ],
-            "product_id": 2315,
-            "brand": "Avon",
-            "ingredient": [
-                "CALCIUM SILICATE",
-                "TRIETHOXYCAPRYLYLSILANE",
-                "CALCIUM SODIUM BOROSILICATE",
-                "HYDRATED SILICA",
-                "DIMETHICONE",
-                "POLYETHYLENE",
-                "SILICATE",
-                "SQUALANE",
-                "ETHYLPARABEN",
-                "Iron Oxides",
-                "BISMUTH OXYCHLORIDE",
-                "ACRYLATES COPOLYMER",
-                "Cetyl PEG",
-                "HYDROXYAPATITE",
-                "BORON NITRIDE",
-                "TITANIUM DIOXIDE",
-                "CETEARYL METHICONE",
-                "KAOLIN",
-                "ZINC OXIDE",
-                "ZINC STEARATE",
-                "CAPRYLYL METHICONE",
-                "METHICONE",
-                "LAUROYL LYSINE",
-                "Ethylhexyl Methoxycinnamate",
-                "PEG",
-                "ALUMINA",
-                "TALC",
-                "TRIMETHYLSILOXYSILICATE",
-                "METHYLPARABEN"
-            ],
-            "size": "",
-            "price": "10.00",
-            "claims": null,
-            "image_url": [
-                "https://img.makeupalley.com/3/0/2/7/1568256.JPG",
-                "https://www.beautypedia.com/wp-content/uploads/2012/09/25C454E1-D95B-4A09-AB07-76218FD87FB2_51Sw5jdaicL.jpg?w=365",
-                null,
-                "https://img.makeupalley.com/1/1/2/5/1640666.GIF"
-            ],
-            "expert_rating": "4",
-            "expert_reviews": [
-                "Ideal Flawless Pressed Powder won't provide ideal or flawless coverage, but it is a good, though standard issue, pressed-powder option for a decent price. It blends easily and gives skin a healthy, soft-focus look. However, its ultra-sheer coverage isn't for anyone with a complexion problem to hide.",
-                "The silky, lightweight texture will appeal to those with combination or oily skin. As many powders can, Ideal Flawless Pressed Powder will combat excess oil without creating a cakey appearance.",
-                "This comes in a wide variety of shades that are workable for light to dark skin tones, plus a translucent option that provides the same benefits as the other shades without adding any color (though it may appear ashy on dark skin tones).",
-                ""
-            ],
-            "expert_pros": [
-                "Absorbs excess oil without creating a cakey appearance.",
-                "Good lightweight pressed-powder option for normal to oily skin.",
-                "Fragrance-free."
-            ],
-            "expert_cons": [
-                "The translucent shade may appear ashy on dark skin tones.",
-                "Doesn't provide much coverage."
-            ],
-            "jar_package": "No",
-            "animal_test": "No",
-            "user_rating": 1.0,
-            "user_reviews": {
-                "usr_review_summary": {
-                    "usr_review_count": 1,
-                    "usr_pros_summary": null,
-                    "usr_cons_summary": null
-                },
-                "usr_review_details": {
-                    "positive_reviews": null,
-                    "negative_reviews": null,
-                    "reviews": [
-                        {
-                            "review_title": "don't discontinue ideal loose powder",
-                            "review_rating": "1",
-                            "review_content": "I like the ideal flawless loose powder. I am very upset that avon has discontinued it. Please bring it back. I do not like the mineral powder. The ideal loose powder looks more natural on me than the mineral powder.",
-                            "review_cons": null,
-                            "review_pros": null,
-                            "review_best_for": null,
-                            "usr_routine_time": null,
-                            "usr_def_tag": null,
-                            "usr_age": null,
-                            "usr_skin_type": null
-                        }
-                    ]
-                }
-            },
-            "buy_url": [],
-            "other_names": [
-                "Age Transforming Pressed Powder SPF 15",
-                "Ideal Shade Pressed Powder",
-                "Incredible Finish Pressed Powder",
-                "Ideal Shade Loose Powder"
-            ],
-            "brand_url": [],
-            "mua_rating": 4.05,
-            "mua_review_cnt": 47,
-            "repurchase_pct": 81.25,
-            "age_counter": {
-                "Under 18": 1,
-                "19-24": 7,
-                "25-29": 7,
-                "30-35": 9,
-                "44-55": -1,
-                "56 & Over": 1,
-                "36-43": 4
-            },
-            "skin_type_counter": {
-                "Combination": 16,
-                "Fair-Medium": 9,
-                "Dry": 1,
-                "Fair": 3,
-                "Very Dry": 2,
-                "Sensitive": 3,
-                "Acne-prone": 8,
-                "Neutral": 4,
-                "Very Oily": 1,
-                "Medium": 6,
-                "Normal": -1,
-                "Oily": -2
-            },
-            "skin_color_counter": {
-                "Tan": 4,
-                "Warm": 12,
-                "Olive": 4,
-                "Normal": 0,
-                "Dark": 1
-            },
-            "hair_style_counter": {
-                "Straight": 14,
-                "Fine": 10,
-                "Wavy": 2,
-                "Medium": 4,
-                "Curly": 5,
-                "Coarse": 7,
-                "Kinky": -1,
-                "Relaxed": 1
-            },
-            "hair_color_counter": {
-                "Brunette": 12,
-                "Brown": 5,
-                "Black": 8,
-                "Red": 0,
-                "Blond": 4
-            },
-            "eyes_counter": {
-                "Other": 2,
-                "Green": 5,
-                "Blue": 3,
-                "Brown": 11,
-                "Black": 5,
-                "Hazel": 3
-            }
-        }
-    },
-    {
-        "2417": {
-            "product_links": "https://www.beautypedia.com/products/cellular-treatment-loose-powder/",
-            "product_names": "Cellular Treatment Loose Powder",
-            "category": "Face Makeup",
-            "sub_category": [
-                "Pressed Powder",
-                "Face Powder",
-                "Loose Powder"
-            ],
-            "product_id": 2417,
-            "brand": "La Prairie",
-            "ingredient": [],
-            "size": "",
-            "price": "95.00",
-            "claims": null,
-            "image_url": [
-                "https://www.beautypedia.com/wp-content/uploads/2012/03/86ED300A-B7F1-404C-8D0C-3C0003CF5597_11hWbuEbTXL.jpg?w=180",
-                null,
-                "https://img.makeupalley.com/0/0/0/1/3798418.jpeg"
-            ],
-            "expert_rating": "4",
-            "expert_reviews": [
-                "Cellular Treatment Loose Powder has an ultra-fine, talc-based texture and a sheer, minimalist finish that leaves skin looking polished and dusted with sparkles. If shiny, expensive powder is your thing, here\u2019s a good option, and both shades are translucent."
-            ],
-            "expert_pros": null,
-            "expert_cons": null,
-            "jar_package": "No",
-            "animal_test": "No",
-            "user_rating": 5.0,
-            "user_reviews": {
-                "usr_review_summary": {
-                    "usr_review_count": 1,
-                    "usr_pros_summary": [
-                        [
-                            "1",
-                            "Blends Well"
                         ],
-                        [
-                            "1",
-                            "Controls Shine"
+                        "review_pros": [
+                            "Blends Well",
+                            "Controls Shine",
+                            "Doesn't Settle In Creases",
+                            "Easy To Apply",
+                            "Lightweight",
+                            "Long-Lasting",
+                            "Silky Finish"
                         ],
-                        [
-                            "1",
-                            "Covers Well"
+                        "review_best_for": [
+                            "Normal Skin",
+                            "Oily Skin"
                         ],
-                        [
-                            "1",
-                            "Doesn't Settle In Creases"
+                        "usr_routine_time": null,
+                        "usr_def_tag": [
+                            "Brand Buyer"
                         ],
-                        [
-                            "1",
-                            "Easy To Apply"
-                        ]
-                    ],
-                    "usr_cons_summary": null
-                },
-                "usr_review_details": {
-                    "positive_reviews": [
-                        {
-                            "review_title": "Lasts forever ,,, and I love the travel size for my purse ..",
-                            "review_rating": "5",
-                            "review_content": "I use this daily ... Have had for over a year and still have half the container left ,,, u don't need much for a flawless finish ,,, well worth the investment !",
-                            "review_cons": null,
-                            "review_pros": [
-                                "Blends Well",
-                                "Controls Shine",
-                                "Covers Well",
-                                "Doesn't Settle In Creases",
-                                "Easy To Apply",
-                                "Lightweight",
-                                "Long-Lasting",
-                                "Silky Finish"
-                            ],
-                            "review_best_for": [
-                                "All Skin Types"
-                            ],
-                            "usr_routine_time": null,
-                            "usr_def_tag": [
-                                "Brand Buyer"
-                            ],
-                            "usr_age": null,
-                            "usr_skin_type": null
-                        }
-                    ],
-                    "negative_reviews": null,
-                    "reviews": null
-                }
-            },
-            "buy_url": [],
-            "other_names": [
-                "Treatment Loose Powder",
-                "Cellular Treatment Pressed Powder"
-            ],
-            "brand_url": [],
-            "mua_rating": 4.65,
-            "mua_review_cnt": 48,
-            "repurchase_pct": 77.5,
-            "age_counter": {
-                "30-35": 10,
-                "19-24": 9,
-                "25-29": 8,
-                "44-55": 4,
-                "Under 18": 1,
-                "36-43": 5
-            },
-            "skin_type_counter": {
-                "Combination": 16,
-                "Fair": 11,
-                "Neutral": 8,
-                "Normal": 9,
-                "Acne-prone": 8,
-                "Medium": 1,
-                "Oily": 2,
-                "Fair-Medium": 15,
-                "Dry": 0,
-                "Sensitive": 2,
-                "Very Oily": 0,
-                "Very Dry": 1
-            },
-            "skin_color_counter": {
-                "Warm": 3,
-                "Normal": 0,
-                "Olive": 3
-            },
-            "hair_style_counter": {
-                "Wavy": 10,
-                "Medium": 10,
-                "Fine": 5,
-                "Straight": 5,
-                "Curly": 0,
-                "Coarse": 2,
-                "Kinky": 1
-            },
-            "hair_color_counter": {
-                "Black": 9,
-                "Brunette": 10,
-                "Brown": 10,
-                "Blond": 7
-            },
-            "eyes_counter": {
-                "Black": 2,
-                "Brown": 25,
-                "Hazel": 5,
-                "Green": 4,
-                "Gray": 1,
-                "Other": 3
-            }
-        }
-    },
-    {
-        "2385": {
-            "product_links": "https://www.beautypedia.com/products/photoready-translucent-finisher/",
-            "product_names": "PhotoReady Translucent Finisher",
-            "category": "Face Makeup",
-            "sub_category": [
-                "Facial Powder",
-                "Face Powder",
-                "Pressed Powder"
-            ],
-            "product_id": 2385,
-            "brand": "Revlon",
-            "ingredient": [
-                "Copper",
-                "TRIETHOXYCAPRYLYLSILANE",
-                "CYCLOPENTASILOXANE",
-                "HYDROGENATED LECITHIN",
-                "TOCOPHERYL ACETATE",
-                "DIMETHICONE",
-                "POLYETHYLENE",
-                "SILICATE",
-                "POTASSIUM",
-                "CALCIUM",
-                "NYLON-12",
-                "Iron Oxides",
-                "BISMUTH OXYCHLORIDE",
-                "Methoxypropyl Gluconamide",
-                "SORBIC ACID",
-                "CALCIUM ALUMINUM BOROSILICATE",
-                "TITANIUM DIOXIDE",
-                "METHYL METHACRYLATE CROSSPOLYMER",
-                "Octyldodecyl Glycol Grapeseedate",
-                "PHENOXYETHANOL",
-                "ZINC STEARATE",
-                "DIMETHICONOL",
-                "POLYMETHYL METHACRYLATE",
-                "MAGNESIUM",
-                "LAUROYL LYSINE",
-                "Iron",
-                "ZINC",
-                "MAGNESIUM ASCORBYL PHOSPHATE",
-                "ALUMINA",
-                "TRIMETHYLSILOXYSILICATE",
-                "PENTAERYTHRITYL TETRAETHYLHEXANOATE",
-                "LECITHIN"
-            ],
-            "size": "",
-            "price": "12.99",
-            "claims": null,
-            "image_url": [
-                "https://img.makeupalley.com/9/6/5/6/2612162.JPG",
-                "https://www.beautypedia.com/wp-content/uploads/2012/05/EF050559-F357-49BD-B7E6-D749E483D965_317CNTyIMoL.jpg?w=400"
-            ],
-            "expert_rating": "2",
-            "expert_reviews": [
-                "This is a very dry pressed powder that has noticeable flecks of shine and far too much opacity to be labeled translucent. Not only is the finish dry, but the powder is also absorptive, which means more drying throughout the day and an exaggeration of any amount of dry skin. The lone shade can be best described as a luminous alabaster, and will work only on the very fairest skin tones. Like many dry-textured powders, this one crumbles off the brush, making it a mess to apply."
-            ],
-            "expert_pros": null,
-            "expert_cons": null,
-            "jar_package": "No",
-            "animal_test": "No",
-            "user_rating": null,
-            "user_reviews": {
-                "usr_review_summary": null,
-                "usr_review_details": {
-                    "positive_reviews": null,
-                    "negative_reviews": null,
-                    "reviews": null
-                }
-            },
-            "buy_url": [
-                "https://www.google.com/search?q=Revlon%20PhotoReady%20Candid%20Anti%20Pollution%20Setting%20Powder,%20001%20Translucent"
-            ],
-            "other_names": [
-                "PhotoReady Candid Anti Pollution Setting Powder",
-                "PhotoReady Translucent Finisher"
-            ],
-            "brand_url": [
-                "https://www.ewg.org/skindeep/browse/brands/1375-Revlon/"
-            ],
-            "colors": [
-                {
-                    "Color": "001 Translucent",
-                    "url": "https://www.ewg.org/skindeep/products/878790-Revlon_PhotoReady_Candid_Anti_Pollution_Setting_Powder_001_Translucent/"
-                }
-            ],
-            "overall_concerns": {
-                "Cancer": "HIGH",
-                "Developmental & reproductive toxicity": "LOW",
-                "Allergies & immunotoxicity": "MODERATE"
-            },
-            "other_concerns": {
-                "HIGH": [
-                    "Irritation (skin, eyes, or lungs)",
-                    "Occupational hazards",
-                    "Persistence and bioaccumulation",
-                    "Use restrictions"
+                        "usr_age": null,
+                        "usr_skin_type": null
+                    }
                 ],
-                "MODERATE": [
-                    "Contamination concerns",
-                    "Organ system toxicity (non-reproductive)"
-                ],
-                "LOW": [
-                    "Enhanced skin absorption",
-                    "Ecotoxicology"
+                "negative_reviews": null,
+                "reviews": [
+                    {
+                        "review_title": "Great for normal to oily skin too",
+                        "review_rating": "5",
+                        "review_content": "This is a fabulous powder. Best of all the many I have tried in trying to replace my discontinued HG, including Chanel, Armani, Laura Mercier, MAC. Very fine, stays true to color on my combo skin. Also u get 70 grams for $15, an incredible bargain. I find it works great on my normal to moderately oily skin.",
+                        "review_cons": [
+                            "Cakes Up",
+                            "Goes On Heavy",
+                            "Settles In Creases"
+                        ],
+                        "review_pros": [
+                            "Blends Well",
+                            "Controls Shine",
+                            "Doesn't Settle In Creases",
+                            "Easy To Apply",
+                            "Lightweight",
+                            "Long-Lasting",
+                            "Silky Finish"
+                        ],
+                        "review_best_for": [
+                            "Normal Skin",
+                            "Oily Skin"
+                        ],
+                        "usr_routine_time": null,
+                        "usr_def_tag": [
+                            "Brand Buyer"
+                        ],
+                        "usr_age": null,
+                        "usr_skin_type": null
+                    },
+                    {
+                        "review_title": "My favorite loose powder",
+                        "review_rating": "5",
+                        "review_content": "The translucent shade is perfect, packaging is convenient and adequate, and the price is right.  Blends with any foundation I have used, in any season.  I am super happy that Paula approves, too!",
+                        "review_cons": [
+                            "Cakes Up",
+                            "Goes On Heavy",
+                            "Settles In Creases"
+                        ],
+                        "review_pros": [
+                            "Blends Well",
+                            "Controls Shine",
+                            "Doesn't Settle In Creases",
+                            "Easy To Apply",
+                            "Lightweight",
+                            "Long-Lasting",
+                            "Silky Finish"
+                        ],
+                        "review_best_for": [
+                            "Normal Skin",
+                            "Oily Skin"
+                        ],
+                        "usr_routine_time": null,
+                        "usr_def_tag": [
+                            "Brand Buyer"
+                        ],
+                        "usr_age": null,
+                        "usr_skin_type": null
+                    }
                 ]
-            },
-            "ewg_ingredient": {
-                "TALC": {
-                    "Score": 8,
-                    "Data Availability": "Good"
-                },
-                "PHENOXYETHANOL": {
-                    "Score": 4,
-                    "Data Availability": "Limited"
-                },
-                "DIMETHICONE": {
-                    "Score": 3,
-                    "Data Availability": "Limited"
-                },
-                "TOCOPHERYL ACETATE": {
-                    "Score": 3,
-                    "Data Availability": "Fair"
-                },
-                "SILICA, AMORPHOUS": {
-                    "Score": 2,
-                    "Data Availability": "Good"
-                },
-                "MICA": {
-                    "Score": 2,
-                    "Data Availability": "Fair"
-                },
-                "CI 77499": {
-                    "Score": 2,
-                    "Data Availability": "Fair"
-                },
-                "ZEA MAYS (CORN) STARCH": {
-                    "Score": 1,
-                    "Data Availability": "Fair"
-                },
-                "CI 75470": {
-                    "Score": 1,
-                    "Data Availability": "Fair"
-                }
-            },
-            "mua_rating": 2.7,
-            "mua_review_cnt": 131,
-            "repurchase_pct": 35.0,
-            "age_counter": {
-                "19-24": -14,
-                "36-43": -6,
-                "Under 18": -11,
-                "30-35": -4,
-                "25-29": -8,
-                "44-55": -7,
-                "56 & Over": 3
-            },
-            "skin_type_counter": {
-                "Acne-prone": -3,
-                "Normal": -5,
-                "Fair-Medium": -12,
-                "Combination": -20,
-                "Fair": -24,
-                "Oily": 0,
-                "Medium": -1,
-                "Dry": -9,
-                "Neutral": -5,
-                "Sensitive": -5,
-                "Very Oily": -2,
-                "Very Dry": 0
-            },
-            "skin_color_counter": {
-                "Tan": -3,
-                "Warm": -11,
-                "Olive": -2,
-                "Medium Brown": -1,
-                "Normal": 0,
-                "Dark": -1
-            },
-            "hair_style_counter": {
-                "Straight": -13,
-                "Fine": -15,
-                "Wavy": -11,
-                "Medium": -11,
-                "Curly": -2,
-                "Coarse": -3,
-                "Relaxed": 1,
-                "Kinky": -1
-            },
-            "hair_color_counter": {
-                "Black": -8,
-                "Brunette": -17,
-                "Blond": -7,
-                "Red": -9,
-                "Brown": -6,
-                "Grey": 1,
-                "Silver": 2
-            },
-            "eyes_counter": {
-                "Black": -4,
-                "Green": -17,
-                "Hazel": -10,
-                "Brown": -9,
-                "Blue": -6,
-                "Other": -1,
-                "Gray": 0
             }
+        },
+        "buy_url": [],
+        "other_names": [
+            "Face Powder - Translucent",
+            "Face Powder"
+        ],
+        "brand_url": [],
+        "mua_rating": 4.45,
+        "mua_review_cnt": 78,
+        "repurchase_pct": 89.5,
+        "age_counter": {
+            "Under 18": 9,
+            "19-24": 23,
+            "30-35": 13,
+            "25-29": 9,
+            "36-43": 3,
+            "44-55": 2
+        },
+        "skin_type_counter": {
+            "Combination": 29,
+            "Fair-Medium": 14,
+            "Neutral": 13,
+            "Fair": 30,
+            "Oily": 4,
+            "Medium": 4,
+            "Acne-prone": 12,
+            "Dry": 6,
+            "Normal": 1,
+            "Very Dry": 3,
+            "Sensitive": -1,
+            "Very Oily": 2
+        },
+        "skin_color_counter": {
+            "Tan": 3,
+            "Warm": 11,
+            "Normal": 0,
+            "Dark": 3,
+            "Olive": -1
+        },
+        "hair_style_counter": {
+            "Straight": 11,
+            "Medium": 17,
+            "Curly": 4,
+            "Fine": 13,
+            "Wavy": 13,
+            "Kinky": 2,
+            "Relaxed": 1,
+            "Coarse": 4
+        },
+        "hair_color_counter": {
+            "Brunette": 14,
+            "Black": 14,
+            "Brown": 16,
+            "Blond": 8,
+            "Red": 2
+        },
+        "eyes_counter": {
+            "Hazel": 13,
+            "Blue": 12,
+            "Black": 4,
+            "Other": 3,
+            "Brown": 18,
+            "Green": 8,
+            "Gray": 2
         }
     },
     {
-        "2384": {
-            "product_links": "https://www.beautypedia.com/products/loose-face-powder/",
-            "product_names": "Loose Face Powder",
-            "category": "Face Makeup",
-            "sub_category": [
-                "Loose Powder",
-                "Face Powder",
-                "Pressed Powder"
-            ],
-            "product_id": 2384,
-            "brand": "The Body Shop",
-            "ingredient": [
-                "BORON NITRIDE",
-                "PTFE",
-                "NYLON-12",
-                "TETRASODIUM EDTA",
-                "Iron Oxides",
-                "PHENOXYETHANOL",
-                "TOCOPHERYL ACETATE",
-                "TALC",
-                "POLYETHYLENE",
-                "SILICATE",
-                "METHYLPARABEN"
-            ],
-            "size": "0.49 fl. oz.",
-            "price": "16.50",
-            "claims": null,
-            "image_url": [
-                "https://www.beautypedia.com/wp-content/uploads/2012/05/A9CB3D54-5A30-4B3C-A7FE-6C0085543F00_TheBodyShopLooseFacePowder.jpg?w=450",
-                "https://img.makeupalley.com/0/2/6/3/1868848.JPG",
-                null,
-                "https://img.makeupalley.com/4/6/9/5/2020950.JPG"
-            ],
-            "expert_rating": "3",
-            "expert_reviews": [
-                "Loose Face Powder has a silky, airy, talc-based texture and a drier-than-usual finish that is ideal for normal to very oily skin. Shades 01, 02, and 03 are neutral tones perfect for fair to medium skin, while shade 05 is a sheer bronze color with gold shimmer, which tends to flake. Apparently The Body Shop hasn\u2019t had a loose powder for years, and customer demand made them reconsider\u2014and what they produced is well worth an audition!"
-            ],
-            "expert_pros": null,
-            "expert_cons": null,
-            "jar_package": "No",
-            "animal_test": "No",
-            "user_rating": 5.0,
-            "user_reviews": {
-                "usr_review_summary": {
-                    "usr_review_count": 1,
-                    "usr_pros_summary": [
-                        [
-                            "1",
-                            "Blends Well"
-                        ],
-                        [
-                            "1",
-                            "Controls Shine"
-                        ],
-                        [
-                            "1",
-                            "Covers Well"
-                        ],
-                        [
-                            "1",
-                            "Doesn't Settle In Creases"
-                        ],
-                        [
-                            "1",
-                            "Easy To Apply"
-                        ]
-                    ],
-                    "usr_cons_summary": null
-                },
-                "usr_review_details": {
-                    "positive_reviews": [
-                        {
-                            "review_title": "Best Powder ever, so naturally they must discontinue it.",
-                            "review_rating": "5",
-                            "review_content": "I don't buy based on Brand, but when I find a product that I like I buy it. Price is a secondary consideration.",
-                            "review_cons": null,
-                            "review_pros": [
-                                "Blends Well",
-                                "Controls Shine",
-                                "Covers Well",
-                                "Doesn't Settle In Creases",
-                                "Easy To Apply",
-                                "Lightweight",
-                                "Long-Lasting",
-                                "Silky Finish"
-                            ],
-                            "review_best_for": [
-                                "All Skin Types"
-                            ],
-                            "usr_routine_time": null,
-                            "usr_def_tag": [
-                                "Budget Shopper"
-                            ],
-                            "usr_age": null,
-                            "usr_skin_type": null
-                        }
-                    ],
-                    "negative_reviews": null,
-                    "reviews": null
-                }
+        "product_links": "https://www.beautypedia.com/products/ideal-flawless-pressed-powder/",
+        "product_names": "Ideal Flawless Pressed Powder",
+        "category": "Face Makeup",
+        "sub_category": [
+            "Loose Powder",
+            "Face Powder",
+            "Pressed Powder"
+        ],
+        "product_id": 2315,
+        "brand": "Avon",
+        "ingredient": [
+            "CALCIUM SILICATE",
+            "TRIETHOXYCAPRYLYLSILANE",
+            "CALCIUM SODIUM BOROSILICATE",
+            "HYDRATED SILICA",
+            "DIMETHICONE",
+            "POLYETHYLENE",
+            "SILICATE",
+            "SQUALANE",
+            "ETHYLPARABEN",
+            "Iron Oxides",
+            "BISMUTH OXYCHLORIDE",
+            "ACRYLATES COPOLYMER",
+            "Cetyl PEG",
+            "HYDROXYAPATITE",
+            "BORON NITRIDE",
+            "TITANIUM DIOXIDE",
+            "CETEARYL METHICONE",
+            "KAOLIN",
+            "ZINC OXIDE",
+            "ZINC STEARATE",
+            "CAPRYLYL METHICONE",
+            "METHICONE",
+            "LAUROYL LYSINE",
+            "Ethylhexyl Methoxycinnamate",
+            "PEG",
+            "ALUMINA",
+            "TALC",
+            "TRIMETHYLSILOXYSILICATE",
+            "METHYLPARABEN"
+        ],
+        "size": "",
+        "price": "10.00",
+        "claims": null,
+        "image_url": [
+            "https://img.makeupalley.com/3/0/2/7/1568256.JPG",
+            "https://www.beautypedia.com/wp-content/uploads/2012/09/25C454E1-D95B-4A09-AB07-76218FD87FB2_51Sw5jdaicL.jpg?w=365",
+            null,
+            "https://img.makeupalley.com/1/1/2/5/1640666.GIF"
+        ],
+        "expert_rating": "4",
+        "expert_reviews": [
+            "Ideal Flawless Pressed Powder won't provide ideal or flawless coverage, but it is a good, though standard issue, pressed-powder option for a decent price. It blends easily and gives skin a healthy, soft-focus look. However, its ultra-sheer coverage isn't for anyone with a complexion problem to hide.",
+            "The silky, lightweight texture will appeal to those with combination or oily skin. As many powders can, Ideal Flawless Pressed Powder will combat excess oil without creating a cakey appearance.",
+            "This comes in a wide variety of shades that are workable for light to dark skin tones, plus a translucent option that provides the same benefits as the other shades without adding any color (though it may appear ashy on dark skin tones).",
+            ""
+        ],
+        "expert_pros": [
+            "Absorbs excess oil without creating a cakey appearance.",
+            "Good lightweight pressed-powder option for normal to oily skin.",
+            "Fragrance-free."
+        ],
+        "expert_cons": [
+            "The translucent shade may appear ashy on dark skin tones.",
+            "Doesn't provide much coverage."
+        ],
+        "jar_package": "No",
+        "animal_test": "No",
+        "user_rating": 1.0,
+        "user_reviews": {
+            "usr_review_summary": {
+                "usr_review_count": 1,
+                "usr_pros_summary": null,
+                "usr_cons_summary": null
             },
-            "buy_url": [],
-            "other_names": [
-                "Pressed Face Powder",
-                "loose powder no.03",
-                "Loose face powder no. 02"
-            ],
-            "brand_url": [],
-            "mua_rating": 2.966666666666667,
-            "mua_review_cnt": 55,
-            "repurchase_pct": 43.666666666666664,
-            "age_counter": {
-                "Under 18": -7,
-                "36-43": -3,
-                "25-29": -4,
-                "44-55": 1,
-                "30-35": -4,
-                "19-24": -3,
-                "56 & Over": -1
-            },
-            "skin_type_counter": {
-                "Combination": -9,
-                "Oily": -1,
-                "Fair": -4,
-                "Acne-prone": -1,
-                "Fair-Medium": -7,
-                "Normal": -6,
-                "Sensitive": 0,
-                "Medium": -2,
-                "Neutral": -3,
-                "Dry": -2
-            },
-            "skin_color_counter": {
-                "Olive": 0,
-                "Normal": 0,
-                "Warm": 0,
-                "Tan": 1
-            },
-            "hair_style_counter": {
-                "Straight": -1,
-                "Fine": -5,
-                "Wavy": -1,
-                "Medium": -1,
-                "Coarse": 1,
-                "Curly": -1
-            },
-            "hair_color_counter": {
-                "Brunette": -11,
-                "Black": -3,
-                "Brown": -2,
-                "Red": -1,
-                "Blond": -2
-            },
-            "eyes_counter": {
-                "Brown": -9,
-                "Blue": -3,
-                "Green": -4,
-                "Black": -1,
-                "Violet": -1,
-                "Gray": -1,
-                "Hazel": -1,
-                "Other": -1
-            }
-        }
-    },
-    {
-        "3089": {
-            "product_links": "https://www.beautypedia.com/products/photoready-airbrush-mousse-makeup/",
-            "product_names": "PhotoReady Airbrush Mousse Makeup",
-            "category": "Face Makeup",
-            "sub_category": [
-                "Powder Foundation",
-                "Cream Foundation",
-                "Liquid Foundation",
-                "Foundation",
-                "Foundation Without Sunscreen"
-            ],
-            "product_id": 3089,
-            "brand": "Revlon",
-            "ingredient": [
-                "SORBITAN LAURATE",
-                "LAURETH-7",
-                "TRIETHOXYCAPRYLYLSILANE",
-                "PHOSPHOLIPIDS",
-                "SILICATE",
-                "SODIUM TRIDECETH SULFATE",
-                "HEXYLENE GLYCOL",
-                "DISODIUM LAUROAMPHODIACETATE",
-                "ISOPROPYL ALCOHOL",
-                "NYLON-12",
-                "Iron Oxides",
-                "CAPRYLYL GLYCOL",
-                "PROLINE",
-                "ISOSTEARYL BEHENATE",
-                "POLY C10-30 ALKYL ACRYLATE",
-                "COCAMIDE MEA",
-                "BORON NITRIDE",
-                "STEARETH-2",
-                "SORBITAN STEARATE",
-                "METHYL METHACRYLATE CROSSPOLYMER",
-                "CALCIUM ALUMINUM BOROSILICATE",
-                "TITANIUM DIOXIDE",
-                "ISOTRIDECYL ISONONANOATE",
-                "PENTAERYTHRITYL TETRAISOSTEARATE",
-                "Acrylates",
-                "1,2-HEXANEDIOL",
-                "PHENOXYETHANOL",
-                "POLYSORBATE-60",
-                "ISOBUTANE",
-                "GLYCERYL DISTEARATE",
-                "C13-14 ISOPARAFFIN",
-                "ISOSTEARIC ACID",
-                "POLYSORBATE-20",
-                "POLYACRYLAMIDE",
-                "BUTYLENE GLYCOL",
-                "TROMETHAMINE",
-                "STEARIC ACID",
-                "STEARETH-21",
-                "NEOPENTYL GLYCOL DIHEPTANOATE",
-                "PROPYLENE GLYCOL LAURATE",
-                "PROPYLENE GLYCOL STEARATE",
-                "LECITHIN"
-            ],
-            "size": "",
-            "price": "13.99",
-            "claims": null,
-            "image_url": [
-                null,
-                "https://img.makeupalley.com/0/0/4/7/2140884.JPG",
-                "https://www.beautypedia.com/wp-content/uploads/2012/05/1D1721B1-BC67-46A1-B95F-1815A42301D7_Revlon_PhotoreadyAirbrushMousse.jpg?w=197",
-                "https://img.makeupalley.com/4/0/2/3/1932853.JPG"
-            ],
-            "expert_rating": "1",
-            "expert_reviews": [
-                "The big deal with this foundation is its aerated texture, which Revlon calls \u201cairbrush,\u201d but it\u2019s much more like that of a hair mousse than anything resembling airbrushed makeup. When dispensed (even when you\u2019re being careful), it shoots out in a bubbly mound, which quickly begins to dissolve into a puddle of creamy liquid foundation that feels wet and runny as you apply.",
-                "As you might imagine, it\u2019s difficult to get even application with a foundation whose consistency is bubbly, and indeed the biggest problem with this foundation is its tendency to streak and apply unevenly. It does provide light to medium coverage, but its gimmicky delivery system, difficult-to-use texture, and unnaturally shiny finish are major, and ridiculous,drawbacks.",
-                "If the texture and application aren\u2019t enough to dissuade you, this foundation is also loaded with flecks of shimmer that tend to sink into lines and exaggerate wrinkles. All told, this foundation has no redeeming qualities. Check out our Best Foundations list for far superior options!",
-                ""
-            ],
-            "expert_pros": null,
-            "expert_cons": null,
-            "jar_package": "No",
-            "animal_test": "No",
-            "user_rating": 1.0,
-            "user_reviews": {
-                "usr_review_summary": {
-                    "usr_review_count": 1,
-                    "usr_pros_summary": null,
-                    "usr_cons_summary": null
-                },
-                "usr_review_details": {
-                    "positive_reviews": null,
-                    "negative_reviews": null,
-                    "reviews": [
-                        {
-                            "review_title": "Review is spot-on",
-                            "review_rating": "1",
-                            "review_content": "This foundation is exactly as the review describes. An additional complaint I have about it is that is smelled unpleasant. It was a waste of money.",
-                            "review_cons": null,
-                            "review_pros": null,
-                            "review_best_for": null,
-                            "usr_routine_time": null,
-                            "usr_def_tag": null,
-                            "usr_age": null,
-                            "usr_skin_type": null
-                        }
-                    ]
-                }
-            },
-            "buy_url": [
-                "https://www.google.com/search?q=Revlon%20Photoready%20Airbrush%20Effect%20Makeup,%20SPF%2020,%20001%20Ivory"
-            ],
-            "other_names": [
-                "PhotoReady Powder - Medium/Deep",
-                "Photoready Airbrush Effect Makeup",
-                "photoready airbrush mousse makeup in golden beige",
-                "Photoready Airbrush Mousse Makeup - Medium Beige",
-                "Photoready Airbrush Mousse Makeup-Nude",
-                "PhotoReady Airbrush Mousse Makeup",
-                "PhotoReady Airbrush Mousse Makeup - Natural Beige",
-                "PhotoReady Powder - Light/Medium"
-            ],
-            "brand_url": [
-                "https://www.ewg.org/skindeep/browse/brands/1375-Revlon/"
-            ],
-            "colors": [
-                {
-                    "Color": "SPF 20",
-                    "url": "https://www.ewg.org/skindeep/products/870634-Revlon_Photoready_Airbrush_Effect_Makeup_SPF_20_001_Ivory/"
-                }
-            ],
-            "overall_concerns": {
-                "Cancer": "LOW",
-                "Developmental & reproductive toxicity": "LOW",
-                "Allergies & immunotoxicity": "MODERATE"
-            },
-            "other_concerns": {
-                "HIGH": [
-                    "Endocrine disruption",
-                    "Contamination concerns",
-                    "Irritation (skin, eyes, or lungs)",
-                    "Occupational hazards",
-                    "Persistence and bioaccumulation",
-                    "Use restrictions"
-                ],
-                "MODERATE": [
-                    "Organ system toxicity (non-reproductive)"
-                ],
-                "LOW": [
-                    "Enhanced skin absorption",
-                    "Ecotoxicology",
-                    "Neurotoxicity"
+            "usr_review_details": {
+                "positive_reviews": null,
+                "negative_reviews": null,
+                "reviews": [
+                    {
+                        "review_title": "don't discontinue ideal loose powder",
+                        "review_rating": "1",
+                        "review_content": "I like the ideal flawless loose powder. I am very upset that avon has discontinued it. Please bring it back. I do not like the mineral powder. The ideal loose powder looks more natural on me than the mineral powder.",
+                        "review_cons": null,
+                        "review_pros": null,
+                        "review_best_for": null,
+                        "usr_routine_time": null,
+                        "usr_def_tag": null,
+                        "usr_age": null,
+                        "usr_skin_type": null
+                    }
                 ]
-            },
-            "ewg_ingredient": {
-                "OCTINOXATE": {
-                    "Score": 5,
-                    "Data Availability": "Fair"
-                },
-                "PHENOXYETHANOL": {
-                    "Score": 4,
-                    "Data Availability": "Limited"
-                },
-                "CYCLOPENTASILOXANE": {
-                    "Score": 3,
-                    "Data Availability": "Fair"
-                },
-                "DIMETHICONE": {
-                    "Score": 3,
-                    "Data Availability": "Limited"
-                },
-                "CETYL PEG/ PPG-10/ 1 DIMETHICONE": {
-                    "Score": 3,
-                    "Data Availability": "Fair"
-                },
-                "TOCOPHERYL ACETATE": {
-                    "Score": 3,
-                    "Data Availability": "Fair"
-                },
-                "ZINC OXIDE (SUNSCREEN GRADE &GT; 100NM)": {
-                    "Score": 2,
-                    "Data Availability": "Good"
-                },
-                "PROPANEDIOL": {
-                    "Score": 2,
-                    "Data Availability": "Fair"
-                },
-                "GLYCERIN": {
-                    "Score": 2,
-                    "Data Availability": "Good"
-                },
-                "MICA": {
-                    "Score": 2,
-                    "Data Availability": "Fair"
-                },
-                "CI 77499": {
-                    "Score": 2,
-                    "Data Availability": "Fair"
-                },
-                "WATER": {
-                    "Score": 1,
-                    "Data Availability": "Robust"
-                },
-                "ISODODECANE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "OCTYLDODECYL STEAROYL STEARATE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "QUATERNIUM-90 BENTONITE": {
-                    "Score": 1,
-                    "Data Availability": "None"
-                },
-                "PHENYL TRIMETHICONE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "TRIMETHYLSILOXYSILICATE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "POLYGLYCERYL-3 DIISOSTEARATE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "METHYL METHACRYLATE CROSSPOLYMER": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "VP/ HEXADECENE COPOLYMER": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "BIS- HEXAMETHYLENEDIUREA (C12-14 ALKYL PPG-2)": {
-                    "Score": 1,
-                    "Data Availability": "None"
-                },
-                "SODIUM CHLORIDE": {
-                    "Score": 1,
-                    "Data Availability": "Robust"
-                },
-                "PROPYLENE CARBONATE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "SILICA SILYLATE": {
-                    "Score": 1,
-                    "Data Availability": "None"
-                },
-                "DIMETHICONE/ VINYL DIMETHICONE CROSSPOLYMER": {
-                    "Score": 1,
-                    "Data Availability": "None"
-                },
-                "POLYSILICONE-11": {
-                    "Score": 1,
-                    "Data Availability": "None"
-                },
-                "BISMUTH OXYCHLORIDE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "TRIETHOXYCAPRYLYLSILANE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "POLYMETHYLSILSESQUIOXANE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "POLYGLYCERYL-6 POLYRICINOLEATE": {
-                    "Score": 1,
-                    "Data Availability": "None"
-                },
-                "XANTHAN GUM": {
-                    "Score": 1,
-                    "Data Availability": "Fair"
-                },
-                "HDI/ TRIMETHYLOL HEXYLLACTONE CROSSPOLYMER": {
-                    "Score": 1,
-                    "Data Availability": "None"
-                },
-                "TRISODIUM EDTA": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "CAPRYLYL GLYCOL": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "1,2-HEXANEDIOL": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "TITANIUM DIOXIDE": {
-                    "Score": 1,
-                    "Data Availability": "Good"
-                }
-            },
-            "mua_rating": 3.1714285714285713,
-            "mua_review_cnt": 331,
-            "repurchase_pct": 57.0,
-            "age_counter": {
-                "36-43": -3,
-                "25-29": -19,
-                "Under 18": -23,
-                "44-55": 3,
-                "30-35": -14,
-                "19-24": -61,
-                "56 & Over": -2
-            },
-            "skin_type_counter": {
-                "Combination": -57,
-                "Fair": -45,
-                "Neutral": -13,
-                "Medium": -7,
-                "Sensitive": -5,
-                "Fair-Medium": -42,
-                "Normal": -8,
-                "Dry": -15,
-                "Very Oily": -5,
-                "Acne-prone": -17,
-                "Oily": -13,
-                "Very Dry": 1
-            },
-            "skin_color_counter": {
-                "Warm": -40,
-                "Tan": -10,
-                "Normal": 0,
-                "Medium Brown": -10,
-                "Olive": -5,
-                "Dark": 1
-            },
-            "hair_style_counter": {
-                "Wavy": -32,
-                "Medium": -37,
-                "Straight": -17,
-                "Fine": -14,
-                "Curly": -16,
-                "Kinky": -1,
-                "Coarse": -19,
-                "Relaxed": 1
-            },
-            "hair_color_counter": {
-                "Black": -40,
-                "Blond": -16,
-                "Brown": -22,
-                "Brunette": -44,
-                "Grey": 1,
-                "Red": -3,
-                "Silver": 2
-            },
-            "eyes_counter": {
-                "Brown": -56,
-                "Hazel": -16,
-                "Blue": -25,
-                "Green": -10,
-                "Black": -9,
-                "Other": -2,
-                "Gray": -1
             }
+        },
+        "buy_url": [],
+        "other_names": [
+            "Age Transforming Pressed Powder SPF 15",
+            "Ideal Shade Pressed Powder",
+            "Incredible Finish Pressed Powder",
+            "Ideal Shade Loose Powder"
+        ],
+        "brand_url": [],
+        "mua_rating": 4.05,
+        "mua_review_cnt": 47,
+        "repurchase_pct": 81.25,
+        "age_counter": {
+            "Under 18": 1,
+            "19-24": 7,
+            "25-29": 7,
+            "30-35": 9,
+            "44-55": -1,
+            "56 & Over": 1,
+            "36-43": 4
+        },
+        "skin_type_counter": {
+            "Combination": 16,
+            "Fair-Medium": 9,
+            "Dry": 1,
+            "Fair": 3,
+            "Very Dry": 2,
+            "Sensitive": 3,
+            "Acne-prone": 8,
+            "Neutral": 4,
+            "Very Oily": 1,
+            "Medium": 6,
+            "Normal": -1,
+            "Oily": -2
+        },
+        "skin_color_counter": {
+            "Tan": 4,
+            "Warm": 12,
+            "Olive": 4,
+            "Normal": 0,
+            "Dark": 1
+        },
+        "hair_style_counter": {
+            "Straight": 14,
+            "Fine": 10,
+            "Wavy": 2,
+            "Medium": 4,
+            "Curly": 5,
+            "Coarse": 7,
+            "Kinky": -1,
+            "Relaxed": 1
+        },
+        "hair_color_counter": {
+            "Brunette": 12,
+            "Brown": 5,
+            "Black": 8,
+            "Red": 0,
+            "Blond": 4
+        },
+        "eyes_counter": {
+            "Other": 2,
+            "Green": 5,
+            "Blue": 3,
+            "Brown": 11,
+            "Black": 5,
+            "Hazel": 3
+        }
+    },
+    {
+        "product_links": "https://www.beautypedia.com/products/cellular-treatment-loose-powder/",
+        "product_names": "Cellular Treatment Loose Powder",
+        "category": "Face Makeup",
+        "sub_category": [
+            "Pressed Powder",
+            "Face Powder",
+            "Loose Powder"
+        ],
+        "product_id": 2417,
+        "brand": "La Prairie",
+        "ingredient": [],
+        "size": "",
+        "price": "95.00",
+        "claims": null,
+        "image_url": [
+            "https://www.beautypedia.com/wp-content/uploads/2012/03/86ED300A-B7F1-404C-8D0C-3C0003CF5597_11hWbuEbTXL.jpg?w=180",
+            null,
+            "https://img.makeupalley.com/0/0/0/1/3798418.jpeg"
+        ],
+        "expert_rating": "4",
+        "expert_reviews": [
+            "Cellular Treatment Loose Powder has an ultra-fine, talc-based texture and a sheer, minimalist finish that leaves skin looking polished and dusted with sparkles. If shiny, expensive powder is your thing, here\u2019s a good option, and both shades are translucent."
+        ],
+        "expert_pros": null,
+        "expert_cons": null,
+        "jar_package": "No",
+        "animal_test": "No",
+        "user_rating": 5.0,
+        "user_reviews": {
+            "usr_review_summary": {
+                "usr_review_count": 1,
+                "usr_pros_summary": [
+                    [
+                        "1",
+                        "Blends Well"
+                    ],
+                    [
+                        "1",
+                        "Controls Shine"
+                    ],
+                    [
+                        "1",
+                        "Covers Well"
+                    ],
+                    [
+                        "1",
+                        "Doesn't Settle In Creases"
+                    ],
+                    [
+                        "1",
+                        "Easy To Apply"
+                    ]
+                ],
+                "usr_cons_summary": null
+            },
+            "usr_review_details": {
+                "positive_reviews": [
+                    {
+                        "review_title": "Lasts forever ,,, and I love the travel size for my purse ..",
+                        "review_rating": "5",
+                        "review_content": "I use this daily ... Have had for over a year and still have half the container left ,,, u don't need much for a flawless finish ,,, well worth the investment !",
+                        "review_cons": null,
+                        "review_pros": [
+                            "Blends Well",
+                            "Controls Shine",
+                            "Covers Well",
+                            "Doesn't Settle In Creases",
+                            "Easy To Apply",
+                            "Lightweight",
+                            "Long-Lasting",
+                            "Silky Finish"
+                        ],
+                        "review_best_for": [
+                            "All Skin Types"
+                        ],
+                        "usr_routine_time": null,
+                        "usr_def_tag": [
+                            "Brand Buyer"
+                        ],
+                        "usr_age": null,
+                        "usr_skin_type": null
+                    }
+                ],
+                "negative_reviews": null,
+                "reviews": null
+            }
+        },
+        "buy_url": [],
+        "other_names": [
+            "Treatment Loose Powder",
+            "Cellular Treatment Pressed Powder"
+        ],
+        "brand_url": [],
+        "mua_rating": 4.65,
+        "mua_review_cnt": 48,
+        "repurchase_pct": 77.5,
+        "age_counter": {
+            "30-35": 10,
+            "19-24": 9,
+            "25-29": 8,
+            "44-55": 4,
+            "Under 18": 1,
+            "36-43": 5
+        },
+        "skin_type_counter": {
+            "Combination": 16,
+            "Fair": 11,
+            "Neutral": 8,
+            "Normal": 9,
+            "Acne-prone": 8,
+            "Medium": 1,
+            "Oily": 2,
+            "Fair-Medium": 15,
+            "Dry": 0,
+            "Sensitive": 2,
+            "Very Oily": 0,
+            "Very Dry": 1
+        },
+        "skin_color_counter": {
+            "Warm": 3,
+            "Normal": 0,
+            "Olive": 3
+        },
+        "hair_style_counter": {
+            "Wavy": 10,
+            "Medium": 10,
+            "Fine": 5,
+            "Straight": 5,
+            "Curly": 0,
+            "Coarse": 2,
+            "Kinky": 1
+        },
+        "hair_color_counter": {
+            "Black": 9,
+            "Brunette": 10,
+            "Brown": 10,
+            "Blond": 7
+        },
+        "eyes_counter": {
+            "Black": 2,
+            "Brown": 25,
+            "Hazel": 5,
+            "Green": 4,
+            "Gray": 1,
+            "Other": 3
         }
     }
 ]

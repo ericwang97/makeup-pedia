@@ -3,19 +3,13 @@ import logo from '../logo.svg';
 import './App.css';
 import axios from 'axios' ;
 import {Layout, Menu, Pagination, Skeleton, Divider, Table, Select ,Button,Input , Card} from 'antd';
-import 'antd/es/input/style/css'; // 加载 CSS
+import 'antd/es/input/style/css';
 import { SearchOutlined } from '@ant-design/icons';
 import TableList from '../tableList/tableList.js';
 
-//const { Header, Content } = Layout;
-//const { SubMenu } = Menu;
 const { Search } = Input;
 const { Option } = Select;
 
-// import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-// import {useHistory} from "react-router-dom";
-// import { withRouter } from "react-router";
-// import PropTypes from "prop-types";
 
 class App extends React.Component {
 
@@ -40,6 +34,7 @@ class App extends React.Component {
         };
         this.handleSearchClick = this.handleSearchClick.bind(this);
         this.handleResetClick = this.handleResetClick.bind(this);
+        this.handleAutoFillClick = this.handleAutoFillClick.bind(this);
 
         this.handleCategoryChange = this.handleCategoryChange.bind(this);
         this.handleSubCategoryChange = this.handleSubCategoryChange.bind(this);
@@ -99,6 +94,22 @@ class App extends React.Component {
             hair_color: null,
             eye_color: null,
             top_k: null,
+            loading: true,
+            response_data: null
+        })
+    }
+
+    handleAutoFillClick() {
+        this.setState({
+            category: "Face Makeup",
+            subcategory: "Face Powder",
+            age: "19-24",
+            skin_type: "Combination",
+            skin_color: "Warm",
+            hair_style: "Straight",
+            hair_color: "Black",
+            eye_color: "Brown",
+            top_k: 5,
             loading: true,
             response_data: null
         })
@@ -220,10 +231,7 @@ class App extends React.Component {
                 of: {this.state.subcategory} </div>);
 
             return_result.push(<div>&nbsp;&nbsp;</div>);
-            // return_result.push(<TableList tableName={table}
-            //                              columnName={columnName}
-            //                              dataSource={this.state.response_data[table][PK]}
-            //                              handleHyperLinkClick = {this.handleHyperLinkClick}/>);
+            return_result.push(<TableList dataSource={this.state.response_data}/>);
         }
 
         return (
@@ -256,11 +264,22 @@ class App extends React.Component {
                         {select_subcategory}
                     </label>
 
+                    <label htmlFor="topK">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Top K &nbsp;&nbsp;
+                        <Input
+                            id="topK"
+                            style={{ width: 300 }}
+                            placeholder="Return TopK Results, 1 ~ 10"
+                            onChange={this.handleTopKChange}
+                            value={this.state.top_k}
+                        />
+                    </label>
+
                 </div>
 
                 <div className="App-search">
                     <label htmlFor="age">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Age &nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Age &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <Select
                             defaultValue="19-24"
                             style={{ width: 160 }}
@@ -379,25 +398,17 @@ class App extends React.Component {
                         </Select >
                     </label>
                 </div>
-                <div className="App-search">
-                    <label htmlFor="topK">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Top K &nbsp;&nbsp;
-                        <Input
-                            id="topK"
-                            style={{ width: 300 }}
-                            placeholder="Return TopK Results, 1 ~ 10"
-                            onChange={this.handleTopKChange}
-                            value={this.state.top_k}
-                        />
-                    </label>
 
-                </div>
                 <div className="App-header">
 
+                    <Button onClick=
+                                {this.handleAutoFillClick}
+                    >Example</Button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                     <Button type="primary" icon={<SearchOutlined />}
                             onClick= {this.handleSearchClick}
                     >Search</Button>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                     <Button onClick=
                                 {this.handleResetClick}
                     >Reset</Button>

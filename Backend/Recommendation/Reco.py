@@ -144,8 +144,8 @@ def reco_main(request, debug=False):
     cleaned_input = json.load(open(cleaned_input_file, 'r', encoding='utf-8'))
     score_list = reco(cleaned_input, request)
     top_k = int(request['top_k'])
-    top_K_score_list = score_list[:top_k] + score_list[-top_k:]
-    result = [{each[0]: cleaned_input[each[0]]} for each in top_K_score_list]
+    top_K_score_list = score_list[:top_k] #+ score_list[-top_k:]
+    result = [cleaned_input[each[0]] for each in top_K_score_list]
 
     # For Testing
     if debug:

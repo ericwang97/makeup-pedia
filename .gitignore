@@ -1,5 +1,6 @@
 /Backend/data_raw/
 /Backend/__pycache__
+/Backend/Recommendation/__pycache__
 /Frontend/node_modules/
 /Frontend/build/
 /.idea/
