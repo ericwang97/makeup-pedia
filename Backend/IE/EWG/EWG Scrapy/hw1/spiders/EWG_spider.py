@@ -56,27 +56,25 @@ class Spider(scrapy.Spider):
             color = ''
             name = raw_name.replace(brand_name + ' ', '')
 
-        """
-        @TODO: ADD Where to purchase: I still use the Amazon.com to be the link if existed
-        
-        """
-        buy_url = self.base_url + site.xpath('//section[@class="browse-more"]//'
-                                             'ul[@class="mb40"]/li/a[@target="_blank"]/@href').extract()
-        if len(buy_url) > 1:
-            buy_url = buy_url[1]
-        elif len(buy_url) == 1:
-            buy_url = buy_url[0]
+        more_url = site.xpath('//section[@class="browse-more"]/ul[@class="mb40"]/li/a/@href').extract()
+
+        buy_urls = site.xpath('//section[@class="browse-more"]//li/a/@href').extract()[len(more_url):]
+
+        if len(buy_urls) > 1:
+            for url in buy_urls:
+                if 'amazon' in url:
+                    buy_url = url
+                    break
+                else:
+                    buy_url = buy_urls[0]
+        elif len(buy_urls) == 1:
+            buy_url = buy_urls[0]
         else:
             buy_url = ''
 
         res = {'Name': name, 'Color': color, 'Brand Name': brand_name,
                'Brand URL': brand_url, 'Buy URL': buy_url}
         result.update(res)
-
-        """
-        @TODO: END
-
-        """
 
         concerns = site.xpath('//section[@class="gauges grid"]//div[@class="gauge-img-wrapper"]/'
                               'img[@class="gauge-img"]/@alt').extract()[0:3]
