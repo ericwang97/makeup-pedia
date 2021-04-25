@@ -1,16 +1,21 @@
-import os
 import time
-import copy
 import json
 import rltk
-from copy import deepcopy
 from tqdm import tqdm
+import os
 
-cleaned_input_file = '../data/cleaned_data.json'
+path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+cleaned_input_file = path.replace('\\', '/') + '/data/cleaned_data.json'
 output_file = '../reco_result/result.json'
+
 sub_category_sim_thres = 0.8
 reviews_thres = 30
 top_K = 3
+
+
+def clean_subcategory(subcategory):
+
+    return subcategory.replace('Face', '').replace('Lip', '').replace('Eye', '').replace('Foundation', '')
 
 
 def get_similarity(n1, n2):
@@ -86,8 +91,6 @@ def get_avg_counter_score(item_data, age, skin, skin_color, hair, hair_color, ey
 
 
 def reco(cleaned_input, request):
-    # category_sub = get_all_category_keys(cleaned_input)
-    # print(category_sub)
     category, subcategory, age, skin, skin_color, hair, hair_color, eye = request['category'], request['subcategory'], \
                                                                           request['age'], request['skin'], \
                                                                           request['skin_color'], request['hair'], \
@@ -97,10 +100,12 @@ def reco(cleaned_input, request):
 
         item_category = cleaned_input[item]['category']
         item_subcategory = cleaned_input[item]['sub_category']
+
         if category != item_category:
             continue
 
-        sim = [get_similarity(subcategory, each) for each in item_subcategory]
+        sim = [get_similarity(clean_subcategory(subcategory), clean_subcategory(each)) for each in item_subcategory]
+        # print(sim, [(clean_subcategory(subcategory), clean_subcategory(each)) for each in item_subcategory])
         if max(sim) < sub_category_sim_thres:
             continue
 
@@ -135,20 +140,24 @@ def reco(cleaned_input, request):
     return score_list
 
 
-def reco_main(request):
+def reco_main(request, debug=False):
     cleaned_input = json.load(open(cleaned_input_file, 'r', encoding='utf-8'))
-    total_age_keys, total_skin_keys, total_hair_keys, total_eyes_keys = get_all_counter_keys(cleaned_input)
-    # print(total_age_keys, total_skin_keys, total_hair_keys, total_eyes_keys)
     score_list = reco(cleaned_input, request)
-    top_K_score_list = score_list[:top_K] + score_list[-top_K:]
-    print(top_K_score_list)
-    # print(cleaned_input[score_list[0][0]])
+    top_k = int(request['top_k'])
+    top_K_score_list = score_list[:top_k] + score_list[-top_k:]
     result = [{each[0]: cleaned_input[each[0]]} for each in top_K_score_list]
 
     # For Testing
-    output = open(output_file, 'w')
-    output.write(json.dumps(result, indent=4))
-    output.close()
+    if debug:
+        # total_age_keys, total_skin_keys, total_hair_keys, total_eyes_keys = get_all_counter_keys(cleaned_input)
+        # print(total_age_keys, total_skin_keys, total_hair_keys, total_eyes_keys)
+        # category_sub = get_all_category_keys(cleaned_input)
+        # print(category_sub)
+        print(top_K_score_list)
+        # print(cleaned_input[score_list[0][0]])
+        output = open(output_file, 'w')
+        output.write(json.dumps(result, indent=4))
+        output.close()
 
     return result
 
@@ -192,12 +201,13 @@ if __name__ == "__main__":
         'category': 'Face Makeup',
         'subcategory': 'Face Powder',
         'age': '19-24',
-        'skin': 'Oily',
+        'skin': 'Combination',
         'skin_color': 'Warm',
         'hair': 'Straight',
         'hair_color': 'Black',
-        'eye': 'Brown'
+        'eye': 'Brown',
+        'top_k': top_K
     }
 
     # Guess what you like!
-    reco_main(request)
+    reco_main(request, debug=True)

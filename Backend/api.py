@@ -1,44 +1,32 @@
 import flask
 from flask import request
 from flask_cors import CORS
-from main import SearchExecution, QueryExecution, Rate
+from Backend.main import reco_execution, rate_execution
 from gevent import pywsgi
 
 server = flask.Flask(__name__)
-CORS(server)
+CORS(server, resources=r'/*')
 
 
-@server.route('/search', methods=['get'])
-def search():
-    databaseName = request.values.get('databasename')
-    tableList = request.values.get('tablelist')
-    input = [request.values.get('searchwords')]
+@server.route('/recommend', methods=['post'])
+def recommend():
+    request_data = request.json
+    print(request_data)
 
-    # newInput = [re.sub(r'[^\w\s]','',input.replace('_',''))]
-
-    return SearchExecution(databaseName, tableList, input)
-
-
-@server.route('/query', methods=['get'])
-def query():
-    databaseName = request.values.get('databasename')
-    tableList = request.values.get('tablelist')
-    value = request.values.get('value')
-
-    return QueryExecution(databaseName, tableList, value)
+    return reco_execution(request_data)
 
 
 @server.route('/rate', methods=['get', 'post'])
 def rate():
     if request.method == 'GET':
-        rate = request.values.get('rate')
+        rate_value = request.values.get('rate')
         comment = request.values.get('comment')
     else:
         data = request.json
-        rate = data.get('rate')
+        rate_value = data.get('rate')
         comment = data.get('comment')
 
-    return Rate(rate, comment)
+    return rate_execution(rate_value, comment)
 
 
 if __name__ == '__main__':
