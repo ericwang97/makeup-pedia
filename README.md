@@ -8,6 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 3. Go to `./Backend`, run `Python3 api.py` to start the back end.
 
+4. If you want to run from scratch, go to `./Backend`, create a folder `data_raw`, then run 3 scrapers under `./Backend/IE/` 
+
 ## How to run the Deployed Project (Currently N/A)
 
 4. Run `npm run build`, then in your terminal run `Python3 start.py` to start the front end and back end deployment APP at the same time.

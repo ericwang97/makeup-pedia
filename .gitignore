@@ -1,3 +1,4 @@
 /Backend/data_raw/
+/Backend/__pycache__
 /Frontend/node_modules/
 /Frontend/build/
