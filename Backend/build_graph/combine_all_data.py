@@ -157,12 +157,13 @@ def get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua, bp_ewg_ingre):
         cleaned_data[bp_id]['sub_category'] = [cleaned_data[bp_id]['sub_category']]
         cleaned_data[bp_id]['image_url'] = [cleaned_data[bp_id]['image_url']]
 
-        # BP
-        for bp_ingr in bp_data['ingredient']:
-            if bp_ingr in bp_ewg_ingre:
-                cleaned_data[bp_id]['ingredient'].append(bp_ewg_ingre[bp_ingr])
-            else:
-                cleaned_data[bp_id]['ingredient'].append(bp_ingr)
+        # BP add ingredient ER
+        if bp_data['ingredient']:
+            for bp_ingr in bp_data['ingredient']:
+                if bp_ingr in bp_ewg_ingre:
+                    cleaned_data[bp_id]['ingredient'].append(bp_ewg_ingre[bp_ingr])
+                else:
+                    cleaned_data[bp_id]['ingredient'].append(bp_ingr)
 
         # EWG
         ewg_id = bp_ewg_mua_index[bp_id]['ewg']
