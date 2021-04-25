@@ -1,8 +1,11 @@
 import rltk
+import copy
 import json
+import csv
 import re
 
 
+############## Product Name ER ##############
 @rltk.remove_raw_object
 class EWG(rltk.Record):
     @rltk.cached_property
@@ -279,3 +282,57 @@ with open('bp_mua_pairs_result.txt', 'w', encoding="utf8") as f:
 
 with open('mua_bp_id.json', 'w', encoding="utf8") as f:
     json.dump(mua_bp_id, f)
+
+############## Ingredient ER ##############
+
+ewg_ingredent = set()
+with open('agg_ewg_data.jl','r',encoding='utf8') as f:
+    ewg_data = f.readlines()
+    for r in ewg_data:
+        record = json.loads(r)
+        for chemical_name in record['Ingredient'].keys(): 
+            if chemical_name not in ewg_ingredent:
+                ewg_ingredent.add(chemical_name)
+
+ewg_index = 0
+with open('ewg_ingredient.jl','w',encoding="utf8") as f:
+    for ing in ewg_ingredent:
+        json.dump({'id':ewg_index,'ingredient':ing},f)
+        f.write('\n')
+        ewg_index += 1
+
+@rltk.remove_raw_object
+class Ingredient(rltk.Record):
+    @rltk.cached_property
+    def id(self):
+        return str(self.raw_object['id'])
+
+    @rltk.cached_property
+    def name(self):
+        return self.raw_object['ingredient']
+
+bp_data = rltk.Dataset(reader=rltk.JsonLinesReader('bp_ingredient.jl'), record_class=Ingredient, adapter=rltk.MemoryKeyValueAdapter())
+ewg_data = rltk.Dataset(reader=rltk.JsonLinesReader('ewg_ingredient.jl'), record_class=Ingredient, adapter=rltk.MemoryKeyValueAdapter())
+
+
+def rule_based_method(r_bp,r_ewg):
+    name_score =rltk.levenshtein_similarity(r_bp.name.lower(),r_ewg.name.lower()) #rltk.hybrid_jaccard_similarity(r_l_set, r_r_set, threshold=0.6, function=rltk.needleman_wunsch_similarity) #jaccard_index_similarity(r_l_set,r_r_set)
+    return name_score >0.7, name_score
+
+pairs = rltk.get_record_pairs(bp_data, ewg_data)
+bp_ingre_2_ewg_ingre = {}
+for r_bp,r_ewg in pairs:
+        result, confidence = rule_based_method(r_bp, r_ewg)
+        if result:
+            if r_bp.name not in bp_ingre_2_ewg_ingre:
+                bp_ingre_2_ewg_ingre[r_bp.name] = [r_ewg.name,confidence]
+            else:
+                if confidence>bp_ingre_2_ewg_ingre[r_bp.name][1]:
+                    bp_ingre_2_ewg_ingre[r_bp.name] = [r_ewg.name,confidence]
+
+for bp_name,ewg_name in bp_ingre_2_ewg_ingre.items():
+    bp_ingre_2_ewg_ingre[bp_name] = ewg_name[0]
+
+with open('bp_ewg_ingre_name.json','w',encoding='utf8') as f:
+    json.dump(bp_ingre_2_ewg_ingre,f)
+
