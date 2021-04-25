@@ -104,8 +104,12 @@ def reco(cleaned_input, request):
         if category != item_category:
             continue
 
+        if not item_subcategory:
+            continue
+        # sim = get_similarity(clean_subcategory(subcategory), clean_subcategory(item_subcategory[0]))
         sim = [get_similarity(clean_subcategory(subcategory), clean_subcategory(each)) for each in item_subcategory]
         # print(sim, [(clean_subcategory(subcategory), clean_subcategory(each)) for each in item_subcategory])
+
         if max(sim) < sub_category_sim_thres:
             continue
 
@@ -203,7 +207,7 @@ if __name__ == "__main__":
     """
     request = {
         'category': 'Face Makeup',
-        'subcategory': 'Face Powder',
+        'subcategory': 'Face Powder',  # 'Cushion Foundation',
         'age': '19-24',
         'skin': 'Combination',
         'skin_color': 'Warm',
