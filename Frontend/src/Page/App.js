@@ -47,8 +47,10 @@ class App extends React.Component {
 
     handleSearchClick() {
         let currentComponent = this;
+        // let base_url = "http://13.57.28.139:8000/";
+        let base_url = "http://localhost:8000/";
         if (currentComponent.state.clickPK === false) {
-            let url = "http://13.57.28.139:8000/search?databasename=" + currentComponent.state.database +
+            let url = base_url + "search?databasename=" + currentComponent.state.database +
                 "&tablelist=" + currentComponent.state.table +
                 "&searchwords=" + currentComponent.state.searchwords;
             let firebaseurl = "https://inf551-a79f9.firebaseio.com/" + currentComponent.state.database + "Node/" +
@@ -87,7 +89,7 @@ class App extends React.Component {
 
                 });
         } else {
-            let url = "http://13.57.28.139:8000/query?databasename=" + currentComponent.state.database +
+            let url = base_url + "query?databasename=" + currentComponent.state.database +
                 "&tablelist=" + currentComponent.state.table +
                 "&value=" + currentComponent.state.searchwords;
 

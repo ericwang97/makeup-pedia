@@ -45,7 +45,7 @@ if __name__ == '__main__':
     host = '0.0.0.0'  # 'Localhost'
     port = 8000
     print('run server...')
-    deployed_server = pywsgi.WSGIServer((host, port), server)
-    deployed_server.serve_forever()
+    # deployed_server = pywsgi.WSGIServer((host, port), server)
+    # deployed_server.serve_forever()
 
-    # server.run(debug=True, port=port, host=host)
+    server.run(debug=True, port=port, host=host)

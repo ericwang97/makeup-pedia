@@ -991,7 +991,8 @@ class QueryTable extends React.Component{
     getTableData(database,table){
 
         let currentComponent = this;
-        let url = "http://13.57.28.139:8000/query?databasename=" + database +
+        let base_url = "http://localhost:8000/";
+        let url = base_url + "query?databasename=" + database +
             "&tablelist=" + table;
         currentComponent.setState({database:database,table:table,loading:true})
         axios.get(url)

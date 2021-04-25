@@ -30,7 +30,8 @@ class myRate extends React.Component{
 
         //let url2 = "http://13.57.28.139:8000/rate?rate=" + currentComponent.state.rate +
         //    "&comment=" + currentComponent.state.comment;
-        let url = "http://13.57.28.139:8000/rate";
+        let url = "http://localhost:8000/rate";
+        // let url = "http://13.57.28.139:8000/rate";
         let rate = currentComponent.state.rate
         let comment = currentComponent.state.comment
 
