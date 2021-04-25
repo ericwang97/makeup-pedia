@@ -13,6 +13,7 @@ import Crawler from './Page/crawler.js';
 import WordCloud from './Page/wordCloud.js';
 
 import myRate from './Page/rate.js';
+import Search from './Page/search.js';
 import Feature from './Page/feature.js';
 import ErrorPage from './Page/error.js';
 import * as serviceWorker from './serviceWorker';
@@ -26,6 +27,7 @@ class INF551DatabaseSearchEngine extends React.Component{
                 <Switch>
                     <Route exact path="/" component = {Home}/>
                     <Route path="/recommend" component = {App}/>
+                    <Route path="/search" component = {Search}/>
                     <Route path="/rate" component = {myRate}/>
                     <Route path="/features" component = {Feature}/>
 

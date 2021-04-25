@@ -144,7 +144,11 @@ def reco_main(request, debug=False):
     cleaned_input = json.load(open(cleaned_input_file, 'r', encoding='utf-8'))
     score_list = reco(cleaned_input, request)
     top_k = int(request['top_k'])
-    top_K_score_list = score_list[:top_k] #+ score_list[-top_k:]
+
+    # Also genreate least TopK for testing the results!
+    # TODO!
+
+    top_K_score_list = score_list[:top_k] + score_list[-top_k:]
     result = [cleaned_input[each[0]] for each in top_K_score_list]
 
     # For Testing
@@ -167,7 +171,7 @@ if __name__ == "__main__":
     """
     Input: Data, Request (see below, hard code the keys and the value choices)
     Reco: 3 filters when doing Reco: Same category --> similar sub_category (string similarity) 
-        --> mua_reviews_cnt > 30
+        --> mua_reviews_cnt > 30 --> use agg_mua_counts for weights, weight * avg(rating + exp rating + repurchase)
     Output: Top K and the Least K results (Least K for comparing whether the result is reasonable)
     """
 
