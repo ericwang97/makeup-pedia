@@ -1,7 +1,9 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
+from chemdataextractor import Document
 import pandas as pd
 from tqdm import tqdm
+import copy
 import time
 import re
 import requests
@@ -298,4 +300,25 @@ if __name__ == "__main__":
     excluded_category = ['Best & Worst Makeup Products']
     mega_data=get_product_by_category(makeup_cat, excluded_category)
     fetch_product(mega_data)
+
+    # BP Ingredient Extraction
+    ingredent = set()
+    with open('bp_makeup_mega_data.jl','r',encoding='utf8') as f:
+        bp_data = f.readlines()
+        for r in bp_data:
+            record = json.loads(r)
+            cleaned_record = copy.deepcopy(record)
+            cleaned_record['ingredient'] = []
+            if record['ingredient'] is not None:
+                record_ingredients = re.split(',  |, |,',record['ingredient'])
+                for term in record_ingredients:
+                #ingre_text = ', '.join(record_ingredients)
+                    for i in Document(term).cems:
+                        chemical_name = i.text.replace('\n','')
+                        cleaned_record['ingredient'].append(chemical_name)
+                        if chemical_name not in ingredent:
+                            ingredent.add(chemical_name)
+            with open('beautypedia_clean_ingr.jl','a+',encoding='utf8') as of:
+                json.dump(cleaned_record,of)
+                of.write('\n')
 
