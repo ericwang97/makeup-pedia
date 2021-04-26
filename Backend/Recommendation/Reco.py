@@ -152,12 +152,15 @@ def reco_main(request, debug=False):
     # Also genreate least TopK for testing the results!
     # TODO!
 
-    top_K_score_list = score_list[:top_k] + score_list[-top_k:]
+    top_K_score_list = score_list[:top_k]
     # result = {}
     # for each in top_K_score_list:
     #     result.update({each[0]: cleaned_input[each[0]]})
     # result = [{each[0]: cleaned_input[each[0]]} for each in top_K_score_list]
-    result = [cleaned_input[each[0]] for each in top_K_score_list]
+    result = {'Top': [cleaned_input[each[0]] for each in top_K_score_list]}
+    
+    last_K_score_list = score_list[-top_k:]
+    result.update({'Last': [cleaned_input[each[0]] for each in last_K_score_list]})
 
     # For Testing
     if debug:
@@ -165,7 +168,7 @@ def reco_main(request, debug=False):
         # print(total_age_keys, total_skin_keys, total_hair_keys, total_eyes_keys)
         # category_sub = get_all_category_keys(cleaned_input)
         # print(category_sub)
-        print(top_K_score_list)
+        print(top_K_score_list, last_K_score_list)
         # print(cleaned_input[score_list[0][0]])
         output = open(output_file, 'w')
         output.write(json.dumps(result, indent=4))

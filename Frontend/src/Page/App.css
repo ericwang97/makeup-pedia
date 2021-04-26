@@ -32,12 +32,12 @@
 
 .App-search {
  background-color: #f4f4f4;
- min-height: 10vh;
+ min-height: 5vh;
  display: flex;
  flex-direction: row;
  align-items: center;
- justify-content: start;
- font-size: calc(2px + 2vmin);
+ justify-content: center;
+ font-size: calc(1px + 1vmin);
  line-height: 2em;
  color: black;
 }

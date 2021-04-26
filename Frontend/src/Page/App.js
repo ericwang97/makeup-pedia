@@ -18,6 +18,8 @@ class App extends React.Component {
         super(props);
 
         this.state = {
+            product_id: null,
+
             category: null,
             subcategory: null,
             age: null,
@@ -35,6 +37,8 @@ class App extends React.Component {
         this.handleSearchClick = this.handleSearchClick.bind(this);
         this.handleResetClick = this.handleResetClick.bind(this);
         this.handleAutoFillClick = this.handleAutoFillClick.bind(this);
+        this.handleHyperLinkClick = this.handleHyperLinkClick.bind(this);
+        this.handleSearchSimilarClick = this.handleSearchSimilarClick.bind(this);
 
         this.handleCategoryChange = this.handleCategoryChange.bind(this);
         this.handleSubCategoryChange = this.handleSubCategoryChange.bind(this);
@@ -83,6 +87,34 @@ class App extends React.Component {
 
     }
 
+    handleSearchSimilarClick() {
+        let currentComponent = this;
+        // let base_url = "http://13.57.28.139:8000/";
+        let url = "http://localhost:8000/similar";
+        alert(currentComponent.state.product_id);
+        axios.post(url,{
+            product_id: currentComponent.state.product_id
+        })
+            .then(function (response) {
+                let status = response.data.status;
+                if (status === 0) {
+                    let response_data = response.data.response
+                    currentComponent.setState({
+                        loading: false, response_data: response_data
+                    });
+
+                } else {
+                    alert(response.data.msg);
+                }
+            })
+            .catch(function (error) {
+                alert("error");
+                console.log(error);
+
+            });
+
+    }
+
     handleResetClick() {
         this.setState({
             category: null,
@@ -109,10 +141,18 @@ class App extends React.Component {
             hair_style: "Straight",
             hair_color: "Black",
             eye_color: "Brown",
-            top_k: 5,
+            top_k: 3,
             loading: true,
             response_data: null
         })
+    }
+
+    handleHyperLinkClick(product_id) {
+        let currentComponent = this;
+        currentComponent.setState({
+                loading: true,
+                product_id: product_id},
+            this.handleSearchSimilarClick);
     }
 
     handleCategoryChange(value) {
@@ -231,7 +271,11 @@ class App extends React.Component {
                 of: {this.state.subcategory} </div>);
 
             return_result.push(<div>&nbsp;&nbsp;</div>);
-            return_result.push(<TableList dataSource={this.state.response_data}/>);
+            return_result.push(<TableList title={"Top"} dataSource={this.state.response_data["Top"]}
+                                          handleHyperLinkClick = {this.handleHyperLinkClick}/>);
+            return_result.push(<div>&nbsp;&nbsp;</div>);
+            return_result.push(<TableList dataSource={this.state.response_data["Last"]}
+                                          handleHyperLinkClick = {this.handleHyperLinkClick}/>);
             // for (let product_id in this.state.response_data) {
             //     return_result.push(<TableList dataSource={this.state.response_data[product_id]}/>);
             // }

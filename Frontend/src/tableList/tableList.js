@@ -23,7 +23,13 @@ class TableList extends React.Component {
                 {
                     title: 'Product',
                     dataIndex: 'product_names',
-                    id: 'name'
+                    id: 'name',
+                    render: text => {
+                        let url = "https://www.beautypedia.com/products/" + text.replaceAll(" ", "-");
+                        return (<a href={url}
+                        >{text}
+                        </a>)
+                    }
                 },
                 {
                     title: 'Category',
@@ -38,17 +44,14 @@ class TableList extends React.Component {
                 },
                 {
                     title: 'Brand',
-                    dataIndex: 'brand'
-                },
-                {
-                    title: 'Product Link',
-                    dataIndex: 'product_links',
-                    id:'link',
+                    dataIndex: 'brand',
                     render: text => {
-                        return (<a href={text}
-                        >product_link
+                        let url = "https://www.beautypedia.com/?s=" + text.replaceAll(" ", "-");
+                        return (<a href={url}
+                        >{text}
                         </a>)
-                }},
+                    }
+                },
                 {
                     title: 'Price',
                     dataIndex: 'price'
@@ -57,10 +60,37 @@ class TableList extends React.Component {
                     title: 'Where to Purchase',
                     dataIndex: 'buy_url',
                     render: text => {
-                        return (<a href={text}
-                        >Buy here
-                        </a>)
-                }},
+                        if (text.length === 0) {
+                            return ({})
+                        } else {
+                            return (<a href={text}
+                            >Buy here!
+                            </a>)
+                        }
+                    }},
+                {
+                    title: 'Look for Reviews',
+                    dataIndex: 'buy_url',
+                    render: text => {
+                        if (text.length === 0) {
+                            return ({})
+                        } else {
+                            return (<a href={text}
+                            >See Reviews!
+                            </a>)
+                        }
+
+                    }},
+                {
+                    title: 'Find Similar',
+                    dataIndex: 'product_id',
+                    render: text => {
+                        return (<Button className="Button"
+                                        onClick={this.props.handleHyperLinkClick.bind(this, text)}
+                        >Find it!
+                        </Button>)
+                    }
+                },
             ]
 
         }
