@@ -13,7 +13,7 @@ class Layout extends React.Component{
         return(
             <div id="wrapper">
                 <NavTop/>
-                <NavSide/>
+                {/*<NavSide/>*/}
                 {this.props.children}
             </div>
         );

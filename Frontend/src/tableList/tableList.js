@@ -46,7 +46,7 @@ class TableList extends React.Component {
                     id:'link',
                     render: text => {
                         return (<a href={text}
-                        >{text}
+                        >product_link
                         </a>)
                 }},
                 {
