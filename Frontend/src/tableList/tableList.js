@@ -33,7 +33,7 @@ class TableList extends React.Component {
                     dataIndex: 'product_links',
                     render: text => {
                         return (<a href={text}
-                        >{text}
+                        >product_link
                         </a>)
                 }},
                 {
@@ -45,7 +45,7 @@ class TableList extends React.Component {
                     dataIndex: 'buy_url',
                     render: text => {
                         return (<a href={text}
-                        >{text}
+                        >buy this!
                         </a>)
                 }},
             ]
@@ -76,7 +76,7 @@ class TableList extends React.Component {
 
     drawSearchTable(){
 
-        return (<Card title={this.props.tableName} style={{ width: 1050 }}>
+        return (<Card title={this.props.subcategory} style={{ width: 1050 }}>
             <Table className="ant-table"
                 columns={this.state.response_data}
                 dataSource={this.props.dataSource}

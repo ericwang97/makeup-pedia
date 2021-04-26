@@ -232,6 +232,9 @@ class App extends React.Component {
 
             return_result.push(<div>&nbsp;&nbsp;</div>);
             return_result.push(<TableList dataSource={this.state.response_data}/>);
+            // for (let product_id in this.state.response_data) {
+            //     return_result.push(<TableList dataSource={this.state.response_data[product_id]}/>);
+            // }
         }
 
         return (

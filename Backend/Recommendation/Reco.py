@@ -153,6 +153,10 @@ def reco_main(request, debug=False):
     # TODO!
 
     top_K_score_list = score_list[:top_k] + score_list[-top_k:]
+    # result = {}
+    # for each in top_K_score_list:
+    #     result.update({each[0]: cleaned_input[each[0]]})
+    # result = [{each[0]: cleaned_input[each[0]]} for each in top_K_score_list]
     result = [cleaned_input[each[0]] for each in top_K_score_list]
 
     # For Testing
