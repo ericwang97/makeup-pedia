@@ -303,8 +303,10 @@ def get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua, bp_ewg_ingre):
                 avg_score = None
             if review_cnt_list:
                 total_review_cnt = sum(review_cnt_list)
+                mua_url = mua[mua_id_list[review_cnt_list.index(max(review_cnt_list))]]['product_url']
             else:
                 total_review_cnt = None
+                mua_url = ''
             if repurchase_pct_list:
                 avg_repurchase_pct = sum(repurchase_pct_list) / len(repurchase_pct_list)
             else:
@@ -314,8 +316,8 @@ def get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua, bp_ewg_ingre):
             cleaned_data[bp_id]['sub_category'] += list(sub_category_set)
             cleaned_data[bp_id]['image_url'] += list(img_url_set)
 
-            cleaned_data[bp_id].update({'mua_rating': avg_score, 'mua_review_cnt': total_review_cnt,
-                                        'repurchase_pct': avg_repurchase_pct})
+            cleaned_data[bp_id].update({'mua_rating': round(avg_score, 1), 'mua_review_cnt': total_review_cnt,
+                                        'repurchase_pct': avg_repurchase_pct, 'mua_url': mua_url})
 
             cleaned_data[bp_id].update({'age_counter': total_age_counter, 'skin_type_counter': total_skin_counter,
                                         'skin_color_counter': total_skin_color_counter,

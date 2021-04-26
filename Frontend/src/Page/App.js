@@ -265,16 +265,16 @@ class App extends React.Component {
                     ... &nbsp;(*╹▽╹*)&nbsp;</div>);
         }
         else {
-            return_result.push(<div>&nbsp;&nbsp;</div>);
+            return_result.push(<Divider/>);
 
-            return_result.push(<div style={{"font-size": "15px"}}>Searching results
-                of: {this.state.subcategory} </div>);
+            return_result.push(<div style={{"font-size": "15px"}}>
+                Guessing what <b>{this.state.subcategory}</b> you like and dislike most! </div>);
 
             return_result.push(<div>&nbsp;&nbsp;</div>);
-            return_result.push(<TableList title={"Top"} dataSource={this.state.response_data["Top"]}
+            return_result.push(<TableList title={"Best Choices for You ❤"} dataSource={this.state.response_data["Top"]}
                                           handleHyperLinkClick = {this.handleHyperLinkClick}/>);
             return_result.push(<div>&nbsp;&nbsp;</div>);
-            return_result.push(<TableList dataSource={this.state.response_data["Last"]}
+            return_result.push(<TableList title={"Worst Choices for You 💔"} dataSource={this.state.response_data["Last"]}
                                           handleHyperLinkClick = {this.handleHyperLinkClick}/>);
             // for (let product_id in this.state.response_data) {
             //     return_result.push(<TableList dataSource={this.state.response_data[product_id]}/>);
@@ -299,9 +299,9 @@ class App extends React.Component {
                             placeholder="Select a category"
                             onChange={this.handleCategoryChange}
                             value={this.state.category}>
-                            <Option value="Face Makeup">Face Makeup</Option>
-                            <Option value="Lip Makeup">Lip Makeup</Option>
-                            <Option value="Eye Makeup">Eye Makeup</Option>
+                            <Option value="Face Makeup">Face Makeup 😊</Option>
+                            <Option value="Lip Makeup">Lip Makeup 💄</Option>
+                            <Option value="Eye Makeup">Eye Makeup 👁</Option>
 
                         </Select >
                     </label>

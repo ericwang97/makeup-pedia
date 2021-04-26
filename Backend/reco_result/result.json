@@ -5,26 +5,26 @@
             "product_names": "Face Powder",
             "category": "Face Makeup",
             "sub_category": [
-                "Face Powder",
-                "Loose Powder"
+                "Loose Powder",
+                "Face Powder"
             ],
             "product_id": 2332,
             "brand": "Marcelle",
             "ingredient": [
-                "UREA",
-                "IMIDAZOLIDINYL UREA",
-                "POLYPARABEN",
+                "TALC",
                 "BHT",
                 "Iron Oxides",
-                "TALC",
-                "METHYLPARABEN"
+                "UREA",
+                "METHYLPARABEN",
+                "IMIDAZOLIDINYL UREA",
+                "POLYPARABEN"
             ],
             "size": "2.40 fl. oz.",
             "price": "14.95",
             "claims": "This loose powder is the perfect tool for setting your makeup or for making those little touch-ups during the day. Its texture ensures beautifully matte skin while micronized talc absorbs excess oil for extra-long-wearing comfort, giving you a perfectly evened-out skin tone. Its soft powdery texture leaves your skin feeling silky smooth.",
             "image_url": [
-                "https://img.makeupalley.com/8/1/3/9/1225881.JPG",
                 "https://img.makeupalley.com/1/1/8/1/3539346.JPG",
+                "https://img.makeupalley.com/8/1/3/9/1225881.JPG",
                 "https://www.beautypedia.com/wp-content/uploads/2018/07/F93CBDD5-0738-41DA-9618-D5BA948AA97A_marcelleLogo.gif?w=212"
             ],
             "expert_rating": "5",
@@ -204,225 +204,64 @@
                 "Face Powder"
             ],
             "brand_url": [],
-            "mua_rating": 4.45,
+            "mua_rating": 4.5,
             "mua_review_cnt": 78,
             "repurchase_pct": 89.5,
+            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=89161/",
             "age_counter": {
-                "Under 18": 9,
-                "19-24": 23,
                 "30-35": 13,
                 "25-29": 9,
+                "19-24": 23,
+                "Under 18": 9,
                 "36-43": 3,
                 "44-55": 2
             },
             "skin_type_counter": {
                 "Combination": 29,
                 "Fair-Medium": 14,
-                "Neutral": 13,
+                "Normal": 1,
+                "Acne-prone": 12,
                 "Fair": 30,
+                "Neutral": 13,
                 "Oily": 4,
                 "Medium": 4,
-                "Acne-prone": 12,
                 "Dry": 6,
-                "Normal": 1,
                 "Very Dry": 3,
-                "Sensitive": -1,
-                "Very Oily": 2
+                "Very Oily": 2,
+                "Sensitive": -1
             },
             "skin_color_counter": {
                 "Tan": 3,
                 "Warm": 11,
-                "Normal": 0,
                 "Dark": 3,
+                "Normal": 0,
                 "Olive": -1
             },
             "hair_style_counter": {
+                "Wavy": 13,
+                "Fine": 13,
                 "Straight": 11,
                 "Medium": 17,
-                "Curly": 4,
-                "Fine": 13,
-                "Wavy": 13,
                 "Kinky": 2,
-                "Relaxed": 1,
-                "Coarse": 4
+                "Curly": 4,
+                "Coarse": 4,
+                "Relaxed": 1
             },
             "hair_color_counter": {
-                "Brunette": 14,
                 "Black": 14,
+                "Brunette": 14,
                 "Brown": 16,
                 "Blond": 8,
                 "Red": 2
             },
             "eyes_counter": {
-                "Hazel": 13,
-                "Blue": 12,
-                "Black": 4,
-                "Other": 3,
                 "Brown": 18,
                 "Green": 8,
+                "Other": 3,
+                "Black": 4,
+                "Blue": 12,
+                "Hazel": 13,
                 "Gray": 2
-            }
-        },
-        {
-            "product_links": "https://www.beautypedia.com/products/ideal-flawless-pressed-powder/",
-            "product_names": "Ideal Flawless Pressed Powder",
-            "category": "Face Makeup",
-            "sub_category": [
-                "Loose Powder",
-                "Face Powder",
-                "Pressed Powder"
-            ],
-            "product_id": 2315,
-            "brand": "Avon",
-            "ingredient": [
-                "CALCIUM SILICATE",
-                "TRIETHOXYCAPRYLYLSILANE",
-                "CALCIUM SODIUM BOROSILICATE",
-                "HYDRATED SILICA",
-                "DIMETHICONE",
-                "POLYETHYLENE",
-                "SILICATE",
-                "SQUALANE",
-                "ETHYLPARABEN",
-                "Iron Oxides",
-                "BISMUTH OXYCHLORIDE",
-                "ACRYLATES COPOLYMER",
-                "Cetyl PEG",
-                "HYDROXYAPATITE",
-                "BORON NITRIDE",
-                "TITANIUM DIOXIDE",
-                "CETEARYL METHICONE",
-                "KAOLIN",
-                "ZINC OXIDE",
-                "ZINC STEARATE",
-                "CAPRYLYL METHICONE",
-                "METHICONE",
-                "LAUROYL LYSINE",
-                "Ethylhexyl Methoxycinnamate",
-                "PEG",
-                "ALUMINA",
-                "TALC",
-                "TRIMETHYLSILOXYSILICATE",
-                "METHYLPARABEN"
-            ],
-            "size": "",
-            "price": "10.00",
-            "claims": null,
-            "image_url": [
-                "https://img.makeupalley.com/3/0/2/7/1568256.JPG",
-                "https://www.beautypedia.com/wp-content/uploads/2012/09/25C454E1-D95B-4A09-AB07-76218FD87FB2_51Sw5jdaicL.jpg?w=365",
-                null,
-                "https://img.makeupalley.com/1/1/2/5/1640666.GIF"
-            ],
-            "expert_rating": "4",
-            "expert_reviews": [
-                "Ideal Flawless Pressed Powder won't provide ideal or flawless coverage, but it is a good, though standard issue, pressed-powder option for a decent price. It blends easily and gives skin a healthy, soft-focus look. However, its ultra-sheer coverage isn't for anyone with a complexion problem to hide.",
-                "The silky, lightweight texture will appeal to those with combination or oily skin. As many powders can, Ideal Flawless Pressed Powder will combat excess oil without creating a cakey appearance.",
-                "This comes in a wide variety of shades that are workable for light to dark skin tones, plus a translucent option that provides the same benefits as the other shades without adding any color (though it may appear ashy on dark skin tones).",
-                ""
-            ],
-            "expert_pros": [
-                "Absorbs excess oil without creating a cakey appearance.",
-                "Good lightweight pressed-powder option for normal to oily skin.",
-                "Fragrance-free."
-            ],
-            "expert_cons": [
-                "The translucent shade may appear ashy on dark skin tones.",
-                "Doesn't provide much coverage."
-            ],
-            "jar_package": "No",
-            "animal_test": "No",
-            "user_rating": 1.0,
-            "user_reviews": {
-                "usr_review_summary": {
-                    "usr_review_count": 1,
-                    "usr_pros_summary": null,
-                    "usr_cons_summary": null
-                },
-                "usr_review_details": {
-                    "positive_reviews": null,
-                    "negative_reviews": null,
-                    "reviews": [
-                        {
-                            "review_title": "don't discontinue ideal loose powder",
-                            "review_rating": "1",
-                            "review_content": "I like the ideal flawless loose powder. I am very upset that avon has discontinued it. Please bring it back. I do not like the mineral powder. The ideal loose powder looks more natural on me than the mineral powder.",
-                            "review_cons": null,
-                            "review_pros": null,
-                            "review_best_for": null,
-                            "usr_routine_time": null,
-                            "usr_def_tag": null,
-                            "usr_age": null,
-                            "usr_skin_type": null
-                        }
-                    ]
-                }
-            },
-            "buy_url": [],
-            "other_names": [
-                "Age Transforming Pressed Powder SPF 15",
-                "Ideal Shade Pressed Powder",
-                "Incredible Finish Pressed Powder",
-                "Ideal Shade Loose Powder"
-            ],
-            "brand_url": [],
-            "mua_rating": 4.05,
-            "mua_review_cnt": 47,
-            "repurchase_pct": 81.25,
-            "age_counter": {
-                "Under 18": 1,
-                "19-24": 7,
-                "25-29": 7,
-                "30-35": 9,
-                "44-55": -1,
-                "56 & Over": 1,
-                "36-43": 4
-            },
-            "skin_type_counter": {
-                "Combination": 16,
-                "Fair-Medium": 9,
-                "Dry": 1,
-                "Fair": 3,
-                "Very Dry": 2,
-                "Sensitive": 3,
-                "Acne-prone": 8,
-                "Neutral": 4,
-                "Very Oily": 1,
-                "Medium": 6,
-                "Normal": -1,
-                "Oily": -2
-            },
-            "skin_color_counter": {
-                "Tan": 4,
-                "Warm": 12,
-                "Olive": 4,
-                "Normal": 0,
-                "Dark": 1
-            },
-            "hair_style_counter": {
-                "Straight": 14,
-                "Fine": 10,
-                "Wavy": 2,
-                "Medium": 4,
-                "Curly": 5,
-                "Coarse": 7,
-                "Kinky": -1,
-                "Relaxed": 1
-            },
-            "hair_color_counter": {
-                "Brunette": 12,
-                "Brown": 5,
-                "Black": 8,
-                "Red": 0,
-                "Blond": 4
-            },
-            "eyes_counter": {
-                "Other": 2,
-                "Green": 5,
-                "Blue": 3,
-                "Brown": 11,
-                "Black": 5,
-                "Hazel": 3
             }
         },
         {
@@ -430,9 +269,9 @@
             "product_names": "Cellular Treatment Loose Powder",
             "category": "Face Makeup",
             "sub_category": [
-                "Pressed Powder",
+                "Loose Powder",
                 "Face Powder",
-                "Loose Powder"
+                "Pressed Powder"
             ],
             "product_id": 2417,
             "brand": "La Prairie",
@@ -515,62 +354,226 @@
             },
             "buy_url": [],
             "other_names": [
-                "Treatment Loose Powder",
-                "Cellular Treatment Pressed Powder"
+                "Cellular Treatment Pressed Powder",
+                "Treatment Loose Powder"
             ],
             "brand_url": [],
-            "mua_rating": 4.65,
+            "mua_rating": 4.7,
             "mua_review_cnt": 48,
             "repurchase_pct": 77.5,
+            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=10289/",
             "age_counter": {
-                "30-35": 10,
                 "19-24": 9,
-                "25-29": 8,
+                "30-35": 10,
                 "44-55": 4,
                 "Under 18": 1,
+                "25-29": 8,
                 "36-43": 5
             },
             "skin_type_counter": {
+                "Normal": 9,
+                "Acne-prone": 8,
                 "Combination": 16,
                 "Fair": 11,
                 "Neutral": 8,
-                "Normal": 9,
-                "Acne-prone": 8,
                 "Medium": 1,
-                "Oily": 2,
                 "Fair-Medium": 15,
-                "Dry": 0,
-                "Sensitive": 2,
                 "Very Oily": 0,
+                "Dry": 0,
+                "Oily": 2,
+                "Sensitive": 2,
                 "Very Dry": 1
             },
             "skin_color_counter": {
                 "Warm": 3,
-                "Normal": 0,
-                "Olive": 3
+                "Olive": 3,
+                "Normal": 0
             },
             "hair_style_counter": {
                 "Wavy": 10,
                 "Medium": 10,
-                "Fine": 5,
                 "Straight": 5,
+                "Fine": 5,
                 "Curly": 0,
-                "Coarse": 2,
-                "Kinky": 1
+                "Kinky": 1,
+                "Coarse": 2
             },
             "hair_color_counter": {
-                "Black": 9,
                 "Brunette": 10,
                 "Brown": 10,
+                "Black": 9,
                 "Blond": 7
             },
             "eyes_counter": {
-                "Black": 2,
                 "Brown": 25,
+                "Black": 2,
                 "Hazel": 5,
                 "Green": 4,
-                "Gray": 1,
-                "Other": 3
+                "Other": 3,
+                "Gray": 1
+            }
+        },
+        {
+            "product_links": "https://www.beautypedia.com/products/ideal-flawless-pressed-powder/",
+            "product_names": "Ideal Flawless Pressed Powder",
+            "category": "Face Makeup",
+            "sub_category": [
+                "Loose Powder",
+                "Face Powder",
+                "Pressed Powder"
+            ],
+            "product_id": 2315,
+            "brand": "Avon",
+            "ingredient": [
+                "ETHYLPARABEN",
+                "SQUALANE",
+                "Ethylhexyl Methoxycinnamate",
+                "LAUROYL LYSINE",
+                "TALC",
+                "TRIMETHYLSILOXYSILICATE",
+                "TITANIUM DIOXIDE",
+                "Cetyl PEG",
+                "ZINC STEARATE",
+                "CALCIUM SILICATE",
+                "Iron Oxides",
+                "POLYETHYLENE",
+                "METHYLPARABEN",
+                "ALUMINA",
+                "METHICONE",
+                "BORON NITRIDE",
+                "DIMETHICONE",
+                "ACRYLATES COPOLYMER",
+                "SILICATE",
+                "BISMUTH OXYCHLORIDE",
+                "CAPRYLYL METHICONE",
+                "CALCIUM SODIUM BOROSILICATE",
+                "TRIETHOXYCAPRYLYLSILANE",
+                "PEG",
+                "HYDROXYAPATITE",
+                "KAOLIN",
+                "HYDRATED SILICA",
+                "ZINC OXIDE",
+                "CETEARYL METHICONE"
+            ],
+            "size": "",
+            "price": "10.00",
+            "claims": null,
+            "image_url": [
+                "https://img.makeupalley.com/1/1/2/5/1640666.GIF",
+                "https://www.beautypedia.com/wp-content/uploads/2012/09/25C454E1-D95B-4A09-AB07-76218FD87FB2_51Sw5jdaicL.jpg?w=365",
+                null,
+                "https://img.makeupalley.com/3/0/2/7/1568256.JPG"
+            ],
+            "expert_rating": "4",
+            "expert_reviews": [
+                "Ideal Flawless Pressed Powder won't provide ideal or flawless coverage, but it is a good, though standard issue, pressed-powder option for a decent price. It blends easily and gives skin a healthy, soft-focus look. However, its ultra-sheer coverage isn't for anyone with a complexion problem to hide.",
+                "The silky, lightweight texture will appeal to those with combination or oily skin. As many powders can, Ideal Flawless Pressed Powder will combat excess oil without creating a cakey appearance.",
+                "This comes in a wide variety of shades that are workable for light to dark skin tones, plus a translucent option that provides the same benefits as the other shades without adding any color (though it may appear ashy on dark skin tones).",
+                ""
+            ],
+            "expert_pros": [
+                "Absorbs excess oil without creating a cakey appearance.",
+                "Good lightweight pressed-powder option for normal to oily skin.",
+                "Fragrance-free."
+            ],
+            "expert_cons": [
+                "The translucent shade may appear ashy on dark skin tones.",
+                "Doesn't provide much coverage."
+            ],
+            "jar_package": "No",
+            "animal_test": "No",
+            "user_rating": 1.0,
+            "user_reviews": {
+                "usr_review_summary": {
+                    "usr_review_count": 1,
+                    "usr_pros_summary": null,
+                    "usr_cons_summary": null
+                },
+                "usr_review_details": {
+                    "positive_reviews": null,
+                    "negative_reviews": null,
+                    "reviews": [
+                        {
+                            "review_title": "don't discontinue ideal loose powder",
+                            "review_rating": "1",
+                            "review_content": "I like the ideal flawless loose powder. I am very upset that avon has discontinued it. Please bring it back. I do not like the mineral powder. The ideal loose powder looks more natural on me than the mineral powder.",
+                            "review_cons": null,
+                            "review_pros": null,
+                            "review_best_for": null,
+                            "usr_routine_time": null,
+                            "usr_def_tag": null,
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        }
+                    ]
+                }
+            },
+            "buy_url": [],
+            "other_names": [
+                "Ideal Shade Pressed Powder",
+                "Incredible Finish Pressed Powder",
+                "Ideal Shade Loose Powder",
+                "Age Transforming Pressed Powder SPF 15"
+            ],
+            "brand_url": [],
+            "mua_rating": 4.0,
+            "mua_review_cnt": 47,
+            "repurchase_pct": 81.25,
+            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=122966/",
+            "age_counter": {
+                "19-24": 7,
+                "30-35": 9,
+                "44-55": -1,
+                "25-29": 7,
+                "Under 18": 1,
+                "36-43": 4,
+                "56 & Over": 1
+            },
+            "skin_type_counter": {
+                "Sensitive": 3,
+                "Combination": 16,
+                "Fair-Medium": 9,
+                "Neutral": 4,
+                "Acne-prone": 8,
+                "Fair": 3,
+                "Very Dry": 2,
+                "Very Oily": 1,
+                "Dry": 1,
+                "Medium": 6,
+                "Oily": -2,
+                "Normal": -1
+            },
+            "skin_color_counter": {
+                "Tan": 4,
+                "Warm": 12,
+                "Olive": 4,
+                "Normal": 0,
+                "Dark": 1
+            },
+            "hair_style_counter": {
+                "Curly": 5,
+                "Coarse": 7,
+                "Straight": 14,
+                "Fine": 10,
+                "Medium": 4,
+                "Wavy": 2,
+                "Kinky": -1,
+                "Relaxed": 1
+            },
+            "hair_color_counter": {
+                "Brown": 5,
+                "Black": 8,
+                "Brunette": 12,
+                "Blond": 4,
+                "Red": 0
+            },
+            "eyes_counter": {
+                "Brown": 11,
+                "Blue": 3,
+                "Hazel": 3,
+                "Green": 5,
+                "Other": 2,
+                "Black": 5
             }
         }
     ],
@@ -580,45 +583,45 @@
             "product_names": "PhotoReady Translucent Finisher",
             "category": "Face Makeup",
             "sub_category": [
-                "Facial Powder",
                 "Face Powder",
-                "Pressed Powder"
+                "Pressed Powder",
+                "Facial Powder"
             ],
             "product_id": 2385,
             "brand": "Revlon",
             "ingredient": [
-                "Copper",
-                "TRIETHOXYCAPRYLYLSILANE",
-                "CYCLOPENTASILOXANE",
-                "HYDROGENATED LECITHIN",
-                "TOCOPHERYL ACETATE",
-                "DIMETHICONE",
-                "POLYETHYLENE",
-                "SILICATE",
-                "POTASSIUM",
-                "CALCIUM",
-                "NYLON-12",
-                "Iron Oxides",
-                "BISMUTH OXYCHLORIDE",
-                "Methoxypropyl Gluconamide",
-                "SORBIC ACID",
                 "CALCIUM ALUMINUM BOROSILICATE",
-                "TITANIUM DIOXIDE",
-                "METHYL METHACRYLATE CROSSPOLYMER",
-                "Octyldodecyl Glycol Grapeseedate",
-                "PHENOXYETHANOL",
-                "ZINC STEARATE",
-                "DIMETHICONOL",
-                "POLYMETHYL METHACRYLATE",
-                "MAGNESIUM",
                 "LAUROYL LYSINE",
-                "Iron",
                 "ZINC",
-                "MAGNESIUM ASCORBYL PHOSPHATE",
-                "ALUMINA",
                 "TRIMETHYLSILOXYSILICATE",
+                "LECITHIN",
+                "TITANIUM DIOXIDE",
+                "Copper",
+                "SORBIC ACID",
+                "Iron",
+                "ZINC STEARATE",
+                "POTASSIUM",
+                "Methoxypropyl Gluconamide",
+                "Iron Oxides",
+                "POLYETHYLENE",
+                "HYDROGENATED LECITHIN",
+                "METHYL METHACRYLATE CROSSPOLYMER",
+                "ALUMINA",
                 "PENTAERYTHRITYL TETRAETHYLHEXANOATE",
-                "LECITHIN"
+                "PHENOXYETHANOL",
+                "CALCIUM",
+                "MAGNESIUM ASCORBYL PHOSPHATE",
+                "DIMETHICONOL",
+                "DIMETHICONE",
+                "CYCLOPENTASILOXANE",
+                "SILICATE",
+                "TOCOPHERYL ACETATE",
+                "Octyldodecyl Glycol Grapeseedate",
+                "BISMUTH OXYCHLORIDE",
+                "TRIETHOXYCAPRYLYLSILANE",
+                "MAGNESIUM",
+                "NYLON-12",
+                "POLYMETHYL METHACRYLATE"
             ],
             "size": "",
             "price": "12.99",
@@ -648,8 +651,8 @@
                 "https://www.google.com/search?q=Revlon%20PhotoReady%20Candid%20Anti%20Pollution%20Setting%20Powder,%20001%20Translucent"
             ],
             "other_names": [
-                "PhotoReady Candid Anti Pollution Setting Powder",
-                "PhotoReady Translucent Finisher"
+                "PhotoReady Translucent Finisher",
+                "PhotoReady Candid Anti Pollution Setting Powder"
             ],
             "brand_url": [
                 "https://www.ewg.org/skindeep/browse/brands/1375-Revlon/"
@@ -722,64 +725,65 @@
             "mua_rating": 2.7,
             "mua_review_cnt": 131,
             "repurchase_pct": 35.0,
+            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=127190/",
             "age_counter": {
-                "19-24": -14,
-                "36-43": -6,
-                "Under 18": -11,
-                "30-35": -4,
                 "25-29": -8,
+                "19-24": -14,
+                "30-35": -4,
+                "36-43": -6,
+                "56 & Over": 3,
                 "44-55": -7,
-                "56 & Over": 3
+                "Under 18": -11
             },
             "skin_type_counter": {
-                "Acne-prone": -3,
-                "Normal": -5,
-                "Fair-Medium": -12,
-                "Combination": -20,
-                "Fair": -24,
-                "Oily": 0,
-                "Medium": -1,
-                "Dry": -9,
-                "Neutral": -5,
                 "Sensitive": -5,
+                "Fair": -24,
+                "Combination": -20,
+                "Dry": -9,
                 "Very Oily": -2,
+                "Oily": 0,
+                "Fair-Medium": -12,
+                "Normal": -5,
+                "Neutral": -5,
+                "Acne-prone": -3,
+                "Medium": -1,
                 "Very Dry": 0
             },
             "skin_color_counter": {
-                "Tan": -3,
                 "Warm": -11,
                 "Olive": -2,
-                "Medium Brown": -1,
+                "Tan": -3,
                 "Normal": 0,
+                "Medium Brown": -1,
                 "Dark": -1
             },
             "hair_style_counter": {
-                "Straight": -13,
-                "Fine": -15,
                 "Wavy": -11,
                 "Medium": -11,
-                "Curly": -2,
+                "Straight": -13,
+                "Fine": -15,
                 "Coarse": -3,
-                "Relaxed": 1,
-                "Kinky": -1
+                "Kinky": -1,
+                "Curly": -2,
+                "Relaxed": 1
             },
             "hair_color_counter": {
-                "Black": -8,
                 "Brunette": -17,
+                "Black": -8,
+                "Brown": -6,
                 "Blond": -7,
                 "Red": -9,
-                "Brown": -6,
-                "Grey": 1,
-                "Silver": 2
+                "Silver": 2,
+                "Grey": 1
             },
             "eyes_counter": {
-                "Black": -4,
                 "Green": -17,
-                "Hazel": -10,
                 "Brown": -9,
+                "Black": -4,
+                "Gray": 0,
                 "Blue": -6,
-                "Other": -1,
-                "Gray": 0
+                "Hazel": -10,
+                "Other": -1
             }
         },
         {
@@ -794,26 +798,26 @@
             "product_id": 2384,
             "brand": "The Body Shop",
             "ingredient": [
-                "BORON NITRIDE",
                 "PTFE",
-                "NYLON-12",
-                "TETRASODIUM EDTA",
-                "Iron Oxides",
-                "PHENOXYETHANOL",
-                "TOCOPHERYL ACETATE",
                 "TALC",
+                "Iron Oxides",
                 "POLYETHYLENE",
+                "TETRASODIUM EDTA",
+                "METHYLPARABEN",
+                "NYLON-12",
                 "SILICATE",
-                "METHYLPARABEN"
+                "TOCOPHERYL ACETATE",
+                "PHENOXYETHANOL",
+                "BORON NITRIDE"
             ],
             "size": "0.49 fl. oz.",
             "price": "16.50",
             "claims": null,
             "image_url": [
-                "https://www.beautypedia.com/wp-content/uploads/2012/05/A9CB3D54-5A30-4B3C-A7FE-6C0085543F00_TheBodyShopLooseFacePowder.jpg?w=450",
-                "https://img.makeupalley.com/0/2/6/3/1868848.JPG",
                 null,
-                "https://img.makeupalley.com/4/6/9/5/2020950.JPG"
+                "https://img.makeupalley.com/0/2/6/3/1868848.JPG",
+                "https://img.makeupalley.com/4/6/9/5/2020950.JPG",
+                "https://www.beautypedia.com/wp-content/uploads/2012/05/A9CB3D54-5A30-4B3C-A7FE-6C0085543F00_TheBodyShopLooseFacePowder.jpg?w=450"
             ],
             "expert_rating": "3",
             "expert_reviews": [
@@ -885,54 +889,55 @@
             },
             "buy_url": [],
             "other_names": [
-                "Pressed Face Powder",
+                "Loose face powder no. 02",
                 "loose powder no.03",
-                "Loose face powder no. 02"
+                "Pressed Face Powder"
             ],
             "brand_url": [],
-            "mua_rating": 2.966666666666667,
+            "mua_rating": 3.0,
             "mua_review_cnt": 55,
             "repurchase_pct": 43.666666666666664,
+            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=20394/",
             "age_counter": {
                 "Under 18": -7,
+                "44-55": 1,
                 "36-43": -3,
                 "25-29": -4,
-                "44-55": 1,
-                "30-35": -4,
                 "19-24": -3,
+                "30-35": -4,
                 "56 & Over": -1
             },
             "skin_type_counter": {
                 "Combination": -9,
-                "Oily": -1,
                 "Fair": -4,
-                "Acne-prone": -1,
-                "Fair-Medium": -7,
-                "Normal": -6,
-                "Sensitive": 0,
-                "Medium": -2,
+                "Oily": -1,
+                "Dry": -2,
                 "Neutral": -3,
-                "Dry": -2
+                "Normal": -6,
+                "Medium": -2,
+                "Sensitive": 0,
+                "Fair-Medium": -7,
+                "Acne-prone": -1
             },
             "skin_color_counter": {
-                "Olive": 0,
                 "Normal": 0,
                 "Warm": 0,
+                "Olive": 0,
                 "Tan": 1
             },
             "hair_style_counter": {
-                "Straight": -1,
-                "Fine": -5,
                 "Wavy": -1,
                 "Medium": -1,
+                "Straight": -1,
+                "Fine": -5,
                 "Coarse": 1,
                 "Curly": -1
             },
             "hair_color_counter": {
                 "Brunette": -11,
+                "Red": -1,
                 "Black": -3,
                 "Brown": -2,
-                "Red": -1,
                 "Blond": -2
             },
             "eyes_counter": {
@@ -940,10 +945,10 @@
                 "Blue": -3,
                 "Green": -4,
                 "Black": -1,
-                "Violet": -1,
-                "Gray": -1,
+                "Other": -1,
                 "Hazel": -1,
-                "Other": -1
+                "Gray": -1,
+                "Violet": -1
             }
         },
         {
@@ -953,64 +958,64 @@
             "sub_category": [
                 "Powder Foundation",
                 "Cream Foundation",
-                "Liquid Foundation",
                 "Foundation",
-                "Foundation Without Sunscreen"
+                "Foundation Without Sunscreen",
+                "Liquid Foundation"
             ],
             "product_id": 3089,
             "brand": "Revlon",
             "ingredient": [
+                "CALCIUM ALUMINUM BOROSILICATE",
+                "BUTYLENE GLYCOL",
+                "ISOBUTANE",
                 "SORBITAN LAURATE",
-                "LAURETH-7",
-                "TRIETHOXYCAPRYLYLSILANE",
-                "PHOSPHOLIPIDS",
-                "SILICATE",
-                "SODIUM TRIDECETH SULFATE",
-                "HEXYLENE GLYCOL",
-                "DISODIUM LAUROAMPHODIACETATE",
-                "ISOPROPYL ALCOHOL",
-                "NYLON-12",
-                "Iron Oxides",
-                "CAPRYLYL GLYCOL",
+                "PROPYLENE GLYCOL STEARATE",
                 "PROLINE",
-                "ISOSTEARYL BEHENATE",
-                "POLY C10-30 ALKYL ACRYLATE",
-                "COCAMIDE MEA",
+                "LECITHIN",
+                "PENTAERYTHRITYL TETRAISOSTEARATE",
+                "CAPRYLYL GLYCOL",
+                "TITANIUM DIOXIDE",
+                "NEOPENTYL GLYCOL DIHEPTANOATE",
+                "POLYSORBATE-20",
+                "ISOSTEARIC ACID",
+                "STEARIC ACID",
+                "TROMETHAMINE",
+                "POLYSORBATE-60",
+                "Acrylates",
+                "STEARETH-21",
+                "SORBITAN STEARATE",
+                "Iron Oxides",
+                "LAURETH-7",
+                "METHYL METHACRYLATE CROSSPOLYMER",
+                "SODIUM TRIDECETH SULFATE",
+                "PROPYLENE GLYCOL LAURATE",
+                "PHENOXYETHANOL",
                 "BORON NITRIDE",
                 "STEARETH-2",
-                "SORBITAN STEARATE",
-                "METHYL METHACRYLATE CROSSPOLYMER",
-                "CALCIUM ALUMINUM BOROSILICATE",
-                "TITANIUM DIOXIDE",
-                "ISOTRIDECYL ISONONANOATE",
-                "PENTAERYTHRITYL TETRAISOSTEARATE",
-                "Acrylates",
-                "1,2-HEXANEDIOL",
-                "PHENOXYETHANOL",
-                "POLYSORBATE-60",
-                "ISOBUTANE",
+                "SILICATE",
+                "COCAMIDE MEA",
+                "PHOSPHOLIPIDS",
+                "DISODIUM LAUROAMPHODIACETATE",
+                "ISOSTEARYL BEHENATE",
                 "GLYCERYL DISTEARATE",
-                "C13-14 ISOPARAFFIN",
-                "ISOSTEARIC ACID",
-                "POLYSORBATE-20",
+                "1,2-HEXANEDIOL",
+                "TRIETHOXYCAPRYLYLSILANE",
                 "POLYACRYLAMIDE",
-                "BUTYLENE GLYCOL",
-                "TROMETHAMINE",
-                "STEARIC ACID",
-                "STEARETH-21",
-                "NEOPENTYL GLYCOL DIHEPTANOATE",
-                "PROPYLENE GLYCOL LAURATE",
-                "PROPYLENE GLYCOL STEARATE",
-                "LECITHIN"
+                "POLY C10-30 ALKYL ACRYLATE",
+                "ISOTRIDECYL ISONONANOATE",
+                "NYLON-12",
+                "HEXYLENE GLYCOL",
+                "ISOPROPYL ALCOHOL",
+                "C13-14 ISOPARAFFIN"
             ],
             "size": "",
             "price": "13.99",
             "claims": null,
             "image_url": [
-                null,
+                "https://img.makeupalley.com/4/0/2/3/1932853.JPG",
                 "https://img.makeupalley.com/0/0/4/7/2140884.JPG",
-                "https://www.beautypedia.com/wp-content/uploads/2012/05/1D1721B1-BC67-46A1-B95F-1815A42301D7_Revlon_PhotoreadyAirbrushMousse.jpg?w=197",
-                "https://img.makeupalley.com/4/0/2/3/1932853.JPG"
+                null,
+                "https://www.beautypedia.com/wp-content/uploads/2012/05/1D1721B1-BC67-46A1-B95F-1815A42301D7_Revlon_PhotoreadyAirbrushMousse.jpg?w=197"
             ],
             "expert_rating": "1",
             "expert_reviews": [
@@ -1053,14 +1058,14 @@
                 "https://www.google.com/search?q=Revlon%20Photoready%20Airbrush%20Effect%20Makeup,%20SPF%2020,%20001%20Ivory"
             ],
             "other_names": [
-                "PhotoReady Powder - Medium/Deep",
-                "Photoready Airbrush Effect Makeup",
-                "photoready airbrush mousse makeup in golden beige",
-                "Photoready Airbrush Mousse Makeup - Medium Beige",
-                "Photoready Airbrush Mousse Makeup-Nude",
-                "PhotoReady Airbrush Mousse Makeup",
                 "PhotoReady Airbrush Mousse Makeup - Natural Beige",
-                "PhotoReady Powder - Light/Medium"
+                "PhotoReady Powder - Light/Medium",
+                "photoready airbrush mousse makeup in golden beige",
+                "PhotoReady Airbrush Mousse Makeup",
+                "PhotoReady Powder - Medium/Deep",
+                "Photoready Airbrush Mousse Makeup-Nude",
+                "Photoready Airbrush Effect Makeup",
+                "Photoready Airbrush Mousse Makeup - Medium Beige"
             ],
             "brand_url": [
                 "https://www.ewg.org/skindeep/browse/brands/1375-Revlon/"
@@ -1240,13 +1245,14 @@
                     "Data Availability": "Good"
                 }
             },
-            "mua_rating": 3.1714285714285713,
+            "mua_rating": 3.2,
             "mua_review_cnt": 331,
             "repurchase_pct": 57.0,
+            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=149124/",
             "age_counter": {
                 "36-43": -3,
-                "25-29": -19,
                 "Under 18": -23,
+                "25-29": -19,
                 "44-55": 3,
                 "30-35": -14,
                 "19-24": -61,
@@ -1254,24 +1260,24 @@
             },
             "skin_type_counter": {
                 "Combination": -57,
+                "Medium": -7,
                 "Fair": -45,
                 "Neutral": -13,
-                "Medium": -7,
-                "Sensitive": -5,
                 "Fair-Medium": -42,
+                "Sensitive": -5,
                 "Normal": -8,
-                "Dry": -15,
                 "Very Oily": -5,
                 "Acne-prone": -17,
+                "Dry": -15,
                 "Oily": -13,
                 "Very Dry": 1
             },
             "skin_color_counter": {
                 "Warm": -40,
+                "Olive": -5,
                 "Tan": -10,
                 "Normal": 0,
                 "Medium Brown": -10,
-                "Olive": -5,
                 "Dark": 1
             },
             "hair_style_counter": {
@@ -1280,22 +1286,22 @@
                 "Straight": -17,
                 "Fine": -14,
                 "Curly": -16,
-                "Kinky": -1,
                 "Coarse": -19,
+                "Kinky": -1,
                 "Relaxed": 1
             },
             "hair_color_counter": {
-                "Black": -40,
                 "Blond": -16,
-                "Brown": -22,
+                "Black": -40,
                 "Brunette": -44,
+                "Brown": -22,
                 "Grey": 1,
                 "Red": -3,
                 "Silver": 2
             },
             "eyes_counter": {
-                "Brown": -56,
                 "Hazel": -16,
+                "Brown": -56,
                 "Blue": -25,
                 "Green": -10,
                 "Black": -9,

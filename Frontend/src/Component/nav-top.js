@@ -19,23 +19,23 @@ class NavTop extends React.Component{
 
                 <ul className="nav navbar-top-links navbar-left">
                     <li className="nav-item">
-                        <Link className="top-navbar active"to="/"><b>Home</b></Link>
+                        <Link className="top-navbar active"to="/"><b>Home 😄</b></Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="top-navbar" to="/features"><b>Features Description</b></Link>
+                        <Link className="top-navbar" to="/features"><b>Features Description 🤔</b></Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="top-navbar" to="/search"><b>Search</b></Link>
+                        <Link className="top-navbar" to="/search"><b>Search 🔍</b></Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="top-navbar" to="/Recommend"><b>Recommend</b></Link>
+                        <Link className="top-navbar" to="/Recommend"><b>Recommend 🧐</b></Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="top-navbar" to="/rate"><b>Rate it</b></Link>
+                        <Link className="top-navbar" to="/rate"><b>Rate it 🤞</b></Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="top-navbar disabled">To be continued</Link>
-                    </li>
+                    {/*<li className="nav-item">*/}
+                    {/*    <Link className="top-navbar disabled">To be continued</Link>*/}
+                    {/*</li>*/}
                 </ul>
 
 

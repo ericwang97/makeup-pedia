@@ -1,4 +1,4 @@
-import {Button, Card, Table} from "antd";
+import {Button, Card, Rate, Table} from "antd";
 import React from "react";
 import 'antd/es/table/style/css'; // 加载 CSS
 import 'antd/es/card/style/css'; // 加载 CSS
@@ -32,10 +32,6 @@ class TableList extends React.Component {
                     }
                 },
                 {
-                    title: 'Category',
-                    dataIndex: 'category'
-                },
-                {
                     title: 'Subcategory',
                     dataIndex: 'sub_category',
                     render: text => {
@@ -53,31 +49,38 @@ class TableList extends React.Component {
                     }
                 },
                 {
-                    title: 'Price',
-                    dataIndex: 'price'
+                    title: 'Price 💲',
+                    // dataIndex: 'price',
+                    render: (text, record) => {
+                        if (record.buy_url.length === 0) {
+                            return (<span>{record.price}</span>)
+                        } else {
+                            return (<span>{record.price} <a href={record.buy_url}
+                            > 🛒 </a> </span>)
+                        }
+                    }
                 },
                 {
-                    title: 'Where to Purchase',
-                    dataIndex: 'buy_url',
-                    render: text => {
-                        if (text.length === 0) {
-                            return ({})
+                    title: 'MakeUp Alley\'s Reviews 💬',
+                    render: (text, record) => {
+                        if (record.mua_url.length === 0) {
+                            return (
+                                <div>
+                                    <Rate disabled allowHalf
+                                        //autoFocus={true}
+                                          defaultValue={record.mua_rating //.toFixed(1)
+                                          }/>&nbsp;&nbsp;
+                                    <span> {record.mua_review_cnt} 💬 </span>
+                                </div>
+                            )
                         } else {
-                            return (<a href={text}
-                            >Buy here!
-                            </a>)
-                        }
-                    }},
-                {
-                    title: 'Look for Reviews',
-                    dataIndex: 'buy_url',
-                    render: text => {
-                        if (text.length === 0) {
-                            return ({})
-                        } else {
-                            return (<a href={text}
-                            >See Reviews!
-                            </a>)
+                            return (
+                                <div>
+                                    <Rate disabled allowHalf
+                                          defaultValue={record.mua_rating}/>&nbsp;&nbsp;
+                                    <span> <a href={record.mua_url}>{record.mua_review_cnt} 💬</a></span>
+                                </div>
+                            )
                         }
 
                     }},
@@ -99,9 +102,9 @@ class TableList extends React.Component {
 
     drawQueryTable(){
         //let columnName = eval(this.props.columnName);
-        return (<Card title={this.props.tableName}>
+        return (<Card title={this.props.title}>
             <Table //className="ant-table"
-                    columns={this.state[this.props.columnName]}
+                columns={this.state.response_data}
                    dataSource={this.props.dataSource}
                    bordered
                 //defaultPageSize={1}
@@ -119,9 +122,9 @@ class TableList extends React.Component {
 
     drawSearchTable(){
 
-        return (<Card title={this.props.tableName} style={{ width: 1350 }}>
+        return (<Card title={this.props.title} style={{ width: 1350 }}>
             <Table className="ant-table"
-                columns={this.state.response_data}
+                   columns={this.state.response_data}
                 dataSource={this.props.dataSource}
                 bordered
                 //defaultPageSize={1}

@@ -390,13 +390,15 @@ footer p {
     font-size: 30px !important;
     font-weight: 600 !important;
     text-transform: uppercase;
-    line-height: 40px !important;
+    line-height: 30px !important;
     background: #081529 !important;
+    /*font-family: "Times New Roman";*/
+    /*background: purple !important;*/
     /*title, very important!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .navbar-brand b {
-    margin-right: 5px !important;
+    margin-right: 10px !important;
     color: #2DAFCB;
 }
 
@@ -540,13 +542,14 @@ ul.nav.nav-second-level.collapse.in {
 
 
 .top-navbar {
-    background: white !important;
+    background: whitesmoke !important;
     /*border-bottom: transparent !important;*/
     border: transparent !important;
     color: black !important;
     /*!!!nav bar tag, very important!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     line-height: 20px !important;
     min-width: 200px !important;
+    font-family: Algerian;
     /*font-size: calc(2px + 2vmin) !important;*/
     /*line-height: 2em !important;*/
 
