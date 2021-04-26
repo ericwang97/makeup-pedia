@@ -25,6 +25,12 @@ class NavTop extends React.Component{
                         <Link className="top-navbar" to="/features"><b>Features Description</b></Link>
                     </li>
                     <li className="nav-item">
+                        <Link className="top-navbar" to="/search"><b>Search</b></Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="top-navbar" to="/Recommend"><b>Recommend</b></Link>
+                    </li>
+                    <li className="nav-item">
                         <Link className="top-navbar" to="/rate"><b>Rate it</b></Link>
                     </li>
                     <li className="nav-item">
