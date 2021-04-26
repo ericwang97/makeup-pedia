@@ -13,39 +13,52 @@ class TableList extends React.Component {
 
             response_data : [
                 {
-                    title: 'product_names',
-                    dataIndex: 'product_names'
+                    title:'Image',
+                    dataIndex: 'image_url',
+                    render: link => {
+                        return (<img src={link[0]} style={{ width: 180 }}
+                        />
+                        )}
                 },
                 {
-                    title: 'category',
+                    title: 'Product',
+                    dataIndex: 'product_names',
+                    id: 'name'
+                },
+                {
+                    title: 'Category',
                     dataIndex: 'category'
                 },
                 {
-                    title: 'sub_category',
-                    dataIndex: 'sub_category'
+                    title: 'Subcategory',
+                    dataIndex: 'sub_category',
+                    render: text => {
+                        return  (<span>{text[0]}</span>)
+                    }
                 },
                 {
-                    title: 'brand',
+                    title: 'Brand',
                     dataIndex: 'brand'
                 },
                 {
-                    title: 'product_links',
+                    title: 'Product Link',
                     dataIndex: 'product_links',
+                    id:'link',
                     render: text => {
                         return (<a href={text}
                         >{text}
                         </a>)
                 }},
                 {
-                    title: 'price',
+                    title: 'Price',
                     dataIndex: 'price'
                 },
                 {
-                    title: 'buy_url',
+                    title: 'Where to Purchase',
                     dataIndex: 'buy_url',
                     render: text => {
                         return (<a href={text}
-                        >{text}
+                        >Buy here
                         </a>)
                 }},
             ]
@@ -76,7 +89,7 @@ class TableList extends React.Component {
 
     drawSearchTable(){
 
-        return (<Card title={this.props.tableName} style={{ width: 1050 }}>
+        return (<Card title={this.props.tableName} style={{ width: 1350 }}>
             <Table className="ant-table"
                 columns={this.state.response_data}
                 dataSource={this.props.dataSource}
