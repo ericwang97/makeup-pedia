@@ -84,6 +84,36 @@ class TableList extends React.Component {
                         }
 
                     }},
+                    {
+                        title: 'EWG Concerns 🧪',
+                        render: (text, record) => {
+                            if ('overall_concerns' in record) {
+                                var Colors={'HIGH':'FireBrick','MODERATE':'SandyBrown','LOW_MODERATE':'Khaki','LOW':'MediumAquaMarine'}
+                                return (
+                                <div>
+                                    <li>
+                                        <span>Cancer: </span> 
+                                        <strong style={{color: Colors[record.overall_concerns.Cancer]}}>{record.overall_concerns.Cancer} </strong>
+                                    </li>
+                                    <li>
+                                        <span>Toxicity: </span>
+                                        <strong style={{color: Colors[record.overall_concerns['Developmental & reproductive toxicity']]}}>{record.overall_concerns['Developmental & reproductive toxicity']} </strong>
+                                    </li>
+                                    <li>
+                                        <span>Allergies: </span> 
+                                        <strong style={{color: Colors[record.overall_concerns['Allergies & immunotoxicity']]}}>{record.overall_concerns['Allergies & immunotoxicity']}</strong>
+                                    </li>
+                                    </div>
+                                )
+                            } else {
+                                return (
+                                    <div>
+                                        Not Available 😞
+                                    </div>
+                                )
+                            }
+    
+                        }},
                 {
                     title: 'Find Similar',
                     dataIndex: 'product_id',
