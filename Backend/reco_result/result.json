@@ -1,308 +1,42 @@
 {
     "Top": [
         {
-            "product_links": "https://www.beautypedia.com/products/face-powder/",
-            "product_names": "Face Powder",
+            "product_links": "https://www.beautypedia.com/products/pureness-matifying-compact-oil-free-spf-16/",
+            "product_names": "Pureness Matifying Compact Oil-Free SPF 16",
             "category": "Face Makeup",
             "sub_category": [
-                "Loose Powder",
-                "Face Powder"
-            ],
-            "product_id": 2332,
-            "brand": "Marcelle",
-            "ingredient": [
-                "TALC",
-                "BHT",
-                "Iron Oxides",
-                "UREA",
-                "METHYLPARABEN",
-                "IMIDAZOLIDINYL UREA",
-                "POLYPARABEN"
-            ],
-            "size": "2.40 fl. oz.",
-            "price": "14.95",
-            "claims": "This loose powder is the perfect tool for setting your makeup or for making those little touch-ups during the day. Its texture ensures beautifully matte skin while micronized talc absorbs excess oil for extra-long-wearing comfort, giving you a perfectly evened-out skin tone. Its soft powdery texture leaves your skin feeling silky smooth.",
-            "image_url": [
-                "https://img.makeupalley.com/1/1/8/1/3539346.JPG",
-                "https://img.makeupalley.com/8/1/3/9/1225881.JPG",
-                "https://www.beautypedia.com/wp-content/uploads/2018/07/F93CBDD5-0738-41DA-9618-D5BA948AA97A_marcelleLogo.gif?w=212"
-            ],
-            "expert_rating": "5",
-            "expert_reviews": [
-                "Housed in a generous-size tub, Face Powder is a talc- and mineral oil based loose powder. It has a silky, almost creamy texture that makes skin look polished and satiny rather than flat and powdered. If one of the two translucent shades works for you, this is a great, affordable loose powder for those with normal to dry skin."
-            ],
-            "expert_pros": null,
-            "expert_cons": null,
-            "jar_package": "No",
-            "animal_test": "No",
-            "user_rating": 4.5,
-            "user_reviews": {
-                "usr_review_summary": {
-                    "usr_review_count": 4,
-                    "usr_pros_summary": [
-                        [
-                            "2",
-                            "Blends Well"
-                        ],
-                        [
-                            "2",
-                            "Controls Shine"
-                        ],
-                        [
-                            "2",
-                            "Easy To Apply"
-                        ],
-                        [
-                            "2",
-                            "Long-Lasting"
-                        ],
-                        [
-                            "1",
-                            "Covers Well"
-                        ]
-                    ],
-                    "usr_cons_summary": [
-                        [
-                            "1",
-                            "Cakes Up"
-                        ],
-                        [
-                            "1",
-                            "Goes On Heavy"
-                        ],
-                        [
-                            "1",
-                            "Settles In Creases"
-                        ]
-                    ]
-                },
-                "usr_review_details": {
-                    "positive_reviews": [
-                        {
-                            "review_title": "Great finishing powder",
-                            "review_rating": "3",
-                            "review_content": "Great setting powder but cakes up easiy if not careful to assure foundation, primer or moisturizer is completely dry first especially creases under eye.",
-                            "review_cons": [
-                                "Cakes Up",
-                                "Goes On Heavy",
-                                "Settles In Creases"
-                            ],
-                            "review_pros": [
-                                "Blends Well",
-                                "Controls Shine",
-                                "Covers Well",
-                                "Easy To Apply",
-                                "Long-Lasting"
-                            ],
-                            "review_best_for": [
-                                "Normal Skin",
-                                "Oily Skin"
-                            ],
-                            "usr_routine_time": null,
-                            "usr_def_tag": [
-                                "Brand Buyer"
-                            ],
-                            "usr_age": null,
-                            "usr_skin_type": null
-                        },
-                        {
-                            "review_title": "Yes!",
-                            "review_rating": "5",
-                            "review_content": "I use this product to set my foundation and concealer. I have combination skin that is sensitive and somewhat prone to breakouts. This product has never caused any irritation. It does what it claims. I wear make-up about 1-3 times per week, and don't often leave it on for more than 8 hours. I find it barely needs retouching except occasionally I have touched up my forehead hours later if I'm looking a tad shiny. Lately I've been trying to reduce how much I spend on skincare and makeup, and this product gives you great bang for your buck.",
-                            "review_cons": [
-                                "Cakes Up",
-                                "Goes On Heavy",
-                                "Settles In Creases"
-                            ],
-                            "review_pros": [
-                                "Blends Well",
-                                "Controls Shine",
-                                "Doesn't Settle In Creases",
-                                "Easy To Apply",
-                                "Lightweight",
-                                "Long-Lasting",
-                                "Silky Finish"
-                            ],
-                            "review_best_for": [
-                                "Normal Skin",
-                                "Oily Skin"
-                            ],
-                            "usr_routine_time": null,
-                            "usr_def_tag": [
-                                "Brand Buyer"
-                            ],
-                            "usr_age": null,
-                            "usr_skin_type": null
-                        }
-                    ],
-                    "negative_reviews": null,
-                    "reviews": [
-                        {
-                            "review_title": "Great for normal to oily skin too",
-                            "review_rating": "5",
-                            "review_content": "This is a fabulous powder. Best of all the many I have tried in trying to replace my discontinued HG, including Chanel, Armani, Laura Mercier, MAC. Very fine, stays true to color on my combo skin. Also u get 70 grams for $15, an incredible bargain. I find it works great on my normal to moderately oily skin.",
-                            "review_cons": [
-                                "Cakes Up",
-                                "Goes On Heavy",
-                                "Settles In Creases"
-                            ],
-                            "review_pros": [
-                                "Blends Well",
-                                "Controls Shine",
-                                "Doesn't Settle In Creases",
-                                "Easy To Apply",
-                                "Lightweight",
-                                "Long-Lasting",
-                                "Silky Finish"
-                            ],
-                            "review_best_for": [
-                                "Normal Skin",
-                                "Oily Skin"
-                            ],
-                            "usr_routine_time": null,
-                            "usr_def_tag": [
-                                "Brand Buyer"
-                            ],
-                            "usr_age": null,
-                            "usr_skin_type": null
-                        },
-                        {
-                            "review_title": "My favorite loose powder",
-                            "review_rating": "5",
-                            "review_content": "The translucent shade is perfect, packaging is convenient and adequate, and the price is right.  Blends with any foundation I have used, in any season.  I am super happy that Paula approves, too!",
-                            "review_cons": [
-                                "Cakes Up",
-                                "Goes On Heavy",
-                                "Settles In Creases"
-                            ],
-                            "review_pros": [
-                                "Blends Well",
-                                "Controls Shine",
-                                "Doesn't Settle In Creases",
-                                "Easy To Apply",
-                                "Lightweight",
-                                "Long-Lasting",
-                                "Silky Finish"
-                            ],
-                            "review_best_for": [
-                                "Normal Skin",
-                                "Oily Skin"
-                            ],
-                            "usr_routine_time": null,
-                            "usr_def_tag": [
-                                "Brand Buyer"
-                            ],
-                            "usr_age": null,
-                            "usr_skin_type": null
-                        }
-                    ]
-                }
-            },
-            "buy_url": [],
-            "other_names": [
-                "Face Powder - Translucent",
-                "Face Powder"
-            ],
-            "brand_url": [],
-            "mua_rating": 4.5,
-            "mua_review_cnt": 78,
-            "repurchase_pct": 89.5,
-            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=89161/",
-            "age_counter": {
-                "30-35": 13,
-                "25-29": 9,
-                "19-24": 23,
-                "Under 18": 9,
-                "36-43": 3,
-                "44-55": 2
-            },
-            "skin_type_counter": {
-                "Combination": 29,
-                "Fair-Medium": 14,
-                "Normal": 1,
-                "Acne-prone": 12,
-                "Fair": 30,
-                "Neutral": 13,
-                "Oily": 4,
-                "Medium": 4,
-                "Dry": 6,
-                "Very Dry": 3,
-                "Very Oily": 2,
-                "Sensitive": -1
-            },
-            "skin_color_counter": {
-                "Tan": 3,
-                "Warm": 11,
-                "Dark": 3,
-                "Normal": 0,
-                "Olive": -1
-            },
-            "hair_style_counter": {
-                "Wavy": 13,
-                "Fine": 13,
-                "Straight": 11,
-                "Medium": 17,
-                "Kinky": 2,
-                "Curly": 4,
-                "Coarse": 4,
-                "Relaxed": 1
-            },
-            "hair_color_counter": {
-                "Black": 14,
-                "Brunette": 14,
-                "Brown": 16,
-                "Blond": 8,
-                "Red": 2
-            },
-            "eyes_counter": {
-                "Brown": 18,
-                "Green": 8,
-                "Other": 3,
-                "Black": 4,
-                "Blue": 12,
-                "Hazel": 13,
-                "Gray": 2
-            }
-        },
-        {
-            "product_links": "https://www.beautypedia.com/products/cellular-treatment-loose-powder/",
-            "product_names": "Cellular Treatment Loose Powder",
-            "category": "Face Makeup",
-            "sub_category": [
-                "Loose Powder",
                 "Face Powder",
                 "Pressed Powder"
             ],
-            "product_id": 2417,
-            "brand": "La Prairie",
+            "product_id": 2340,
+            "brand": "Shiseido",
             "ingredient": [],
             "size": "",
-            "price": "95.00",
+            "price": "21.00",
             "claims": null,
             "image_url": [
-                "https://www.beautypedia.com/wp-content/uploads/2012/03/86ED300A-B7F1-404C-8D0C-3C0003CF5597_11hWbuEbTXL.jpg?w=180",
-                null,
-                "https://img.makeupalley.com/0/0/0/1/3798418.jpeg"
+                "https://img.makeupalley.com/2/5/6/4/2519154.JPG",
+                "https://www.beautypedia.com/wp-content/uploads/2012/06/854643FB-2566-4AFC-92B5-5A20D7512CF9_41iIatyF0OL.jpg?w=400"
             ],
-            "expert_rating": "4",
+            "expert_rating": "5",
             "expert_reviews": [
-                "Cellular Treatment Loose Powder has an ultra-fine, talc-based texture and a sheer, minimalist finish that leaves skin looking polished and dusted with sparkles. If shiny, expensive powder is your thing, here\u2019s a good option, and both shades are translucent."
+                "Pureness Matifying Compact Oil-Free SPF 16 is a slam-dunk recommendation for those with oily to very oily skin looking for an absorbent, matte-finish pressed powder with sun protection. The actives are titanium dioxide and zinc oxide (which are quite absorbent on their own), and the talc-based formula applies well despite feeling too dry. All six shades are recommended. The compact for this product adds $8 to your purchase. Note: This foundation does contain a small amount of fragrance, though not in any amount that should be a concern except for those with sensitive skin."
             ],
             "expert_pros": null,
             "expert_cons": null,
             "jar_package": "No",
             "animal_test": "No",
-            "user_rating": 5.0,
+            "user_rating": 4.0,
             "user_reviews": {
                 "usr_review_summary": {
-                    "usr_review_count": 1,
+                    "usr_review_count": 7,
                     "usr_pros_summary": [
                         [
-                            "1",
+                            "2",
                             "Blends Well"
                         ],
                         [
-                            "1",
+                            "2",
                             "Controls Shine"
                         ],
                         [
@@ -318,190 +52,183 @@
                             "Easy To Apply"
                         ]
                     ],
-                    "usr_cons_summary": null
+                    "usr_cons_summary": [
+                        [
+                            "1",
+                            "Cakes Up"
+                        ],
+                        [
+                            "1",
+                            "Unnatural Color"
+                        ]
+                    ]
                 },
                 "usr_review_details": {
                     "positive_reviews": [
                         {
-                            "review_title": "Lasts forever ,,, and I love the travel size for my purse ..",
-                            "review_rating": "5",
-                            "review_content": "I use this daily ... Have had for over a year and still have half the container left ,,, u don't need much for a flawless finish ,,, well worth the investment !",
-                            "review_cons": null,
+                            "review_title": "Sadly this is discontinued..",
+                            "review_rating": "4",
+                            "review_content": "This was a great powder..and the price was  under $25 for the refills. I bought this powder for a good 7 years it was great for my oily skin worked well to keep it matte for a good 6 hours and had great coverage. Now I will have to find something else! Nooo!\ud83d\ude2d",
+                            "review_cons": [
+                                "Unnatural Color"
+                            ],
                             "review_pros": [
                                 "Blends Well",
                                 "Controls Shine",
                                 "Covers Well",
                                 "Doesn't Settle In Creases",
                                 "Easy To Apply",
-                                "Lightweight",
                                 "Long-Lasting",
                                 "Silky Finish"
                             ],
                             "review_best_for": [
-                                "All Skin Types"
+                                "Oily Skin"
                             ],
                             "usr_routine_time": null,
                             "usr_def_tag": [
-                                "Brand Buyer"
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "No longer containing zinc.  Contains octinixate instead",
+                            "review_rating": "3",
+                            "review_content": "Surprised to see the ingredients had changed and went to  2  salespeople they didn't know either",
+                            "review_cons": [
+                                "Cakes Up"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Controls Shine",
+                                "Lightweight"
+                            ],
+                            "review_best_for": [
+                                "Acne Prone Skin",
+                                "Oily Skin"
+                            ],
+                            "usr_routine_time": null,
+                            "usr_def_tag": [
+                                "Budget Shopper"
                             ],
                             "usr_age": null,
                             "usr_skin_type": null
                         }
                     ],
                     "negative_reviews": null,
-                    "reviews": null
-                }
-            },
-            "buy_url": [],
-            "other_names": [
-                "Cellular Treatment Pressed Powder",
-                "Treatment Loose Powder"
-            ],
-            "brand_url": [],
-            "mua_rating": 4.7,
-            "mua_review_cnt": 48,
-            "repurchase_pct": 77.5,
-            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=10289/",
-            "age_counter": {
-                "19-24": 9,
-                "30-35": 10,
-                "44-55": 4,
-                "Under 18": 1,
-                "25-29": 8,
-                "36-43": 5
-            },
-            "skin_type_counter": {
-                "Normal": 9,
-                "Acne-prone": 8,
-                "Combination": 16,
-                "Fair": 11,
-                "Neutral": 8,
-                "Medium": 1,
-                "Fair-Medium": 15,
-                "Very Oily": 0,
-                "Dry": 0,
-                "Oily": 2,
-                "Sensitive": 2,
-                "Very Dry": 1
-            },
-            "skin_color_counter": {
-                "Warm": 3,
-                "Olive": 3,
-                "Normal": 0
-            },
-            "hair_style_counter": {
-                "Wavy": 10,
-                "Medium": 10,
-                "Straight": 5,
-                "Fine": 5,
-                "Curly": 0,
-                "Kinky": 1,
-                "Coarse": 2
-            },
-            "hair_color_counter": {
-                "Brunette": 10,
-                "Brown": 10,
-                "Black": 9,
-                "Blond": 7
-            },
-            "eyes_counter": {
-                "Brown": 25,
-                "Black": 2,
-                "Hazel": 5,
-                "Green": 4,
-                "Other": 3,
-                "Gray": 1
-            }
-        },
-        {
-            "product_links": "https://www.beautypedia.com/products/ideal-flawless-pressed-powder/",
-            "product_names": "Ideal Flawless Pressed Powder",
-            "category": "Face Makeup",
-            "sub_category": [
-                "Loose Powder",
-                "Face Powder",
-                "Pressed Powder"
-            ],
-            "product_id": 2315,
-            "brand": "Avon",
-            "ingredient": [
-                "ETHYLPARABEN",
-                "SQUALANE",
-                "Ethylhexyl Methoxycinnamate",
-                "LAUROYL LYSINE",
-                "TALC",
-                "TRIMETHYLSILOXYSILICATE",
-                "TITANIUM DIOXIDE",
-                "Cetyl PEG",
-                "ZINC STEARATE",
-                "CALCIUM SILICATE",
-                "Iron Oxides",
-                "POLYETHYLENE",
-                "METHYLPARABEN",
-                "ALUMINA",
-                "METHICONE",
-                "BORON NITRIDE",
-                "DIMETHICONE",
-                "ACRYLATES COPOLYMER",
-                "SILICATE",
-                "BISMUTH OXYCHLORIDE",
-                "CAPRYLYL METHICONE",
-                "CALCIUM SODIUM BOROSILICATE",
-                "TRIETHOXYCAPRYLYLSILANE",
-                "PEG",
-                "HYDROXYAPATITE",
-                "KAOLIN",
-                "HYDRATED SILICA",
-                "ZINC OXIDE",
-                "CETEARYL METHICONE"
-            ],
-            "size": "",
-            "price": "10.00",
-            "claims": null,
-            "image_url": [
-                "https://img.makeupalley.com/1/1/2/5/1640666.GIF",
-                "https://www.beautypedia.com/wp-content/uploads/2012/09/25C454E1-D95B-4A09-AB07-76218FD87FB2_51Sw5jdaicL.jpg?w=365",
-                null,
-                "https://img.makeupalley.com/3/0/2/7/1568256.JPG"
-            ],
-            "expert_rating": "4",
-            "expert_reviews": [
-                "Ideal Flawless Pressed Powder won't provide ideal or flawless coverage, but it is a good, though standard issue, pressed-powder option for a decent price. It blends easily and gives skin a healthy, soft-focus look. However, its ultra-sheer coverage isn't for anyone with a complexion problem to hide.",
-                "The silky, lightweight texture will appeal to those with combination or oily skin. As many powders can, Ideal Flawless Pressed Powder will combat excess oil without creating a cakey appearance.",
-                "This comes in a wide variety of shades that are workable for light to dark skin tones, plus a translucent option that provides the same benefits as the other shades without adding any color (though it may appear ashy on dark skin tones).",
-                ""
-            ],
-            "expert_pros": [
-                "Absorbs excess oil without creating a cakey appearance.",
-                "Good lightweight pressed-powder option for normal to oily skin.",
-                "Fragrance-free."
-            ],
-            "expert_cons": [
-                "The translucent shade may appear ashy on dark skin tones.",
-                "Doesn't provide much coverage."
-            ],
-            "jar_package": "No",
-            "animal_test": "No",
-            "user_rating": 1.0,
-            "user_reviews": {
-                "usr_review_summary": {
-                    "usr_review_count": 1,
-                    "usr_pros_summary": null,
-                    "usr_cons_summary": null
-                },
-                "usr_review_details": {
-                    "positive_reviews": null,
-                    "negative_reviews": null,
                     "reviews": [
                         {
-                            "review_title": "don't discontinue ideal loose powder",
+                            "review_title": "What decade is this???",
                             "review_rating": "1",
-                            "review_content": "I like the ideal flawless loose powder. I am very upset that avon has discontinued it. Please bring it back. I do not like the mineral powder. The ideal loose powder looks more natural on me than the mineral powder.",
-                            "review_cons": null,
-                            "review_pros": null,
-                            "review_best_for": null,
+                            "review_content": "Expensive, chalky, ORANGE! That's lightest shade!",
+                            "review_cons": [
+                                "Cakes Up"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Controls Shine",
+                                "Lightweight"
+                            ],
+                            "review_best_for": [
+                                "Acne Prone Skin",
+                                "Oily Skin"
+                            ],
                             "usr_routine_time": null,
-                            "usr_def_tag": null,
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Where can you buy this?",
+                            "review_rating": "5",
+                            "review_content": "Hi :-)  I'm sure that I've bought this in the past, but now I cannot find it anywhere :-(  It's not even listed on shiseido's website, as far as I can tell :-(  Where did you find it to test? (Ditto re people who have recently reviewed; where did you buy it?) Thank you :-)",
+                            "review_cons": [
+                                "Cakes Up"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Controls Shine",
+                                "Lightweight"
+                            ],
+                            "review_best_for": [
+                                "Acne Prone Skin",
+                                "Oily Skin"
+                            ],
+                            "usr_routine_time": null,
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Fragrance",
+                            "review_rating": "5",
+                            "review_content": "Just wanted to add that this contains fragrance (5th ingredient from bottom).   This isn't noted in review nor is the ingredient list.   Would this still be rated BEST.  I am curious because the spf 36 compact has an average rating with fragrance listed as a concern.",
+                            "review_cons": [
+                                "Cakes Up"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Controls Shine",
+                                "Lightweight"
+                            ],
+                            "review_best_for": [
+                                "Acne Prone Skin",
+                                "Oily Skin"
+                            ],
+                            "usr_routine_time": null,
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Holy Grail",
+                            "review_rating": "5",
+                            "review_content": "It is a very fine milled and translucent pressed powder with spf. Very happy that I follow PC's recommendation which is in most cases blunt, objective and right. And only con is the shade limitation. The lightest shade SP10 (light ivory) is quite dark for pale/fair/fair-to-light skin. My shade in Shiseido is fair ochre so light ivory is too dark. Since it is very translucent, I still count on it for touch up. Great buy.",
+                            "review_cons": [
+                                "Cakes Up"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Controls Shine",
+                                "Lightweight"
+                            ],
+                            "review_best_for": [
+                                "Acne Prone Skin",
+                                "Oily Skin"
+                            ],
+                            "usr_routine_time": null,
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "amazing",
+                            "review_rating": "5",
+                            "review_content": "It's really amazing, it has a subtle very fine texture and it almost blends with the skin.",
+                            "review_cons": [
+                                "Cakes Up"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Controls Shine",
+                                "Lightweight"
+                            ],
+                            "review_best_for": [
+                                "Acne Prone Skin",
+                                "Oily Skin"
+                            ],
+                            "usr_routine_time": null,
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
                             "usr_age": null,
                             "usr_skin_type": null
                         }
@@ -510,129 +237,112 @@
             },
             "buy_url": [],
             "other_names": [
-                "Ideal Shade Pressed Powder",
-                "Incredible Finish Pressed Powder",
-                "Ideal Shade Loose Powder",
-                "Age Transforming Pressed Powder SPF 15"
+                "Pureness Mattifying Compact oilfree spf 16"
             ],
             "brand_url": [],
             "mua_rating": 4.0,
-            "mua_review_cnt": 47,
-            "repurchase_pct": 81.25,
-            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=122966/",
+            "mua_review_cnt": 35,
+            "repurchase_pct": 71.0,
+            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=29420/",
             "age_counter": {
-                "19-24": 7,
-                "30-35": 9,
+                "25-29": 2,
+                "19-24": 11,
+                "Under 18": 0,
+                "30-35": 3,
                 "44-55": -1,
-                "25-29": 7,
-                "Under 18": 1,
-                "36-43": 4,
-                "56 & Over": 1
+                "36-43": 2
             },
             "skin_type_counter": {
-                "Sensitive": 3,
-                "Combination": 16,
-                "Fair-Medium": 9,
-                "Neutral": 4,
+                "Combination": 6,
+                "Fair-Medium": 7,
+                "Oily": 1,
                 "Acne-prone": 8,
                 "Fair": 3,
-                "Very Dry": 2,
                 "Very Oily": 1,
-                "Dry": 1,
-                "Medium": 6,
-                "Oily": -2,
-                "Normal": -1
+                "Sensitive": 1,
+                "Dry": -1,
+                "Medium": 0,
+                "Normal": 1
             },
             "skin_color_counter": {
-                "Tan": 4,
-                "Warm": 12,
-                "Olive": 4,
-                "Normal": 0,
-                "Dark": 1
+                "Warm": 2,
+                "Tan": 3,
+                "Olive": 1
             },
             "hair_style_counter": {
-                "Curly": 5,
-                "Coarse": 7,
-                "Straight": 14,
-                "Fine": 10,
-                "Medium": 4,
-                "Wavy": 2,
-                "Kinky": -1,
-                "Relaxed": 1
+                "Wavy": 0,
+                "Medium": 2,
+                "Straight": 2,
+                "Fine": 0
             },
             "hair_color_counter": {
-                "Brown": 5,
-                "Black": 8,
-                "Brunette": 12,
-                "Blond": 4,
-                "Red": 0
+                "Brunette": 0,
+                "Blond": 1,
+                "Black": 7,
+                "Brown": 7,
+                "Red": 1
             },
             "eyes_counter": {
+                "Hazel": 1,
+                "Blue": 1,
                 "Brown": 11,
-                "Blue": 3,
-                "Hazel": 3,
-                "Green": 5,
-                "Other": 2,
-                "Black": 5
+                "Black": 2,
+                "Green": 1,
+                "Other": 1
             }
-        }
-    ],
-    "Last": [
+        },
         {
-            "product_links": "https://www.beautypedia.com/products/photoready-translucent-finisher/",
-            "product_names": "PhotoReady Translucent Finisher",
+            "product_links": "https://www.beautypedia.com/products/the-makeup-powdery-foundation-spf-14-17/",
+            "product_names": "The Makeup Powdery Foundation SPF 14-17",
             "category": "Face Makeup",
             "sub_category": [
-                "Face Powder",
-                "Pressed Powder",
-                "Facial Powder"
+                "Powder Foundation",
+                "Foundation With Sunscreen",
+                "Liquid Foundation",
+                "Cream Foundation"
             ],
-            "product_id": 2385,
-            "brand": "Revlon",
+            "product_id": 2819,
+            "brand": "Shiseido",
             "ingredient": [
-                "CALCIUM ALUMINUM BOROSILICATE",
-                "LAUROYL LYSINE",
-                "ZINC",
-                "TRIMETHYLSILOXYSILICATE",
-                "LECITHIN",
-                "TITANIUM DIOXIDE",
-                "Copper",
-                "SORBIC ACID",
-                "Iron",
-                "ZINC STEARATE",
-                "POTASSIUM",
-                "Methoxypropyl Gluconamide",
-                "Iron Oxides",
-                "POLYETHYLENE",
-                "HYDROGENATED LECITHIN",
-                "METHYL METHACRYLATE CROSSPOLYMER",
-                "ALUMINA",
-                "PENTAERYTHRITYL TETRAETHYLHEXANOATE",
-                "PHENOXYETHANOL",
-                "CALCIUM",
-                "MAGNESIUM ASCORBYL PHOSPHATE",
-                "DIMETHICONOL",
-                "DIMETHICONE",
-                "CYCLOPENTASILOXANE",
-                "SILICATE",
+                "PHYTOSTERYL/ OCTYLDODECYL LAUROYL GLUTAMATE",
+                "ULTRAMARINES",
+                "TALC",
+                "TOCOPHEROL",
                 "TOCOPHERYL ACETATE",
-                "Octyldodecyl Glycol Grapeseedate",
-                "BISMUTH OXYCHLORIDE",
-                "TRIETHOXYCAPRYLYLSILANE",
-                "MAGNESIUM",
-                "NYLON-12",
-                "POLYMETHYL METHACRYLATE"
+                "POLYETHYLHEXYL ACRYLATE",
+                "TITANIUM DIOXIDE",
+                "SORBITAN SESQUIISOSTEARATE",
+                "ALUMINUM HYDROXIDE",
+                "MYRISTIC ACID",
+                "POLYMETHYL METHACRYLATE",
+                "DIISOSTEARYL MALATE",
+                "ZINC OXIDE",
+                "METHICONE",
+                "ISOSTEARIC ACID",
+                "DIMETHICONE",
+                "ALUMINUM DISTEARATE",
+                "Iron Oxides",
+                "OCTINOXATE",
+                "TRIOCTANION",
+                "ETHYLPARABEN",
+                "SILICATE",
+                "CALCIUM STEARATE",
+                "MAGNESIUM MYRISTATE"
             ],
             "size": "",
-            "price": "12.99",
+            "price": "37.50",
             "claims": null,
             "image_url": [
-                "https://img.makeupalley.com/9/6/5/6/2612162.JPG",
-                "https://www.beautypedia.com/wp-content/uploads/2012/05/EF050559-F357-49BD-B7E6-D749E483D965_317CNTyIMoL.jpg?w=400"
+                "https://img.makeupalley.com/8/3/7/3/868445.JPG",
+                null,
+                "https://www.beautypedia.com/wp-content/uploads/2012/05/93BE78C3-442A-4E19-B46B-03416AA3F193_ShiseidoTheMakeupPowderyFoundation.jpg?w=326",
+                "https://img.makeupalley.com/0/9/4/2/2316441.JPG"
             ],
-            "expert_rating": "2",
+            "expert_rating": "4",
             "expert_reviews": [
-                "This is a very dry pressed powder that has noticeable flecks of shine and far too much opacity to be labeled translucent. Not only is the finish dry, but the powder is also absorptive, which means more drying throughout the day and an exaggeration of any amount of dry skin. The lone shade can be best described as a luminous alabaster, and will work only on the very fairest skin tones. Like many dry-textured powders, this one crumbles off the brush, making it a mess to apply."
+                "Powdery Foundation features titanium dioxide as its main active ingredient, which means broad-spectrum protection is assured though for some reason the SPF varies by shade. This talc-based, pressed-powder foundation has a dry but silky texture that goes on soft and even, providing seamless light to medium coverage. It could function as your only sunscreen if you apply it liberally (meaning thick), but it works best when dusted over a regular sunscreen or foundation with sunscreen. The shade range is beautifully neutral, but lacks options for dark skin. The only color to avoid is the too-peach B60 Natural Deep Beige. ",
+                "Note: the price for this powder foundation with sunscreen includes the compact that Shiseido sells separately. You need to purchase the compact because the powder itself comes packaged in an unreliable plastic clamshell case. Refills may be purchased for $29.50",
+                ""
             ],
             "expert_pros": null,
             "expert_cons": null,
@@ -647,391 +357,150 @@
                     "reviews": null
                 }
             },
-            "buy_url": [
-                "https://www.google.com/search?q=Revlon%20PhotoReady%20Candid%20Anti%20Pollution%20Setting%20Powder,%20001%20Translucent"
-            ],
+            "buy_url": [],
             "other_names": [
-                "PhotoReady Translucent Finisher",
-                "PhotoReady Candid Anti Pollution Setting Powder"
+                "The Makeup Lifting Foundation SPF 16",
+                "The Makeup Cream Foundation",
+                "The Makeup Powdery Foundation SPF 15 "
             ],
-            "brand_url": [
-                "https://www.ewg.org/skindeep/browse/brands/1375-Revlon/"
-            ],
-            "colors": [
-                {
-                    "Color": "001 Translucent",
-                    "url": "https://www.ewg.org/skindeep/products/878790-Revlon_PhotoReady_Candid_Anti_Pollution_Setting_Powder_001_Translucent/"
-                }
-            ],
-            "overall_concerns": {
-                "Cancer": "HIGH",
-                "Developmental & reproductive toxicity": "LOW",
-                "Allergies & immunotoxicity": "MODERATE"
-            },
-            "other_concerns": {
-                "HIGH": [
-                    "Irritation (skin, eyes, or lungs)",
-                    "Occupational hazards",
-                    "Persistence and bioaccumulation",
-                    "Use restrictions"
-                ],
-                "MODERATE": [
-                    "Contamination concerns",
-                    "Organ system toxicity (non-reproductive)"
-                ],
-                "LOW": [
-                    "Enhanced skin absorption",
-                    "Ecotoxicology"
-                ]
-            },
-            "ewg_ingredient": {
-                "TALC": {
-                    "Score": 8,
-                    "Data Availability": "Good"
-                },
-                "PHENOXYETHANOL": {
-                    "Score": 4,
-                    "Data Availability": "Limited"
-                },
-                "DIMETHICONE": {
-                    "Score": 3,
-                    "Data Availability": "Limited"
-                },
-                "TOCOPHERYL ACETATE": {
-                    "Score": 3,
-                    "Data Availability": "Fair"
-                },
-                "SILICA, AMORPHOUS": {
-                    "Score": 2,
-                    "Data Availability": "Good"
-                },
-                "MICA": {
-                    "Score": 2,
-                    "Data Availability": "Fair"
-                },
-                "CI 77499": {
-                    "Score": 2,
-                    "Data Availability": "Fair"
-                },
-                "ZEA MAYS (CORN) STARCH": {
-                    "Score": 1,
-                    "Data Availability": "Fair"
-                },
-                "CI 75470": {
-                    "Score": 1,
-                    "Data Availability": "Fair"
-                }
-            },
-            "mua_rating": 2.7,
-            "mua_review_cnt": 131,
-            "repurchase_pct": 35.0,
-            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=127190/",
+            "brand_url": [],
+            "mua_rating": 4.0,
+            "mua_review_cnt": 357,
+            "repurchase_pct": 68.66666666666667,
+            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=6911/",
             "age_counter": {
-                "25-29": -8,
-                "19-24": -14,
-                "30-35": -4,
-                "36-43": -6,
-                "56 & Over": 3,
-                "44-55": -7,
-                "Under 18": -11
+                "36-43": 19,
+                "30-35": 17,
+                "25-29": 47,
+                "19-24": 51,
+                "44-55": 9,
+                "Under 18": 8,
+                "56 & Over": 4
             },
             "skin_type_counter": {
-                "Sensitive": -5,
-                "Fair": -24,
-                "Combination": -20,
-                "Dry": -9,
-                "Very Oily": -2,
-                "Oily": 0,
-                "Fair-Medium": -12,
-                "Normal": -5,
-                "Neutral": -5,
-                "Acne-prone": -3,
-                "Medium": -1,
-                "Very Dry": 0
+                "Combination": 75,
+                "Medium": 18,
+                "Fair": 27,
+                "Normal": 22,
+                "Dry": 15,
+                "Acne-prone": 17,
+                "Fair-Medium": 31,
+                "Neutral": 18,
+                "Very Dry": 5,
+                "Oily": 13,
+                "Sensitive": 6,
+                "Very Oily": -1
             },
             "skin_color_counter": {
-                "Warm": -11,
-                "Olive": -2,
-                "Tan": -3,
+                "Warm": 23,
                 "Normal": 0,
-                "Medium Brown": -1,
-                "Dark": -1
+                "Olive": 3,
+                "Tan": 6
             },
             "hair_style_counter": {
-                "Wavy": -11,
-                "Medium": -11,
-                "Straight": -13,
-                "Fine": -15,
-                "Coarse": -3,
-                "Kinky": -1,
-                "Curly": -2,
+                "Straight": 12,
+                "Medium": 29,
+                "Fine": 10,
+                "Coarse": 3,
+                "Wavy": 28,
+                "Curly": 4,
                 "Relaxed": 1
             },
             "hair_color_counter": {
-                "Brunette": -17,
-                "Black": -8,
-                "Brown": -6,
-                "Blond": -7,
-                "Red": -9,
-                "Silver": 2,
-                "Grey": 1
+                "Brunette": 26,
+                "Red": 10,
+                "Brown": 45,
+                "Blond": 8,
+                "Black": 61,
+                "Silver": 2
             },
             "eyes_counter": {
-                "Green": -17,
-                "Brown": -9,
-                "Black": -4,
-                "Gray": 0,
-                "Blue": -6,
-                "Hazel": -10,
-                "Other": -1
+                "Brown": 90,
+                "Blue": 9,
+                "Hazel": 15,
+                "Black": 15,
+                "Green": 20,
+                "Other": 10
             }
         },
         {
-            "product_links": "https://www.beautypedia.com/products/loose-face-powder/",
-            "product_names": "Loose Face Powder",
-            "category": "Face Makeup",
-            "sub_category": [
-                "Loose Powder",
-                "Face Powder",
-                "Pressed Powder"
-            ],
-            "product_id": 2384,
-            "brand": "The Body Shop",
-            "ingredient": [
-                "PTFE",
-                "TALC",
-                "Iron Oxides",
-                "POLYETHYLENE",
-                "TETRASODIUM EDTA",
-                "METHYLPARABEN",
-                "NYLON-12",
-                "SILICATE",
-                "TOCOPHERYL ACETATE",
-                "PHENOXYETHANOL",
-                "BORON NITRIDE"
-            ],
-            "size": "0.49 fl. oz.",
-            "price": "16.50",
-            "claims": null,
-            "image_url": [
-                null,
-                "https://img.makeupalley.com/0/2/6/3/1868848.JPG",
-                "https://img.makeupalley.com/4/6/9/5/2020950.JPG",
-                "https://www.beautypedia.com/wp-content/uploads/2012/05/A9CB3D54-5A30-4B3C-A7FE-6C0085543F00_TheBodyShopLooseFacePowder.jpg?w=450"
-            ],
-            "expert_rating": "3",
-            "expert_reviews": [
-                "Loose Face Powder has a silky, airy, talc-based texture and a drier-than-usual finish that is ideal for normal to very oily skin. Shades 01, 02, and 03 are neutral tones perfect for fair to medium skin, while shade 05 is a sheer bronze color with gold shimmer, which tends to flake. Apparently The Body Shop hasn\u2019t had a loose powder for years, and customer demand made them reconsider\u2014and what they produced is well worth an audition!"
-            ],
-            "expert_pros": null,
-            "expert_cons": null,
-            "jar_package": "No",
-            "animal_test": "No",
-            "user_rating": 5.0,
-            "user_reviews": {
-                "usr_review_summary": {
-                    "usr_review_count": 1,
-                    "usr_pros_summary": [
-                        [
-                            "1",
-                            "Blends Well"
-                        ],
-                        [
-                            "1",
-                            "Controls Shine"
-                        ],
-                        [
-                            "1",
-                            "Covers Well"
-                        ],
-                        [
-                            "1",
-                            "Doesn't Settle In Creases"
-                        ],
-                        [
-                            "1",
-                            "Easy To Apply"
-                        ]
-                    ],
-                    "usr_cons_summary": null
-                },
-                "usr_review_details": {
-                    "positive_reviews": [
-                        {
-                            "review_title": "Best Powder ever, so naturally they must discontinue it.",
-                            "review_rating": "5",
-                            "review_content": "I don't buy based on Brand, but when I find a product that I like I buy it. Price is a secondary consideration.",
-                            "review_cons": null,
-                            "review_pros": [
-                                "Blends Well",
-                                "Controls Shine",
-                                "Covers Well",
-                                "Doesn't Settle In Creases",
-                                "Easy To Apply",
-                                "Lightweight",
-                                "Long-Lasting",
-                                "Silky Finish"
-                            ],
-                            "review_best_for": [
-                                "All Skin Types"
-                            ],
-                            "usr_routine_time": null,
-                            "usr_def_tag": [
-                                "Budget Shopper"
-                            ],
-                            "usr_age": null,
-                            "usr_skin_type": null
-                        }
-                    ],
-                    "negative_reviews": null,
-                    "reviews": null
-                }
-            },
-            "buy_url": [],
-            "other_names": [
-                "Loose face powder no. 02",
-                "loose powder no.03",
-                "Pressed Face Powder"
-            ],
-            "brand_url": [],
-            "mua_rating": 3.0,
-            "mua_review_cnt": 55,
-            "repurchase_pct": 43.666666666666664,
-            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=20394/",
-            "age_counter": {
-                "Under 18": -7,
-                "44-55": 1,
-                "36-43": -3,
-                "25-29": -4,
-                "19-24": -3,
-                "30-35": -4,
-                "56 & Over": -1
-            },
-            "skin_type_counter": {
-                "Combination": -9,
-                "Fair": -4,
-                "Oily": -1,
-                "Dry": -2,
-                "Neutral": -3,
-                "Normal": -6,
-                "Medium": -2,
-                "Sensitive": 0,
-                "Fair-Medium": -7,
-                "Acne-prone": -1
-            },
-            "skin_color_counter": {
-                "Normal": 0,
-                "Warm": 0,
-                "Olive": 0,
-                "Tan": 1
-            },
-            "hair_style_counter": {
-                "Wavy": -1,
-                "Medium": -1,
-                "Straight": -1,
-                "Fine": -5,
-                "Coarse": 1,
-                "Curly": -1
-            },
-            "hair_color_counter": {
-                "Brunette": -11,
-                "Red": -1,
-                "Black": -3,
-                "Brown": -2,
-                "Blond": -2
-            },
-            "eyes_counter": {
-                "Brown": -9,
-                "Blue": -3,
-                "Green": -4,
-                "Black": -1,
-                "Other": -1,
-                "Hazel": -1,
-                "Gray": -1,
-                "Violet": -1
-            }
-        },
-        {
-            "product_links": "https://www.beautypedia.com/products/photoready-airbrush-mousse-makeup/",
-            "product_names": "PhotoReady Airbrush Mousse Makeup",
+            "product_links": "https://www.beautypedia.com/products/lift-lumiere-firming-and-smoothing-fluid-makeup-spf-15/",
+            "product_names": "Lift Lumiere Firming and Smoothing Fluid Makeup SPF 15",
             "category": "Face Makeup",
             "sub_category": [
                 "Powder Foundation",
-                "Cream Foundation",
-                "Foundation",
-                "Foundation Without Sunscreen",
+                "Foundation With Sunscreen",
                 "Liquid Foundation"
             ],
-            "product_id": 3089,
-            "brand": "Revlon",
+            "product_id": 2895,
+            "brand": "Chanel",
             "ingredient": [
-                "CALCIUM ALUMINUM BOROSILICATE",
-                "BUTYLENE GLYCOL",
-                "ISOBUTANE",
-                "SORBITAN LAURATE",
-                "PROPYLENE GLYCOL STEARATE",
-                "PROLINE",
-                "LECITHIN",
-                "PENTAERYTHRITYL TETRAISOSTEARATE",
-                "CAPRYLYL GLYCOL",
+                "Alcohol",
+                "PEG-10 DIMETHICONE",
+                "ULTRAMARINES",
+                "TALC",
+                "PHENYL TRIMETHICONE",
+                "POLYGLYCERYL 3 ESTERS",
+                "TOCOPHEROL",
+                "DENATONIUM BENZOATE",
+                "TOCOPHERYL ACETATE",
+                "POLYMETHYLSILSESQUIOXANE",
                 "TITANIUM DIOXIDE",
-                "NEOPENTYL GLYCOL DIHEPTANOATE",
-                "POLYSORBATE-20",
-                "ISOSTEARIC ACID",
-                "STEARIC ACID",
-                "TROMETHAMINE",
-                "POLYSORBATE-60",
-                "Acrylates",
-                "STEARETH-21",
-                "SORBITAN STEARATE",
-                "Iron Oxides",
-                "LAURETH-7",
-                "METHYL METHACRYLATE CROSSPOLYMER",
-                "SODIUM TRIDECETH SULFATE",
-                "PROPYLENE GLYCOL LAURATE",
-                "PHENOXYETHANOL",
+                "ALUMINA",
+                "BHT",
+                "C30-45 ALKYL DIMETHICONE",
+                "SODIUM CITRATE",
+                "DIMETHICONE SILYLATE",
+                "ALUMINUM HYDROXIDE",
                 "BORON NITRIDE",
-                "STEARETH-2",
+                "STEARIC ACID",
+                "PHENOXYETHANOL",
+                "CHLORPHENESIN",
+                "METHYLPARABEN",
+                "CYCLOPENTASILOXANE",
+                "PROPYLENE GLYCOL",
+                "Pea",
+                "SODIUM CHLORIDE",
+                "DIMETHICONE",
+                "PROPYLPARABEN",
+                "SODIUM HYALURONATE",
+                "BUTYLENE GLYCOL",
+                "Polycarbamyl",
+                "BUTYLPARABEN",
+                "Iron Oxides",
+                "DISTEARDIMONIUM HECTORITE",
+                "OCTINOXATE",
+                "POTASSIUM SORBATE",
+                "ETHYLPARABEN",
+                "DISODIUM STEAROYL GLUTAMATE",
                 "SILICATE",
-                "COCAMIDE MEA",
-                "PHOSPHOLIPIDS",
-                "DISODIUM LAUROAMPHODIACETATE",
-                "ISOSTEARYL BEHENATE",
-                "GLYCERYL DISTEARATE",
-                "1,2-HEXANEDIOL",
-                "TRIETHOXYCAPRYLYLSILANE",
-                "POLYACRYLAMIDE",
-                "POLY C10-30 ALKYL ACRYLATE",
-                "ISOTRIDECYL ISONONANOATE",
-                "NYLON-12",
-                "HEXYLENE GLYCOL",
-                "ISOPROPYL ALCOHOL",
-                "C13-14 ISOPARAFFIN"
+                "ISOBUTYLPARABEN"
             ],
             "size": "",
-            "price": "13.99",
+            "price": "65.00",
             "claims": null,
             "image_url": [
-                "https://img.makeupalley.com/4/0/2/3/1932853.JPG",
-                "https://img.makeupalley.com/0/0/4/7/2140884.JPG",
-                null,
-                "https://www.beautypedia.com/wp-content/uploads/2012/05/1D1721B1-BC67-46A1-B95F-1815A42301D7_Revlon_PhotoreadyAirbrushMousse.jpg?w=197"
+                "https://img.makeupalley.com/1/7/0/9/923062.JPG",
+                "https://img.makeupalley.com/6/8/0/5/851955.JPG",
+                "https://www.beautypedia.com/wp-content/uploads/2012/01/02AB433D-84D4-45D5-A7DD-3D37F20ED992_ChanelLiftLumiereFirmingSmoothingFluidMakeupSPF15.jpg?w=350"
             ],
-            "expert_rating": "1",
+            "expert_rating": "4",
             "expert_reviews": [
-                "The big deal with this foundation is its aerated texture, which Revlon calls \u201cairbrush,\u201d but it\u2019s much more like that of a hair mousse than anything resembling airbrushed makeup. When dispensed (even when you\u2019re being careful), it shoots out in a bubbly mound, which quickly begins to dissolve into a puddle of creamy liquid foundation that feels wet and runny as you apply.",
-                "As you might imagine, it\u2019s difficult to get even application with a foundation whose consistency is bubbly, and indeed the biggest problem with this foundation is its tendency to streak and apply unevenly. It does provide light to medium coverage, but its gimmicky delivery system, difficult-to-use texture, and unnaturally shiny finish are major, and ridiculous,drawbacks.",
-                "If the texture and application aren\u2019t enough to dissuade you, this foundation is also loaded with flecks of shimmer that tend to sink into lines and exaggerate wrinkles. All told, this foundation has no redeeming qualities. Check out our Best Foundations list for far superior options!",
+                "Described as being more than a foundation, Chanel wants you to know they have created \u201cthe consummate skin-caring makeup.\u201d That sounds great, but the ingredient list doesn\u2019t support the boast. In terms of texture, this has a beautifully silky feel and includes a broad-spectrum sunscreen with an in-part titanium dioxide base, but that\u2019s only a start when it comes to ultimate skin-caring makeup. Where are the antioxidants and cell-communicating ingredients? How about some anti-irritants or skin-identical ingredients like ceramides or hyaluronic acid? They\u2019re not here, save for a teeny, tiny amount of plant oil and plant extracts with antioxidant ability. That doesn\u2019t add up to being worth $65. ",
+                "Even though this is a long way off from being skin-caring makeup, you can count on reliable sun protection, supremely smooth application, and an attractive satin matte finish suitable for normal to slightly dry or slightly oily skin. Coverage begins at medium and can be built to nearly full camouflage, although doing so produces a heavier look that is not easily softened. ",
+                "The majority of shades are neutral and ideal for fair to medium skin tones. Avoid the following shades because they are too pink, orange, or rose to look convincing: Natural Beige, Naturel, and Tawny.",
+                "One more point: It goes without saying that this foundation won\u2019t firm skin in any noticeable way, though it definitely creates the illusion of smooth, even-toned skin.",
+                "Note: This foundation\u2019s rating is due to its overall performance rather than its SPF rating. Due to concerns about people not applying sunscreen liberally enough to get the amount of SPF protection stated on the label, it is often recommended to look for SPFs with ratings higher than 15. If you plan to use foundation as your sole source of facial sun protection, consider using one rated SPF 20 or greater. If the foundation with sunscreen you choose is rated less than an SPF 20, we strongly advise applying it over a daytime moisturizer rated SPF 15 or greater and following it with a pressed powder rated SPF 15 or greater. That way, you\u2019re ensuring sufficient broad-spectrum protection which is essential for having and maintaining healthy, younger-looking skin at any age.",
                 ""
             ],
             "expert_pros": null,
             "expert_cons": null,
             "jar_package": "No",
             "animal_test": "No",
-            "user_rating": 1.0,
+            "user_rating": 3.5,
             "user_reviews": {
                 "usr_review_summary": {
-                    "usr_review_count": 1,
+                    "usr_review_count": 2,
                     "usr_pros_summary": null,
                     "usr_cons_summary": null
                 },
@@ -1040,9 +509,21 @@
                     "negative_reviews": null,
                     "reviews": [
                         {
-                            "review_title": "Review is spot-on",
-                            "review_rating": "1",
-                            "review_content": "This foundation is exactly as the review describes. An additional complaint I have about it is that is smelled unpleasant. It was a waste of money.",
+                            "review_title": "luv this on certain flaky skin days",
+                            "review_rating": "5",
+                            "review_content": "I splurged on this when i went to the Chanel counter to browse& i am so glad i did..i have E.L double wear&i really like that on certain days since it won't budge&covers my redness but it makes my dry spots worse looking no matter how much moisturizer i use..especially my flaky nose corners I've been battling..when that flares up this is what i reach for when i have to wear makeup.it feels moisturizing for some reason but it doesn't make my nose look cakey.it lasts all day.",
+                            "review_cons": null,
+                            "review_pros": null,
+                            "review_best_for": null,
+                            "usr_routine_time": null,
+                            "usr_def_tag": null,
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Dissappointed !",
+                            "review_rating": "2",
+                            "review_content": "I went ahead and splurged on this Chanel foundation- years ago my favorite was Chanel's Teint Natural in soft beige. It gave me a wonderful glow and matched my fair skin tone perfectly. It has been discontinued  for quite awhile .  Read the reviews of this foundation  and ordered the same shade in hopes of finding a good substitute. The color was about the same shade as my old favorite, but I cannot understand how people rave about the finish. I found it  to give my face a dull finish-no glow!",
                             "review_cons": null,
                             "review_pros": null,
                             "review_best_for": null,
@@ -1054,259 +535,1683 @@
                     ]
                 }
             },
-            "buy_url": [
-                "https://www.google.com/search?q=Revlon%20Photoready%20Airbrush%20Effect%20Makeup,%20SPF%2020,%20001%20Ivory"
-            ],
+            "buy_url": [],
             "other_names": [
-                "PhotoReady Airbrush Mousse Makeup - Natural Beige",
-                "PhotoReady Powder - Light/Medium",
-                "photoready airbrush mousse makeup in golden beige",
-                "PhotoReady Airbrush Mousse Makeup",
-                "PhotoReady Powder - Medium/Deep",
-                "Photoready Airbrush Mousse Makeup-Nude",
-                "Photoready Airbrush Effect Makeup",
-                "Photoready Airbrush Mousse Makeup - Medium Beige"
+                "Mat Lumiere Long Lasting Luminous Matte Fluid Makeup SPF 15  [DISCONTINUED]",
+                "Mat Lumiere Luminous Matte Powder Makeup SPF 10 [DISCONTINUED]"
             ],
-            "brand_url": [
-                "https://www.ewg.org/skindeep/browse/brands/1375-Revlon/"
-            ],
-            "colors": [
-                {
-                    "Color": "SPF 20",
-                    "url": "https://www.ewg.org/skindeep/products/870634-Revlon_Photoready_Airbrush_Effect_Makeup_SPF_20_001_Ivory/"
-                }
-            ],
-            "overall_concerns": {
-                "Cancer": "LOW",
-                "Developmental & reproductive toxicity": "LOW",
-                "Allergies & immunotoxicity": "MODERATE"
-            },
-            "other_concerns": {
-                "HIGH": [
-                    "Endocrine disruption",
-                    "Contamination concerns",
-                    "Irritation (skin, eyes, or lungs)",
-                    "Occupational hazards",
-                    "Persistence and bioaccumulation",
-                    "Use restrictions"
-                ],
-                "MODERATE": [
-                    "Organ system toxicity (non-reproductive)"
-                ],
-                "LOW": [
-                    "Enhanced skin absorption",
-                    "Ecotoxicology",
-                    "Neurotoxicity"
-                ]
-            },
-            "ewg_ingredient": {
-                "OCTINOXATE": {
-                    "Score": 5,
-                    "Data Availability": "Fair"
-                },
-                "PHENOXYETHANOL": {
-                    "Score": 4,
-                    "Data Availability": "Limited"
-                },
-                "CYCLOPENTASILOXANE": {
-                    "Score": 3,
-                    "Data Availability": "Fair"
-                },
-                "DIMETHICONE": {
-                    "Score": 3,
-                    "Data Availability": "Limited"
-                },
-                "CETYL PEG/ PPG-10/ 1 DIMETHICONE": {
-                    "Score": 3,
-                    "Data Availability": "Fair"
-                },
-                "TOCOPHERYL ACETATE": {
-                    "Score": 3,
-                    "Data Availability": "Fair"
-                },
-                "ZINC OXIDE (SUNSCREEN GRADE &GT; 100NM)": {
-                    "Score": 2,
-                    "Data Availability": "Good"
-                },
-                "PROPANEDIOL": {
-                    "Score": 2,
-                    "Data Availability": "Fair"
-                },
-                "GLYCERIN": {
-                    "Score": 2,
-                    "Data Availability": "Good"
-                },
-                "MICA": {
-                    "Score": 2,
-                    "Data Availability": "Fair"
-                },
-                "CI 77499": {
-                    "Score": 2,
-                    "Data Availability": "Fair"
-                },
-                "WATER": {
-                    "Score": 1,
-                    "Data Availability": "Robust"
-                },
-                "ISODODECANE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "OCTYLDODECYL STEAROYL STEARATE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "QUATERNIUM-90 BENTONITE": {
-                    "Score": 1,
-                    "Data Availability": "None"
-                },
-                "PHENYL TRIMETHICONE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "TRIMETHYLSILOXYSILICATE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "POLYGLYCERYL-3 DIISOSTEARATE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "METHYL METHACRYLATE CROSSPOLYMER": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "VP/ HEXADECENE COPOLYMER": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "BIS- HEXAMETHYLENEDIUREA (C12-14 ALKYL PPG-2)": {
-                    "Score": 1,
-                    "Data Availability": "None"
-                },
-                "SODIUM CHLORIDE": {
-                    "Score": 1,
-                    "Data Availability": "Robust"
-                },
-                "PROPYLENE CARBONATE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "SILICA SILYLATE": {
-                    "Score": 1,
-                    "Data Availability": "None"
-                },
-                "DIMETHICONE/ VINYL DIMETHICONE CROSSPOLYMER": {
-                    "Score": 1,
-                    "Data Availability": "None"
-                },
-                "POLYSILICONE-11": {
-                    "Score": 1,
-                    "Data Availability": "None"
-                },
-                "BISMUTH OXYCHLORIDE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "TRIETHOXYCAPRYLYLSILANE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "POLYMETHYLSILSESQUIOXANE": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "POLYGLYCERYL-6 POLYRICINOLEATE": {
-                    "Score": 1,
-                    "Data Availability": "None"
-                },
-                "XANTHAN GUM": {
-                    "Score": 1,
-                    "Data Availability": "Fair"
-                },
-                "HDI/ TRIMETHYLOL HEXYLLACTONE CROSSPOLYMER": {
-                    "Score": 1,
-                    "Data Availability": "None"
-                },
-                "TRISODIUM EDTA": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "CAPRYLYL GLYCOL": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "1,2-HEXANEDIOL": {
-                    "Score": 1,
-                    "Data Availability": "Limited"
-                },
-                "TITANIUM DIOXIDE": {
-                    "Score": 1,
-                    "Data Availability": "Good"
-                }
-            },
-            "mua_rating": 3.2,
-            "mua_review_cnt": 331,
-            "repurchase_pct": 57.0,
-            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=149124/",
+            "brand_url": [],
+            "mua_rating": 4.0,
+            "mua_review_cnt": 534,
+            "repurchase_pct": 66.0,
+            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=99205/",
             "age_counter": {
-                "36-43": -3,
-                "Under 18": -23,
-                "25-29": -19,
-                "44-55": 3,
-                "30-35": -14,
-                "19-24": -61,
+                "25-29": 39,
+                "19-24": 66,
+                "30-35": 19,
+                "Under 18": 16,
+                "36-43": 4,
+                "44-55": 6,
+                "56 & Over": 0
+            },
+            "skin_type_counter": {
+                "Combination": 94,
+                "Normal": 9,
+                "Medium": 35,
+                "Neutral": 14,
+                "Very Oily": 8,
+                "Fair": 36,
+                "Oily": 3,
+                "Fair-Medium": 52,
+                "Acne-prone": 24,
+                "Sensitive": 0,
+                "Dry": 7,
+                "Very Dry": -1
+            },
+            "skin_color_counter": {
+                "Tan": 6,
+                "Warm": 25,
+                "Normal": 0,
+                "Olive": 10,
+                "Dark": 1,
+                "Medium Brown": 1
+            },
+            "hair_style_counter": {
+                "Curly": 3,
+                "Coarse": 9,
+                "Straight": 16,
+                "Fine": 23,
+                "Wavy": 20,
+                "Medium": 15,
+                "Relaxed": 5,
+                "Kinky": 3
+            },
+            "hair_color_counter": {
+                "Brown": 20,
+                "Brunette": 48,
+                "Blond": 38,
+                "Black": 41,
+                "Red": 3,
+                "Grey": 0,
+                "Silver": 1
+            },
+            "eyes_counter": {
+                "Brown": 86,
+                "Hazel": 0,
+                "Blue": 31,
+                "Black": 3,
+                "Green": 23,
+                "Other": 9,
+                "Gray": 1,
+                "Violet": 1
+            }
+        }
+    ],
+    "Last": [
+        {
+            "product_links": "https://www.beautypedia.com/products/oil-free-neutralizer/",
+            "product_names": "Oil-Free Neutralizer",
+            "category": "Face Makeup",
+            "sub_category": [
+                "Powder Foundation",
+                "Foundation Without Sunscreen",
+                "Liquid Foundation"
+            ],
+            "product_id": 3157,
+            "brand": "Lorac",
+            "ingredient": [
+                "ULTRAMARINES",
+                "SODIUM MAGNESIUM SILICATE",
+                "DIMETHICONE COPOLYMER",
+                "TITANIUM DIOXIDE",
+                "STEARETH-21",
+                "PVM/ MA COPOLYMER",
+                "STEARIC ACID",
+                "PHENOXYETHANOL",
+                "METHYLPARABEN",
+                "CYCLOPENTASILOXANE",
+                "DIMETHICONE",
+                "STEARYL ALCOHOL",
+                "TETRASODIUM EDTA",
+                "PROPYLPARABEN",
+                "TRIETHANOLAMINE",
+                "BUTYLENE GLYCOL",
+                "BUTYLPARABEN",
+                "SODIUM POLYACRYLATE",
+                "STEAROXYTRIMETHYLSILANE",
+                "Iron Oxides",
+                "STEARETH-2",
+                "ETHYLPARABEN"
+            ],
+            "size": "0.90 fl. oz.",
+            "price": "30.00",
+            "claims": "Neutralizer is a specially tinted, oil-free makeup that's infused with soothing botanicals. It corrects and conceals underlying red tones to create a naturally flawless finish - ideal for sensitive skin.",
+            "image_url": [
+                "https://img.makeupalley.com/4/1/6/5/1248893.JPG",
+                "https://img.makeupalley.com/2/5/0/0/1198784.JPG",
+                "https://www.beautypedia.com/wp-content/uploads/2018/07/1B16F62B-2048-46B3-8A2D-993E48D154F1_lorac.jpg?w=241"
+            ],
+            "expert_rating": "2",
+            "expert_reviews": [
+                "Oil-Free Neutralizer is supposed to even out any blue or red discolorations. It works to some extent because of its semi-opaque coverage and whitening effect (the green tinge has been minimized), but the same results can be achieved with a single foundation\u2014though not with Lorac\u2019s liquid foundations, which are too sheer to conceal bothersome redness."
+            ],
+            "expert_pros": null,
+            "expert_cons": null,
+            "jar_package": "No",
+            "animal_test": "No",
+            "user_rating": null,
+            "user_reviews": {
+                "usr_review_summary": null,
+                "usr_review_details": {
+                    "positive_reviews": null,
+                    "negative_reviews": null,
+                    "reviews": null
+                }
+            },
+            "buy_url": [],
+            "other_names": [
+                "Oil-Free Wet/Dry Makeup",
+                "Oil-free foundation"
+            ],
+            "brand_url": [],
+            "mua_rating": 3.0,
+            "mua_review_cnt": 182,
+            "repurchase_pct": 47.5,
+            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=2069/",
+            "age_counter": {
+                "19-24": -14,
+                "25-29": -5,
+                "30-35": 5,
+                "Under 18": -4,
+                "44-55": -2,
+                "36-43": 0
+            },
+            "skin_type_counter": {
+                "Acne-prone": -13,
+                "Medium": 0,
+                "Combination": -3,
+                "Fair": -17,
+                "Sensitive": -3,
+                "Oily": 5,
+                "Fair-Medium": -9,
+                "Very Oily": -2,
+                "Dry": 0,
+                "Normal": -6,
+                "Neutral": -4,
+                "Very Dry": -2
+            },
+            "skin_color_counter": {
+                "Warm": -5,
+                "Dark": 2,
+                "Normal": 0,
+                "Olive": -1,
+                "Tan": 1
+            },
+            "hair_style_counter": {
+                "Medium": -4,
+                "Wavy": -6,
+                "Fine": -9,
+                "Straight": -11,
+                "Coarse": -2,
+                "Curly": 0,
+                "Kinky": 1,
+                "Relaxed": -1
+            },
+            "hair_color_counter": {
+                "Black": -7,
+                "Blond": -10,
+                "Brunette": -2,
+                "Red": 1,
+                "Brown": 2,
+                "Silver": -1,
+                "Grey": -1
+            },
+            "eyes_counter": {
+                "Brown": 1,
+                "Blue": -11,
+                "Green": 1,
+                "Hazel": -9,
+                "Other": -1,
+                "Black": 0,
+                "Gray": -1
+            }
+        },
+        {
+            "product_links": "https://www.beautypedia.com/products/fit-me-dewy-smooth-foundation-spf-18/",
+            "product_names": "Fit Me! Dewy & Smooth Foundation SPF 18",
+            "category": "Face Makeup",
+            "sub_category": [
+                "Powder Foundation",
+                "Foundation With Sunscreen",
+                "Liquid Foundation"
+            ],
+            "product_id": 2847,
+            "brand": "Maybelline New York",
+            "ingredient": [
+                "DIPROPYLENE GLYCOL",
+                "PEG-10 DIMETHICONE",
+                "POLYGLYCERIN-3",
+                "PEG-9 POLYDIMETHYLSILOXYETHYL DIMETHICONE",
+                "PEG-9",
+                "TOCOPHEROL",
+                "SODIUM",
+                "TITANIUM DIOXIDE",
+                "ALUMINUM HYDROXIDE",
+                "PHENOXYETHANOL",
+                "CHLORPHENESIN",
+                "METHYLPARABEN",
+                "CYCLOPENTASILOXANE",
+                "ALPHA-ISOMETHYL IONONE",
+                "ACRYLATES COPOLYMER",
+                "SODIUM CHLORIDE",
+                "DIMETHICONE",
+                "ISOTRIDECYL ISONONANOATE",
+                "PROPYLPARABEN",
+                "ISOPROPYL PALMITATE",
+                "BUTYLPARABEN",
+                "Iron Oxides",
+                "DISTEARDIMONIUM HECTORITE",
+                "EDTA",
+                "OCTINOXATE",
+                "ETHYLPARABEN",
+                "DISODIUM STEAROYL GLUTAMATE",
+                "ISOBUTYLPARABEN"
+            ],
+            "size": "",
+            "price": "7.99",
+            "claims": null,
+            "image_url": [
+                "https://img.makeupalley.com/0/0/0/1/3678966.jpeg",
+                "https://www.beautypedia.com/wp-content/uploads/2018/07/6A01F8BC-911E-485B-8C57-27E555D0FA92_maybelline.jpg?w=196",
+                "https://img.makeupalley.com/0/0/0/1/3678962.jpeg"
+            ],
+            "expert_rating": "2",
+            "expert_reviews": [
+                "This foundation has many good qualities, but the sunscreen doesn\u2019t include adequate UVA protection, which means it does not contain one of the following active ingredients: titanium dioxide, zinc oxide, avobenzone, Mexoryl SX (ecamsule), or Tinosorb.",
+                "For a sheer foundation it performs very well, with plenty of slip to make blending easy, but although it provides very natural-looking coverage, it will cover only minor skin imperfections. Once this foundation sets, the finish is best described as matte with only a slight sheen, but no shimmer.",
+                "Choosing the right shade is made easier because in many stores the displays have testers. The shades are divided into colors for Light, Medium, and Deep skin tones, with corresponding numbers for Maybelline\u2019s Fit Me! Pressed Powder shades, along with skin-tone matches for Maybelline\u2019s Fit Me! concealer, blush, and bronzers.",
+                "One warning: Fit Me! Foundation tends to change color a bit once it\u2019s on your skin for a few minutes, so you want to spend plenty of time with the testers before you decide on a shade. Many Light shades veer toward orange and peach tones after setting, while Medium shades look quite yellow. There isn\u2019t any single shade to definitely avoid, but picking the best one is more of a gamble than usual. There are some very good (new) dark shades in the Women of Color collection.",
+                "Note: Shades 330, 340, and 360 do NOT have sunscreen."
+            ],
+            "expert_pros": null,
+            "expert_cons": null,
+            "jar_package": "No",
+            "animal_test": "No",
+            "user_rating": 4.7,
+            "user_reviews": {
+                "usr_review_summary": {
+                    "usr_review_count": 7,
+                    "usr_pros_summary": [
+                        [
+                            "4",
+                            "Lightweight"
+                        ],
+                        [
+                            "4",
+                            "Blends Well"
+                        ],
+                        [
+                            "4",
+                            "Easy To Apply"
+                        ],
+                        [
+                            "4",
+                            "Goes On Smoothly"
+                        ],
+                        [
+                            "2",
+                            "Good Pigmentation"
+                        ]
+                    ],
+                    "usr_cons_summary": null
+                },
+                "usr_review_details": {
+                    "positive_reviews": [
+                        {
+                            "review_title": "It the same as L'oreal Tru Match Lumi!",
+                            "review_rating": "3",
+                            "review_content": "I use this on a daily basis and it's looks good for my dry skin.  Coverage is light/medium and the shade range is great. This negative is that it can fade at about the five hour mark on me.   If you look at the ingredients they are almost the same as L'oreal Lumi for half the price.",
+                            "review_cons": null,
+                            "review_pros": [
+                                "Easy To Use",
+                                "Good Value",
+                                "Lightweight"
+                            ],
+                            "review_best_for": [
+                                "Daily Use"
+                            ],
+                            "usr_routine_time": null,
+                            "usr_def_tag": null,
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Incredibly beautiful foundation with excellent shade choice",
+                            "review_rating": "5",
+                            "review_content": "This product is what I have wanted forever from a \"drugstore\" brand of foundation.  I have been using inexpensive foundations for years and did well with Revlon until they discontinued my product.  This is a beautiful replacement.  It slips on even mature skin, adds just the right amount of color and corrects for pores and small discolorations.  It has that hard-to-define quality of making you quietly glow, which is what we'd all like from our foundation, I suspect.  At the price it's impossible to lose with this one.",
+                            "review_cons": null,
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Lightweight",
+                                "Noncomodegenic",
+                                "creates fine pored appearance"
+                            ],
+                            "review_best_for": [
+                                "Dry Skin",
+                                "Light To Medium Coverage",
+                                "Mature Skin",
+                                "Normal Skin"
+                            ],
+                            "usr_routine_time": null,
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "What a steal!",
+                            "review_rating": "5",
+                            "review_content": "I couldn't disagree with the PC review more.  I always check it to make sure there aren't terribly irritating ingredients in the formula I should avoid, but makeup is definitely more of a personal preference.   I'm absolutely in love with this foundation and agree with the other Canadian reviewer.   I live in very harsh winter conditions and have dry dehydrated skin at the best of times.  I'm 35 years old and a bit of a foundation junkie.  I cannot get over that in my entire collection my $6 (bought on sale) Maybeline Fit me foundation out performs just about every other foundation I have!  It is my #1 or #2 foundation! (Might be a close second to my Dr. Jart Premium BB Cream).  This foundation is so smoothing and doesn't highlight any dry patches or fine lines.  It's not overly dewy but it is radiant enough that my skin looks fresh and healthy.  I think the coverage is plenty for the average consumer but I definitely prefer lighter foundations with concealer where I need it.  It's a match made in heaven for me!  I also use shade 110 (and 15 fair in the concealer) with no noticeable change in colour.  I've also recently tried the Loreal Lumi foundation which is quite similar but I think I prefer the Fit Me foundation.  I did wish there was no sunscreen in this foundation as I prefer to wear my own PC mineral sunscreen underneath my foundations due to rosacea.  In any case, I haven't noticed any sensitivity with this formula.",
+                            "review_cons": null,
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly"
+                            ],
+                            "review_best_for": [
+                                "Dry Skin",
+                                "Light To Medium Coverage",
+                                "Mature Skin",
+                                "Normal Skin"
+                            ],
+                            "usr_routine_time": null,
+                            "usr_def_tag": [
+                                "Brand Buyer"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Best Buy",
+                            "review_rating": "5",
+                            "review_content": "I am 64 with normal to dry mature skin.  A loyal Lanc\u00f4me Absolue buyer, I only tried this because  friend reccomended it and I am trying to budget.  Wow!!!  I still can't believe how well it worked for my skin.  Every bit as well if not better than the foundation I had been using at 10X the cost. I also switched to the Fit Me Concealer but still use Lanc\u00f4me Dual Finish Powder..",
+                            "review_cons": null,
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Lightweight",
+                                "Long-Lasting"
+                            ],
+                            "review_best_for": [
+                                "Dry Skin",
+                                "Light To Medium Coverage",
+                                "Mature Skin",
+                                "Normal Skin"
+                            ],
+                            "usr_routine_time": null,
+                            "usr_def_tag": [
+                                "Brand Buyer"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "I love this stuff",
+                            "review_rating": "5",
+                            "review_content": "I've been on a bit of a foundation binge lately. I had my eye on Chanel's Vitalumiere but after getting a sample of it from my local department store, decided I hated it. I have dry, dehydrated skin and winter is particularly harsh in my corner of Canada so I'm not in the market for a matte product. On a whim I bought this last week and hoped for the best with the colour match (I got the lightest shade 110). I applied it several times over the weekend and honestly couldn't believe this was from the drugstore. It softened the appearance of my 40something skin. I couldn't stop looking in the mirror. Plus the colour match is spot on. It's neither particularly hydrating nor drying. And I ALWAYS wear a standalone SPF so that wasn't a factor for me. I highly recommend this foundation. It's like my skin but better.",
+                            "review_cons": null,
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Lightweight"
+                            ],
+                            "review_best_for": [
+                                "Dry Skin",
+                                "Light To Medium Coverage",
+                                "Mature Skin",
+                                "Normal Skin"
+                            ],
+                            "usr_routine_time": null,
+                            "usr_def_tag": [
+                                "Brand Buyer"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        }
+                    ],
+                    "negative_reviews": null,
+                    "reviews": [
+                        {
+                            "review_title": "Fabulous foundation!!",
+                            "review_rating": "5",
+                            "review_content": "I agree with the last review plus with all SPF make-up, Paula always says you would have to glob it on for it to be effective no matter what sunscreen is used.  And no one is going to do that.  This is a fabulous foundation--goes on easily, has decent coverage and the lightest shade is great for my pale skin (no color change at all).  The finished look is matte with my large pores greatly reduced in appearance.  I have normal to dry, mature skin and this is the best I've found yet and cheap!",
+                            "review_cons": null,
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Lightweight"
+                            ],
+                            "review_best_for": [
+                                "Dry Skin",
+                                "Light To Medium Coverage",
+                                "Mature Skin",
+                                "Normal Skin"
+                            ],
+                            "usr_routine_time": null,
+                            "usr_def_tag": [
+                                "Brand Buyer"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Confusing",
+                            "review_rating": "5",
+                            "review_content": "This review confused me. On other foundations with reliable SPF, she writes \"This foundation's rating is due to its overall performance rather than its SPF rating.\" BUT on foundations with bad SPF rating, she doesn't write that and gives the foundation a bad rating. Most people wear moisturizer with SPF underneath anyway, so why should the SPF rating determine the overall foundation rating on BP?",
+                            "review_cons": null,
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Lightweight"
+                            ],
+                            "review_best_for": [
+                                "Dry Skin",
+                                "Light To Medium Coverage",
+                                "Mature Skin",
+                                "Normal Skin"
+                            ],
+                            "usr_routine_time": null,
+                            "usr_def_tag": [
+                                "Brand Buyer"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        }
+                    ]
+                }
+            },
+            "buy_url": [],
+            "other_names": [
+                "FIT ME DEWY + SMOOTH FOUNDATION",
+                "FIT ME SET + SMOOTH POWDER"
+            ],
+            "brand_url": [],
+            "mua_rating": 3.5,
+            "mua_review_cnt": 2005,
+            "repurchase_pct": 64.5,
+            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=138672/",
+            "age_counter": {
+                "Under 18": -73,
+                "44-55": 22,
+                "19-24": -150,
+                "25-29": -40,
+                "36-43": 4,
+                "30-35": -18,
                 "56 & Over": -2
             },
             "skin_type_counter": {
-                "Combination": -57,
-                "Medium": -7,
-                "Fair": -45,
-                "Neutral": -13,
-                "Fair-Medium": -42,
-                "Sensitive": -5,
-                "Normal": -8,
-                "Very Oily": -5,
-                "Acne-prone": -17,
-                "Dry": -15,
-                "Oily": -13,
-                "Very Dry": 1
+                "Combination": -130,
+                "Fair": -116,
+                "Dry": 26,
+                "Normal": 28,
+                "Fair-Medium": -120,
+                "Oily": -60,
+                "Sensitive": -29,
+                "Neutral": -57,
+                "Acne-prone": -82,
+                "Medium": -13,
+                "Very Oily": -21,
+                "Very Dry": 2
             },
             "skin_color_counter": {
-                "Warm": -40,
                 "Olive": -5,
-                "Tan": -10,
-                "Normal": 0,
-                "Medium Brown": -10,
-                "Dark": 1
+                "Warm": -12,
+                "Tan": -4,
+                "Dark": -12,
+                "Medium Brown": -8,
+                "Normal": 0
             },
             "hair_style_counter": {
-                "Wavy": -32,
-                "Medium": -37,
-                "Straight": -17,
-                "Fine": -14,
-                "Curly": -16,
-                "Coarse": -19,
-                "Kinky": -1,
-                "Relaxed": 1
+                "Curly": -10,
+                "Medium": -62,
+                "Wavy": -44,
+                "Fine": -43,
+                "Straight": -67,
+                "Coarse": -41,
+                "Kinky": -13,
+                "Relaxed": -13
             },
             "hair_color_counter": {
-                "Blond": -16,
-                "Black": -40,
-                "Brunette": -44,
-                "Brown": -22,
-                "Grey": 1,
-                "Red": -3,
+                "Blond": -80,
+                "Brown": -42,
+                "Brunette": -105,
+                "Red": 2,
+                "Black": -36,
+                "Silver": 0,
+                "Grey": -1
+            },
+            "eyes_counter": {
+                "Blue": -69,
+                "Hazel": -47,
+                "Brown": -116,
+                "Green": -22,
+                "Black": -7,
+                "Gray": 4,
+                "Other": -7,
+                "Violet": -1
+            }
+        },
+        {
+            "product_links": "https://www.beautypedia.com/products/stay-matte-liquid-mousse-foundation/",
+            "product_names": "Stay Matte Liquid Mousse Foundation",
+            "category": "Face Makeup",
+            "sub_category": [
+                "Powder Foundation",
+                "Foundation Without Sunscreen",
+                "Liquid Foundation",
+                "Cream Foundation"
+            ],
+            "product_id": 3002,
+            "brand": "Rimmel",
+            "ingredient": [
+                "PEG-10 DIMETHICONE",
+                "POLYGLYCERIN-3",
+                "TALC",
+                "POLYPROPYLENE",
+                "TOCOPHEROL",
+                "TITANIUM DIOXIDE",
+                "CAPRYLYL GLYCOL",
+                "DIMETHICONOL",
+                "BHT",
+                "LAURETH-4",
+                "PROPYLENE CARBONATE",
+                "SORBITAN SESQUIOLEATE",
+                "BEESWAX",
+                "SILICA DIMETHYL SILYLATE",
+                "PHENOXYETHANOL",
+                "METHYL METHACRYLATE CROSSPOLYMER",
+                "CYCLOPENTASILOXANE",
+                "Ethylhexyl Methoxycinnamate",
+                "ISODODECANE",
+                "ALUMINUM STARCH OCTENYLSUCCINATE",
+                "SODIUM CHLORIDE",
+                "DIMETHICONE",
+                "TRIHYDROXYSTEARIN",
+                "TRIMETHYLSILOXYSILICATE",
+                "DICAPRYLYL ETHER",
+                "TRIBEHENIN",
+                "Iron Oxides",
+                "DISTEARDIMONIUM HECTORITE",
+                "CI 77499",
+                "KAOLIN",
+                "PHENYL DIMETHICONE"
+            ],
+            "size": "",
+            "price": "5.49",
+            "claims": "A feather light, oil free formula with an airy mousse texture that wont feel heavy or greasy. Delivers all day shine control and blends flawlessly for a natural looking matte finish. Minimizes the appearance of pores. The weight is over  finally, shine has met its matte. 8 available shades",
+            "image_url": [
+                "https://img.makeupalley.com/7/4/1/7/2679511.JPG",
+                "https://img.makeupalley.com/7/7/5/6/1249977.JPG",
+                "https://img.makeupalley.com/3/9/9/7/1208495.JPG",
+                "https://img.makeupalley.com/0/0/0/1/3697953.png",
+                "https://www.beautypedia.com/wp-content/uploads/2014/09/519B2DBC-E1BB-4F75-8D0A-825E5CD66334_rimmel_stay_matte_liquid_mousse_foundation.jpg?w=1000"
+            ],
+            "expert_rating": "5",
+            "expert_reviews": [
+                "When shopping for a truly matte-finish foundation, you may have noticed that the options are slim to none at the drugstore. Imagine our surprise with Rimmel's Stay Matte Liquid Mousse Foundation: This is an excellent fragrance-free addition from the drugstore lineup. For most, the name is to be taken seriously, as this can absolutely \"stay\" matte for most of the workday.",
+                "Packaged in a tube, this formula is best for oily to combination skin (even acne-prone skin) and provides medium to full coverage. Among the eight shades, there are options for very fair to medium skin tones\u2014those with deeper or very tan complexions won't find an option here. All eight shades are neutral, with nary a peach, yellow, or overly pink-toned option among them.",
+                "While the finish is natural looking, it's mousse-like texture builds coverage rapidly\u2014a little of this formula goes a long way. In fact, because of its somewhat unique texture and coverage, we recommend experimenting by buffing it on with a foundation brush or sponge, because your fingers can easily deposit more product than you need.",
+                "Given its matte finish, the Stay Matte Liquid Mousse Foundation dries quickly, so it may take an application or two before you get the hang of it\u2014all qualities that you'll find consistent with very matte formulas like this.",
+                ""
+            ],
+            "expert_pros": [
+                "Available in eight neutral shades (with options for very fair to medium skin tones).",
+                "Truly matte finish that is ideal for oily to combination skin types.",
+                "Medium to full coverage that holds up over the course of the day.",
+                "Fragrance free."
+            ],
+            "expert_cons": [
+                "None."
+            ],
+            "jar_package": "No",
+            "animal_test": "No",
+            "user_rating": 3.9,
+            "user_reviews": {
+                "usr_review_summary": {
+                    "usr_review_count": 39,
+                    "usr_pros_summary": [
+                        [
+                            "14",
+                            "Matte Finish"
+                        ],
+                        [
+                            "11",
+                            "Good Pigmentation"
+                        ],
+                        [
+                            "11",
+                            "Long-Lasting"
+                        ],
+                        [
+                            "8",
+                            "Lightweight"
+                        ],
+                        [
+                            "8",
+                            "Blends Well"
+                        ]
+                    ],
+                    "usr_cons_summary": [
+                        [
+                            "2",
+                            "Difficult To Apply"
+                        ],
+                        [
+                            "2",
+                            "Heavy"
+                        ],
+                        [
+                            "1",
+                            "Not Effective"
+                        ],
+                        [
+                            "1",
+                            "Causes Breakouts"
+                        ],
+                        [
+                            "1",
+                            "Poor Coverage"
+                        ]
+                    ]
+                },
+                "usr_review_details": {
+                    "positive_reviews": [
+                        {
+                            "review_title": "Great coverage that lasts",
+                            "review_rating": "5",
+                            "review_content": "I have a drawer full of different foundations and struggle with getting the right level of coverage for my pigmentation damage and a small patch of rosacea, especially when having a busy day in a hot humid Queensland. I keep trying to find the perfect product and have preference for a cream to powder type compact for convenience. Tried this one after doing a Beautipedia research read and then a trip to Priceline. And yes, it's great, goes on quite mouse like, spreads easily and sets matte, and it lasts through the day. My colour is 200 Soft Beige and I've almost finished this tube. The package is opaque so you can't tell how much is left but that's no issue versus the 6 other products sitting in my drawer unused due to bad colour matching. My bad. Try this one if you need a bit more coverage, it's a keeper",
+                            "review_cons": [
+                                "Not Effective"
+                            ],
+                            "review_pros": [
+                                "Easy To Use",
+                                "Effective",
+                                "Good Value",
+                                "Good coverage and matte finish"
+                            ],
+                            "review_best_for": [
+                                "Daily Use"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Excellent coverage",
+                            "review_rating": "5",
+                            "review_content": "You need smooth hydrated skin and then apply this foundation with your fingers. A little goes a long way and the coverage is medium to full. I sometimes apply a powder to make it set but it is not necessary and is more my personal preference to finish my foundation with a light dusting of powder.\n\nRemember a little goes a long way. I receive compliments when I use this foundation and one person said my skin looks flawless.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Long-Lasting"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Truly Matte",
+                            "review_rating": "5",
+                            "review_content": "Found out the semi formal event I would be attending in April would be outdoor. It was steaming hot, humid and I have oily skin so  I needed a matte foundation that could withstand the weather and all the picture taking (nothing worse than a shiny face in a shiny dress). Purchased this last minute cheap foundation after reading the reviews on Beautipedia and it worked like a charm. Tried other drugstore foundations as well the days leading to the event but this one won by far.  I couldn't believe that something so cheap could work so well.  Only issue was that the event was outdoor so some sunscreen would have been great.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Goes On Smoothly",
+                                "Lightweight",
+                                "Long-Lasting",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Better than most!",
+                            "review_rating": "4",
+                            "review_content": "My biggest problem with foundation is poor coverage (acne and super fair yet blotchy skin), and makeup settling into creases. This does better than most foundations I've found in both respects - although it's not perfect. I would buy it again! It's super inexpensive for how well it works and the bottle is really nice and lightweight for travel!",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Lightweight",
+                                "Matte Finish",
+                                "Noncomodegenic"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Full Coverage",
+                                "Sensitive Skin"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Fantastic Foundation!",
+                            "review_rating": "5",
+                            "review_content": "This is a fantastic foundation and the price point cannot be beat.  I was amazed. The product has a wonderful matte, full coverage, finish.  You only need a pea sized amount to cover your face.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Lightweight",
+                                "Long-Lasting",
+                                "Matte Finish",
+                                "Noncomodegenic"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Brand Buyer"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Great coverage that lasts",
+                            "review_rating": "5",
+                            "review_content": "I have a drawer full of different foundations and struggle with getting the right level of coverage for my pigmentation damage and a small patch of rosacea, especially when having a busy day in a hot humid Queensland. I keep trying to find the perfect product and have preference for a cream to powder type compact for convenience. Tried this one after doing a Beautipedia research read and then a trip to Priceline. And yes, it's great, goes on quite mouse like, spreads easily and sets matte, and it lasts through the day. My colour is 200 Soft Beige and I've almost finished this tube. The package is opaque so you can't tell how much is left but that's no issue versus the 6 other products sitting in my drawer unused due to bad colour matching. My bad. Try this one if you need a bit more coverage, it's a keeper",
+                            "review_cons": [
+                                "Not Effective"
+                            ],
+                            "review_pros": [
+                                "Easy To Use",
+                                "Effective",
+                                "Good Value",
+                                "Good coverage and matte finish"
+                            ],
+                            "review_best_for": [
+                                "Daily Use"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Excellent coverage",
+                            "review_rating": "5",
+                            "review_content": "You need smooth hydrated skin and then apply this foundation with your fingers. A little goes a long way and the coverage is medium to full. I sometimes apply a powder to make it set but it is not necessary and is more my personal preference to finish my foundation with a light dusting of powder.\n\nRemember a little goes a long way. I receive compliments when I use this foundation and one person said my skin looks flawless.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Long-Lasting"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Truly Matte",
+                            "review_rating": "5",
+                            "review_content": "Found out the semi formal event I would be attending in April would be outdoor. It was steaming hot, humid and I have oily skin so  I needed a matte foundation that could withstand the weather and all the picture taking (nothing worse than a shiny face in a shiny dress). Purchased this last minute cheap foundation after reading the reviews on Beautipedia and it worked like a charm. Tried other drugstore foundations as well the days leading to the event but this one won by far.  I couldn't believe that something so cheap could work so well.  Only issue was that the event was outdoor so some sunscreen would have been great.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Goes On Smoothly",
+                                "Lightweight",
+                                "Long-Lasting",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Better than most!",
+                            "review_rating": "4",
+                            "review_content": "My biggest problem with foundation is poor coverage (acne and super fair yet blotchy skin), and makeup settling into creases. This does better than most foundations I've found in both respects - although it's not perfect. I would buy it again! It's super inexpensive for how well it works and the bottle is really nice and lightweight for travel!",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Lightweight",
+                                "Matte Finish",
+                                "Noncomodegenic"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Full Coverage",
+                                "Sensitive Skin"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Fantastic Foundation!",
+                            "review_rating": "5",
+                            "review_content": "This is a fantastic foundation and the price point cannot be beat.  I was amazed. The product has a wonderful matte, full coverage, finish.  You only need a pea sized amount to cover your face.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Lightweight",
+                                "Long-Lasting",
+                                "Matte Finish",
+                                "Noncomodegenic"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Brand Buyer"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Great coverage that lasts",
+                            "review_rating": "5",
+                            "review_content": "I have a drawer full of different foundations and struggle with getting the right level of coverage for my pigmentation damage and a small patch of rosacea, especially when having a busy day in a hot humid Queensland. I keep trying to find the perfect product and have preference for a cream to powder type compact for convenience. Tried this one after doing a Beautipedia research read and then a trip to Priceline. And yes, it's great, goes on quite mouse like, spreads easily and sets matte, and it lasts through the day. My colour is 200 Soft Beige and I've almost finished this tube. The package is opaque so you can't tell how much is left but that's no issue versus the 6 other products sitting in my drawer unused due to bad colour matching. My bad. Try this one if you need a bit more coverage, it's a keeper",
+                            "review_cons": [
+                                "Not Effective"
+                            ],
+                            "review_pros": [
+                                "Easy To Use",
+                                "Effective",
+                                "Good Value",
+                                "Good coverage and matte finish"
+                            ],
+                            "review_best_for": [
+                                "Daily Use"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Excellent coverage",
+                            "review_rating": "5",
+                            "review_content": "You need smooth hydrated skin and then apply this foundation with your fingers. A little goes a long way and the coverage is medium to full. I sometimes apply a powder to make it set but it is not necessary and is more my personal preference to finish my foundation with a light dusting of powder.\n\nRemember a little goes a long way. I receive compliments when I use this foundation and one person said my skin looks flawless.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Long-Lasting"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Truly Matte",
+                            "review_rating": "5",
+                            "review_content": "Found out the semi formal event I would be attending in April would be outdoor. It was steaming hot, humid and I have oily skin so  I needed a matte foundation that could withstand the weather and all the picture taking (nothing worse than a shiny face in a shiny dress). Purchased this last minute cheap foundation after reading the reviews on Beautipedia and it worked like a charm. Tried other drugstore foundations as well the days leading to the event but this one won by far.  I couldn't believe that something so cheap could work so well.  Only issue was that the event was outdoor so some sunscreen would have been great.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Goes On Smoothly",
+                                "Lightweight",
+                                "Long-Lasting",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Better than most!",
+                            "review_rating": "4",
+                            "review_content": "My biggest problem with foundation is poor coverage (acne and super fair yet blotchy skin), and makeup settling into creases. This does better than most foundations I've found in both respects - although it's not perfect. I would buy it again! It's super inexpensive for how well it works and the bottle is really nice and lightweight for travel!",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Lightweight",
+                                "Matte Finish",
+                                "Noncomodegenic"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Full Coverage",
+                                "Sensitive Skin"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Fantastic Foundation!",
+                            "review_rating": "5",
+                            "review_content": "This is a fantastic foundation and the price point cannot be beat.  I was amazed. The product has a wonderful matte, full coverage, finish.  You only need a pea sized amount to cover your face.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Lightweight",
+                                "Long-Lasting",
+                                "Matte Finish",
+                                "Noncomodegenic"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Brand Buyer"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Great coverage that lasts",
+                            "review_rating": "5",
+                            "review_content": "I have a drawer full of different foundations and struggle with getting the right level of coverage for my pigmentation damage and a small patch of rosacea, especially when having a busy day in a hot humid Queensland. I keep trying to find the perfect product and have preference for a cream to powder type compact for convenience. Tried this one after doing a Beautipedia research read and then a trip to Priceline. And yes, it's great, goes on quite mouse like, spreads easily and sets matte, and it lasts through the day. My colour is 200 Soft Beige and I've almost finished this tube. The package is opaque so you can't tell how much is left but that's no issue versus the 6 other products sitting in my drawer unused due to bad colour matching. My bad. Try this one if you need a bit more coverage, it's a keeper",
+                            "review_cons": [
+                                "Not Effective"
+                            ],
+                            "review_pros": [
+                                "Easy To Use",
+                                "Effective",
+                                "Good Value",
+                                "Good coverage and matte finish"
+                            ],
+                            "review_best_for": [
+                                "Daily Use"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Excellent coverage",
+                            "review_rating": "5",
+                            "review_content": "You need smooth hydrated skin and then apply this foundation with your fingers. A little goes a long way and the coverage is medium to full. I sometimes apply a powder to make it set but it is not necessary and is more my personal preference to finish my foundation with a light dusting of powder.\n\nRemember a little goes a long way. I receive compliments when I use this foundation and one person said my skin looks flawless.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Long-Lasting"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Truly Matte",
+                            "review_rating": "5",
+                            "review_content": "Found out the semi formal event I would be attending in April would be outdoor. It was steaming hot, humid and I have oily skin so  I needed a matte foundation that could withstand the weather and all the picture taking (nothing worse than a shiny face in a shiny dress). Purchased this last minute cheap foundation after reading the reviews on Beautipedia and it worked like a charm. Tried other drugstore foundations as well the days leading to the event but this one won by far.  I couldn't believe that something so cheap could work so well.  Only issue was that the event was outdoor so some sunscreen would have been great.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Goes On Smoothly",
+                                "Lightweight",
+                                "Long-Lasting",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Better than most!",
+                            "review_rating": "4",
+                            "review_content": "My biggest problem with foundation is poor coverage (acne and super fair yet blotchy skin), and makeup settling into creases. This does better than most foundations I've found in both respects - although it's not perfect. I would buy it again! It's super inexpensive for how well it works and the bottle is really nice and lightweight for travel!",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Lightweight",
+                                "Matte Finish",
+                                "Noncomodegenic"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Full Coverage",
+                                "Sensitive Skin"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Fantastic Foundation!",
+                            "review_rating": "5",
+                            "review_content": "This is a fantastic foundation and the price point cannot be beat.  I was amazed. The product has a wonderful matte, full coverage, finish.  You only need a pea sized amount to cover your face.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Lightweight",
+                                "Long-Lasting",
+                                "Matte Finish",
+                                "Noncomodegenic"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Brand Buyer"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        }
+                    ],
+                    "negative_reviews": [
+                        {
+                            "review_title": "Not for wrinkles!",
+                            "review_rating": "2",
+                            "review_content": "Was excited to try this product based on expert review   Sadly, this formula cakes in fine lines and wrinkles and I returned it for a full refund.   Ladies, don't throw away product that does not work - get a refund!",
+                            "review_cons": [
+                                "Not Effective"
+                            ],
+                            "review_pros": [
+                                "Good Value"
+                            ],
+                            "review_best_for": null,
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Didn't work for me",
+                            "review_rating": "3",
+                            "review_content": "I don't think this product is bad, it just didn't work for me. I have combination skin (oily T-zone/dry cheeks) and my skin is medium. I have used this product with moisturizer and both with and without foundation primer. I think I may have gotten a color slightly too light, because when I try to apply it, it doesn't cover very well and for some reason, it settles into each and every pore over my nose and cheeks and I am unable to blend it in. I am 47, so I am thinking it may work for a younger, smoother skinned woman.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Lightweight"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Light To Medium Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Not a good product",
+                            "review_rating": "2",
+                            "review_content": "I tried this foundation. The first thing I noticed is that it made my one wrinkle look extra wrinkly. It also settled into my fine lines. I used a primer and settling powder so it's probably the product that makes my skin look extra wrinkly. The second thing I noticed is that the color match is really poor even though I tried the shade that's closest to my skin. I have a warm skin tone and the product is generally too neutral.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Good Pigmentation",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Laureth-4",
+                            "review_rating": "3",
+                            "review_content": "I absolutely LOVED this foundation and thought I'd hit a goldmine... UNTIL... breakout of the century!!!  I couldn't figure out why, since all the reviews are saying it's great for acne prone skin.  I did my own research, and found that one of the ingredients is LAURETH-4, an ingredient which is known to be comodegenic.  This is a really big disappointment, since otherwise, this product is awesome!!",
+                            "review_cons": [
+                                "Causes Breakouts"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Lightweight",
+                                "Long-Lasting",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage",
+                                "Normal Skin"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Not for wrinkles!",
+                            "review_rating": "2",
+                            "review_content": "Was excited to try this product based on expert review   Sadly, this formula cakes in fine lines and wrinkles and I returned it for a full refund.   Ladies, don't throw away product that does not work - get a refund!",
+                            "review_cons": [
+                                "Not Effective"
+                            ],
+                            "review_pros": [
+                                "Good Value"
+                            ],
+                            "review_best_for": null,
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Didn't work for me",
+                            "review_rating": "3",
+                            "review_content": "I don't think this product is bad, it just didn't work for me. I have combination skin (oily T-zone/dry cheeks) and my skin is medium. I have used this product with moisturizer and both with and without foundation primer. I think I may have gotten a color slightly too light, because when I try to apply it, it doesn't cover very well and for some reason, it settles into each and every pore over my nose and cheeks and I am unable to blend it in. I am 47, so I am thinking it may work for a younger, smoother skinned woman.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Lightweight"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Light To Medium Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Not a good product",
+                            "review_rating": "2",
+                            "review_content": "I tried this foundation. The first thing I noticed is that it made my one wrinkle look extra wrinkly. It also settled into my fine lines. I used a primer and settling powder so it's probably the product that makes my skin look extra wrinkly. The second thing I noticed is that the color match is really poor even though I tried the shade that's closest to my skin. I have a warm skin tone and the product is generally too neutral.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Good Pigmentation",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Laureth-4",
+                            "review_rating": "3",
+                            "review_content": "I absolutely LOVED this foundation and thought I'd hit a goldmine... UNTIL... breakout of the century!!!  I couldn't figure out why, since all the reviews are saying it's great for acne prone skin.  I did my own research, and found that one of the ingredients is LAURETH-4, an ingredient which is known to be comodegenic.  This is a really big disappointment, since otherwise, this product is awesome!!",
+                            "review_cons": [
+                                "Causes Breakouts"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Lightweight",
+                                "Long-Lasting",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage",
+                                "Normal Skin"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Not for wrinkles!",
+                            "review_rating": "2",
+                            "review_content": "Was excited to try this product based on expert review   Sadly, this formula cakes in fine lines and wrinkles and I returned it for a full refund.   Ladies, don't throw away product that does not work - get a refund!",
+                            "review_cons": [
+                                "Not Effective"
+                            ],
+                            "review_pros": [
+                                "Good Value"
+                            ],
+                            "review_best_for": null,
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Didn't work for me",
+                            "review_rating": "3",
+                            "review_content": "I don't think this product is bad, it just didn't work for me. I have combination skin (oily T-zone/dry cheeks) and my skin is medium. I have used this product with moisturizer and both with and without foundation primer. I think I may have gotten a color slightly too light, because when I try to apply it, it doesn't cover very well and for some reason, it settles into each and every pore over my nose and cheeks and I am unable to blend it in. I am 47, so I am thinking it may work for a younger, smoother skinned woman.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Lightweight"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Light To Medium Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Not a good product",
+                            "review_rating": "2",
+                            "review_content": "I tried this foundation. The first thing I noticed is that it made my one wrinkle look extra wrinkly. It also settled into my fine lines. I used a primer and settling powder so it's probably the product that makes my skin look extra wrinkly. The second thing I noticed is that the color match is really poor even though I tried the shade that's closest to my skin. I have a warm skin tone and the product is generally too neutral.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Good Pigmentation",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Laureth-4",
+                            "review_rating": "3",
+                            "review_content": "I absolutely LOVED this foundation and thought I'd hit a goldmine... UNTIL... breakout of the century!!!  I couldn't figure out why, since all the reviews are saying it's great for acne prone skin.  I did my own research, and found that one of the ingredients is LAURETH-4, an ingredient which is known to be comodegenic.  This is a really big disappointment, since otherwise, this product is awesome!!",
+                            "review_cons": [
+                                "Causes Breakouts"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Lightweight",
+                                "Long-Lasting",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage",
+                                "Normal Skin"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Not for wrinkles!",
+                            "review_rating": "2",
+                            "review_content": "Was excited to try this product based on expert review   Sadly, this formula cakes in fine lines and wrinkles and I returned it for a full refund.   Ladies, don't throw away product that does not work - get a refund!",
+                            "review_cons": [
+                                "Not Effective"
+                            ],
+                            "review_pros": [
+                                "Good Value"
+                            ],
+                            "review_best_for": null,
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Didn't work for me",
+                            "review_rating": "3",
+                            "review_content": "I don't think this product is bad, it just didn't work for me. I have combination skin (oily T-zone/dry cheeks) and my skin is medium. I have used this product with moisturizer and both with and without foundation primer. I think I may have gotten a color slightly too light, because when I try to apply it, it doesn't cover very well and for some reason, it settles into each and every pore over my nose and cheeks and I am unable to blend it in. I am 47, so I am thinking it may work for a younger, smoother skinned woman.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Lightweight"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Light To Medium Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Not a good product",
+                            "review_rating": "2",
+                            "review_content": "I tried this foundation. The first thing I noticed is that it made my one wrinkle look extra wrinkly. It also settled into my fine lines. I used a primer and settling powder so it's probably the product that makes my skin look extra wrinkly. The second thing I noticed is that the color match is really poor even though I tried the shade that's closest to my skin. I have a warm skin tone and the product is generally too neutral.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Good Pigmentation",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Laureth-4",
+                            "review_rating": "3",
+                            "review_content": "I absolutely LOVED this foundation and thought I'd hit a goldmine... UNTIL... breakout of the century!!!  I couldn't figure out why, since all the reviews are saying it's great for acne prone skin.  I did my own research, and found that one of the ingredients is LAURETH-4, an ingredient which is known to be comodegenic.  This is a really big disappointment, since otherwise, this product is awesome!!",
+                            "review_cons": [
+                                "Causes Breakouts"
+                            ],
+                            "review_pros": [
+                                "Blends Well",
+                                "Easy To Apply",
+                                "Goes On Smoothly",
+                                "Good Pigmentation",
+                                "Lightweight",
+                                "Long-Lasting",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Full Coverage",
+                                "Normal Skin"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        }
+                    ],
+                    "reviews": [
+                        {
+                            "review_title": "Not too sure",
+                            "review_rating": "2",
+                            "review_content": "Extremely affordable, medium to full coverage, and good for oily skin... but their shade selection needs some work. If the foundation was actually my shade I think i'd like it. The shade was too light for me but with some manipulation I can make  it work.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Long-Lasting",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Full Coverage",
+                                "Sensitive Skin"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Not too sure",
+                            "review_rating": "2",
+                            "review_content": "Extremely affordable, medium to full coverage, and good for oily skin... but their shade selection needs some work. If the foundation was actually my shade I think i'd like it. The shade was too light for me but with some manipulation I can make  it work.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Long-Lasting",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Full Coverage",
+                                "Sensitive Skin"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Not too sure",
+                            "review_rating": "2",
+                            "review_content": "Extremely affordable, medium to full coverage, and good for oily skin... but their shade selection needs some work. If the foundation was actually my shade I think i'd like it. The shade was too light for me but with some manipulation I can make  it work.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Long-Lasting",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Full Coverage",
+                                "Sensitive Skin"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        },
+                        {
+                            "review_title": "Not too sure",
+                            "review_rating": "2",
+                            "review_content": "Extremely affordable, medium to full coverage, and good for oily skin... but their shade selection needs some work. If the foundation was actually my shade I think i'd like it. The shade was too light for me but with some manipulation I can make  it work.",
+                            "review_cons": [
+                                "Poor Coverage"
+                            ],
+                            "review_pros": [
+                                "Long-Lasting",
+                                "Matte Finish"
+                            ],
+                            "review_best_for": [
+                                "Acne-Prone or Oily Skin",
+                                "Full Coverage",
+                                "Sensitive Skin"
+                            ],
+                            "usr_routine_time": "10 Minutes",
+                            "usr_def_tag": [
+                                "Budget Shopper"
+                            ],
+                            "usr_age": null,
+                            "usr_skin_type": null
+                        }
+                    ]
+                }
+            },
+            "buy_url": [],
+            "other_names": [
+                "Stay Matte Compact Powder Foundation",
+                "Stay Matte Clarifying Matte Foundation",
+                "Stay Matte Liquid Mousse Foundation",
+                "cool matte mousse foundation [DISCONTINUED]"
+            ],
+            "brand_url": [],
+            "mua_rating": 3.0,
+            "mua_review_cnt": 1263,
+            "repurchase_pct": 46.25,
+            "mua_url": "https://www.makeupalley.com/product/showreview.asp/ItemId=168473/",
+            "age_counter": {
+                "19-24": -100,
+                "25-29": -30,
+                "44-55": 11,
+                "30-35": -9,
+                "Under 18": -77,
+                "36-43": -7,
+                "56 & Over": 0
+            },
+            "skin_type_counter": {
+                "Combination": -90,
+                "Fair": -105,
+                "Fair-Medium": -81,
+                "Oily": -56,
+                "Dry": -9,
+                "Medium": -7,
+                "Normal": -1,
+                "Acne-prone": -29,
+                "Neutral": -30,
+                "Sensitive": -14,
+                "Very Oily": -15,
+                "Very Dry": 0
+            },
+            "skin_color_counter": {
+                "Warm": -53,
+                "Tan": -2,
+                "Normal": 0,
+                "Olive": -19,
+                "Dark": 0,
+                "Medium Brown": 0
+            },
+            "hair_style_counter": {
+                "Wavy": -41,
+                "Coarse": -20,
+                "Curly": -27,
+                "Fine": -44,
+                "Straight": -56,
+                "Medium": -77,
+                "Kinky": -6,
+                "Relaxed": -7
+            },
+            "hair_color_counter": {
+                "Blond": -11,
+                "Black": -44,
+                "Brunette": -104,
+                "Brown": -33,
+                "Red": -14,
                 "Silver": 2
             },
             "eyes_counter": {
-                "Hazel": -16,
-                "Brown": -56,
-                "Blue": -25,
-                "Green": -10,
-                "Black": -9,
+                "Brown": -82,
+                "Blue": -69,
+                "Black": -12,
+                "Hazel": -29,
+                "Green": -15,
                 "Other": -2,
-                "Gray": -1
+                "Gray": -8,
+                "Violet": 1
             }
         }
     ]

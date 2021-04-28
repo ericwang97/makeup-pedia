@@ -1,5 +1,3 @@
-import os
-import time
 import copy
 import json
 from tqdm import tqdm
@@ -316,7 +314,7 @@ def get_cleaned_data(bp_ewg_mua_index, bp, ewg, mua, bp_ewg_ingre):
             cleaned_data[bp_id]['sub_category'] += list(sub_category_set)
             cleaned_data[bp_id]['image_url'] += list(img_url_set)
 
-            cleaned_data[bp_id].update({'mua_rating': round(avg_score, 1), 'mua_review_cnt': total_review_cnt,
+            cleaned_data[bp_id].update({'mua_rating': round(avg_score * 2, 0) / 2, 'mua_review_cnt': total_review_cnt,
                                         'repurchase_pct': avg_repurchase_pct, 'mua_url': mua_url})
 
             cleaned_data[bp_id].update({'age_counter': total_age_counter, 'skin_type_counter': total_skin_counter,

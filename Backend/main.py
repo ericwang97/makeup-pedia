@@ -2,18 +2,43 @@ import mysql.connector
 import json
 import time
 
-from Backend.Recommendation.Reco import reco_main
+from Backend.backend_features.reco import reco_main
+from Backend.backend_features.search import search_main
+from Backend.backend_features.find_similar import find_main
 
 
 def reco_execution(request):
 
-    print(request)
     result = reco_main(request)
 
     if result:
         result = {'status': 0, 'response': result}
     else:
         result = {'status': 1, 'msg': 'Sorry, no recommend results here.'}
+
+    return json.dumps(result, indent=4, ensure_ascii=False)
+
+
+def search_execution(request):
+
+    result = search_main(request)
+
+    if result:
+        result = {'status': 0, 'response': result}
+    else:
+        result = {'status': 1, 'msg': 'Sorry, no search results here.'}
+
+    return json.dumps(result, indent=4, ensure_ascii=False)
+
+
+def find_execution(request):
+
+    result = find_main(request)
+
+    if result:
+        result = {'status': 0, 'response': result}
+    else:
+        result = {'status': 1, 'msg': 'Sorry, no similar results here.'}
 
     return json.dumps(result, indent=4, ensure_ascii=False)
 

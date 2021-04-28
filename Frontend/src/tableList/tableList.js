@@ -16,7 +16,7 @@ class TableList extends React.Component {
                     title:'Image',
                     dataIndex: 'image_url',
                     render: link => {
-                        return (<img src={link[0]} style={{ width: 180 }}
+                        return (<img src={link[0]} style={{ width: 180, height: 180 }}
                         />
                         )}
                 },
@@ -87,9 +87,9 @@ class TableList extends React.Component {
                 {
                     title: 'Find Similar',
                     dataIndex: 'product_id',
-                    render: text => {
+                    render: (text, record) => {
                         return (<Button className="Button"
-                                        onClick={this.props.handleHyperLinkClick.bind(this, text)}
+                                        onClick={this.props.handleHyperLinkClick.bind(this, text, record.product_names)}
                         >Find it!
                         </Button>)
                     }
@@ -111,7 +111,7 @@ class TableList extends React.Component {
                    minRows={20}
                    size="small"
                    //pagination={{simple: true}}
-                pagination={{ pageSize: 50 }}
+                pagination={{ pageSize: 5 }}
                    scroll={{ y: 1000 }}
                    loading={this.props.loading}
             >
@@ -131,7 +131,7 @@ class TableList extends React.Component {
                 minRows={20}
                 size="small"
                 //pagination={{simple: true}}
-                pagination={true}
+                   pagination={{ pageSize: 5 }}
                 loading={this.props.loading}
             >
             </Table>

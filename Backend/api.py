@@ -1,7 +1,7 @@
 import flask
 from flask import request
 from flask_cors import CORS
-from Backend.main import reco_execution, rate_execution
+from Backend.main import reco_execution, search_execution, find_execution, rate_execution
 from gevent import pywsgi
 
 server = flask.Flask(__name__)
@@ -14,6 +14,22 @@ def recommend():
     print(request_data)
 
     return reco_execution(request_data)
+
+
+@server.route('/search', methods=['post'])
+def search():
+    request_data = request.json
+    print(request_data)
+
+    return search_execution(request_data)
+
+
+@server.route('/find_similar', methods=['post'])
+def find():
+    request_data = request.json
+    print(request_data)
+
+    return find_execution(request_data)
 
 
 @server.route('/rate', methods=['get', 'post'])

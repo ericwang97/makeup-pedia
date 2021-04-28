@@ -19,6 +19,7 @@ class App extends React.Component {
 
         this.state = {
             product_id: null,
+            product_name: null,
 
             category: null,
             subcategory: null,
@@ -31,14 +32,17 @@ class App extends React.Component {
             top_k: null,
 
             loading: true,
-            response_data: null
+            response_data: null,
+
+            history: []
 
         };
-        this.handleSearchClick = this.handleSearchClick.bind(this);
         this.handleResetClick = this.handleResetClick.bind(this);
+        this.handleGoBackClick = this.handleGoBackClick.bind(this);
+        this.handleSearchClick = this.handleSearchClick.bind(this);
+        this.handleSearchSimilarClick = this.handleSearchSimilarClick.bind(this);
         this.handleAutoFillClick = this.handleAutoFillClick.bind(this);
         this.handleHyperLinkClick = this.handleHyperLinkClick.bind(this);
-        this.handleSearchSimilarClick = this.handleSearchSimilarClick.bind(this);
 
         this.handleCategoryChange = this.handleCategoryChange.bind(this);
         this.handleSubCategoryChange = this.handleSubCategoryChange.bind(this);
@@ -49,6 +53,41 @@ class App extends React.Component {
         this.handleHairColorChange = this.handleHairColorChange.bind(this);
         this.handleEyeColorChange = this.handleEyeColorChange.bind(this);
         this.handleTopKChange = this.handleTopKChange.bind(this);
+    }
+
+    handleResetClick() {
+        this.setState({
+            product_id: null,
+            product_name: null,
+            category: null,
+            subcategory: null,
+            age: null,
+            skin_type: null,
+            skin_color: null,
+            hair_style: null,
+            hair_color: null,
+            eye_color: null,
+            top_k: null,
+            loading: true,
+            response_data: null,
+            history: []
+        })
+    }
+
+    handleGoBackClick() {
+        let currentComponent = this;
+
+        let historyList = currentComponent.state.history;
+
+        if(historyList.length > 1) {
+            let history = historyList[historyList.length - 2];
+            this.setState(history);
+            historyList.pop();
+        }
+        else{
+            alert("Can't go back any more!");
+        }
+
     }
 
     handleSearchClick() {
@@ -75,6 +114,10 @@ class App extends React.Component {
                         loading: false, response_data: response_data
                     });
 
+                    let history = currentComponent.state.history;
+                    history.push(currentComponent.state)
+                    currentComponent.setState({history:history})
+
                 } else {
                     alert(response.data.msg);
                 }
@@ -90,8 +133,7 @@ class App extends React.Component {
     handleSearchSimilarClick() {
         let currentComponent = this;
         // let base_url = "http://13.57.28.139:8000/";
-        let url = "http://localhost:8000/similar";
-        alert(currentComponent.state.product_id);
+        let url = "http://localhost:8000/find_similar";
         axios.post(url,{
             product_id: currentComponent.state.product_id
         })
@@ -102,6 +144,10 @@ class App extends React.Component {
                     currentComponent.setState({
                         loading: false, response_data: response_data
                     });
+
+                    let history = currentComponent.state.history;
+                    history.push(currentComponent.state)
+                    currentComponent.setState({history:history})
 
                 } else {
                     alert(response.data.msg);
@@ -115,21 +161,6 @@ class App extends React.Component {
 
     }
 
-    handleResetClick() {
-        this.setState({
-            category: null,
-            subcategory: null,
-            age: null,
-            skin_type: null,
-            skin_color: null,
-            hair_style: null,
-            hair_color: null,
-            eye_color: null,
-            top_k: null,
-            loading: true,
-            response_data: null
-        })
-    }
 
     handleAutoFillClick() {
         this.setState({
@@ -147,20 +178,24 @@ class App extends React.Component {
         })
     }
 
-    handleHyperLinkClick(product_id) {
+    handleHyperLinkClick(product_id, product_name) {
         let currentComponent = this;
         currentComponent.setState({
                 loading: true,
-                product_id: product_id},
+                product_id: product_id,
+                product_name: product_name
+            },
             this.handleSearchSimilarClick);
     }
 
     handleCategoryChange(value) {
         this.setState({category: value, loading: true, subcategory: null});
     }
+
     handleSubCategoryChange(value) {
         this.setState({subcategory: value, loading: true});
     }
+
     handleAgeChange(value) {
         this.setState({age: value, loading: true});
     }
@@ -260,15 +295,22 @@ class App extends React.Component {
         let return_result = [];
         if (this.state.loading === true) {
 
-            return_result.push(<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>)
-            return_result.push(<div style={{"fontSize": "15px"}}>Please enter your information
+            if (this.state.product_id === null) {
+                return_result.push(<div style={{"fontSize": "15px"}}>Please enter your personal information and we will try to recommend the best products for you
                     ... &nbsp;(*╹▽╹*)&nbsp;</div>);
+            } else {
+                return_result.push(<div style={{"fontSize": "15px"}}>Finding the similar products
+                    ... &nbsp;(*╹▽╹*)&nbsp;</div>);
+            }
         }
         else {
             return_result.push(<Divider/>);
-
-            return_result.push(<div style={{"font-size": "15px"}}>
-                Guessing what <b>{this.state.subcategory}</b> you like and dislike most! </div>);
+            if (this.state.product_id === null) {
+                return_result.push(<div style={{"font-size": "15px"}}>
+                    Guessing what <b>{this.state.subcategory}</b> you like and dislike most! </div>);
+            } else {
+                return_result.push(<div style={{"fontSize": "15px"}}>Here are the similar products of <b>{this.state.product_name}</b></div>);
+            }
 
             return_result.push(<div>&nbsp;&nbsp;</div>);
             return_result.push(<TableList title={"Best Choices for You ❤"} dataSource={this.state.response_data["Top"]}
@@ -276,9 +318,7 @@ class App extends React.Component {
             return_result.push(<div>&nbsp;&nbsp;</div>);
             return_result.push(<TableList title={"Worst Choices for You 💔"} dataSource={this.state.response_data["Last"]}
                                           handleHyperLinkClick = {this.handleHyperLinkClick}/>);
-            // for (let product_id in this.state.response_data) {
-            //     return_result.push(<TableList dataSource={this.state.response_data[product_id]}/>);
-            // }
+
         }
 
         return (
@@ -315,8 +355,8 @@ class App extends React.Component {
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Top K &nbsp;&nbsp;
                         <Input
                             id="topK"
-                            style={{ width: 300 }}
-                            placeholder="Return TopK Results, 1 ~ 10"
+                            style={{ width: 200 }}
+                            placeholder="TopK Results"
                             onChange={this.handleTopKChange}
                             value={this.state.top_k}
                         />
@@ -446,11 +486,12 @@ class App extends React.Component {
                     </label>
                 </div>
 
+
                 <div className="App-header">
 
                     <Button onClick=
-                                {this.handleAutoFillClick}
-                    >Example</Button>
+                                {this.handleGoBackClick}
+                    >Go Back</Button>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <Button type="primary" icon={<SearchOutlined />}
                             onClick= {this.handleSearchClick}
@@ -459,6 +500,10 @@ class App extends React.Component {
                     <Button onClick=
                                 {this.handleResetClick}
                     >Reset</Button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <Button onClick=
+                                {this.handleAutoFillClick}
+                    >Example</Button>
 
                 </div>
                 <div className="App-body">

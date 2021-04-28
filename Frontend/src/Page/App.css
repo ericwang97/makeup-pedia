@@ -28,6 +28,7 @@
  font-size: calc(20px + 2vmin);
  line-height: 2em;
  color: antiquewhite;
+ font-family: Algerian;
 }
 
 .App-search {
@@ -40,6 +41,7 @@
  font-size: calc(1px + 1vmin);
  line-height: 2em;
  color: black;
+ font-family: Bahnschrift;
 }
 
 .App-body {
@@ -53,6 +55,7 @@
  font-size: calc(2px + 2vmin);
  line-height: 1.5em;
  color: black;
+ font-family: Bahnschrift;
 }
 
 
