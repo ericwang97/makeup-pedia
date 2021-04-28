@@ -3,13 +3,18 @@ import PageTitle from '../Component/page-title.js';
 
 import './App.css';
 import axios from 'axios' ;
-import {Layout, Menu, Pagination, Skeleton, Divider, Table, Select ,Button,Input , Card} from 'antd';
+import {Layout, Menu, Pagination, Skeleton, Divider, Table, Select, Button, Input, Card, Radio} from 'antd';
 import 'antd/es/input/style/css';
 import { SearchOutlined } from '@ant-design/icons';
 import TableList from '../tableList/tableList.js';
 
 // const { Search } = Input;
 const { Option } = Select;
+const options = [
+    { label: 'Table Display', value: "false" },
+    { label: 'Neo4J Visualization', value: "true" },
+];
+
 
 class Search extends React.Component{
 
@@ -27,7 +32,9 @@ class Search extends React.Component{
             loading: true,
             response_data: null,
 
-            history: []
+            history: [],
+
+            is_neo: "false"
 
         };
         this.handleResetClick = this.handleResetClick.bind(this);
@@ -40,6 +47,7 @@ class Search extends React.Component{
         this.handleCategoryChange = this.handleCategoryChange.bind(this);
         this.handleSubCategoryChange = this.handleSubCategoryChange.bind(this);
         this.handleSearchNameChange = this.handleSearchNameChange.bind(this);
+        this.handleDisplayChange = this.handleDisplayChange.bind(this);
     }
 
     handleResetClick() {
@@ -51,7 +59,8 @@ class Search extends React.Component{
             search_name: null,
             loading: true,
             response_data: null,
-            history: []
+            history: [],
+            is_neo: "false"
         })
     }
 
@@ -168,6 +177,9 @@ class Search extends React.Component{
         this.setState({search_name: event.target.value, loading: true});
     }
 
+    handleDisplayChange(event) {
+        this.setState({is_neo: event.target.value, loading: false});
+    }
 
 
     render(){
@@ -249,25 +261,38 @@ class Search extends React.Component{
             }
         }
         else {
-            return_result.push(<Divider/>);
+            // return_result.push(<Divider/>);
             if (this.state.product_id === null) {
                 return_result.push(<div style={{"font-size": "15px"}}>
                     Here are the searching results of <b>{this.state.search_name}</b></div>);
             } else {
                 return_result.push(<div style={{"fontSize": "15px"}}>Here are the similar products of <b>{this.state.product_name}</b></div>);
             }
-
             return_result.push(<div>&nbsp;&nbsp;</div>);
-            if (this.state.product_id === null) {
-                return_result.push(<TableList title={"Best Results for You ❤"} dataSource={this.state.response_data["Result"]}
-                                              handleHyperLinkClick = {this.handleHyperLinkClick}/>);
+            return_result.push(<Radio.Group
+                options={options}
+                defaultValue="false"
+                onChange=
+                    {this.handleDisplayChange}
+            />);
+            return_result.push(<Divider/>);
+            return_result.push(<div>&nbsp;&nbsp;</div>);
+            if (this.state.is_neo === "false") {
+                if (this.state.product_id === null) {
+                    return_result.push(<TableList title={"Best Results for You ❤"} dataSource={this.state.response_data["Result"]}
+                                                  handleHyperLinkClick = {this.handleHyperLinkClick}/>);
+                } else {
+                    return_result.push(<TableList title={"Best Results for You ❤"} dataSource={this.state.response_data["Top"]}
+                                                  handleHyperLinkClick = {this.handleHyperLinkClick}/>);
+                    return_result.push(<div>&nbsp;&nbsp;</div>);
+                    return_result.push(<TableList title={"Worst Results for You 💔"} dataSource={this.state.response_data["Last"]}
+                                                  handleHyperLinkClick = {this.handleHyperLinkClick}/>);
+                }
             } else {
-                return_result.push(<TableList title={"Best Results for You ❤"} dataSource={this.state.response_data["Top"]}
-                                              handleHyperLinkClick = {this.handleHyperLinkClick}/>);
-                return_result.push(<div>&nbsp;&nbsp;</div>);
-                return_result.push(<TableList title={"Worst Results for You 💔"} dataSource={this.state.response_data["Last"]}
-                                              handleHyperLinkClick = {this.handleHyperLinkClick}/>);
+                return_result.push(<div style={{"fontSize": "15px"}}>TBD
+                    ... &nbsp;(*╹▽╹*)&nbsp;</div>);
             }
+
         }
 
         return(

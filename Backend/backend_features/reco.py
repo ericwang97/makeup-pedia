@@ -205,7 +205,7 @@ if __name__ == "__main__":
     """
     request = {
         'category': 'Face Makeup',
-        'subcategory': 'Face Powder',  # 'Cushion Foundation',
+        'subcategory': 'Bronzer',
         'age': '19-24',
         'skin': 'Combination',
         'skin_color': 'Warm',

@@ -24,6 +24,7 @@ class TableList extends React.Component {
                     title: 'Product',
                     dataIndex: 'product_names',
                     id: 'name',
+                    width: 250,
                     render: text => {
                         let url = "https://www.beautypedia.com/products/" + text.replaceAll(" ", "-");
                         return (<a href={url}
@@ -41,6 +42,7 @@ class TableList extends React.Component {
                 {
                     title: 'Brand',
                     dataIndex: 'brand',
+                    width: 100,
                     render: text => {
                         let url = "https://www.beautypedia.com/?s=" + text.replaceAll(" ", "-");
                         return (<a href={url}
@@ -50,6 +52,7 @@ class TableList extends React.Component {
                 },
                 {
                     title: 'Price 💲',
+                    width: 80,
                     // dataIndex: 'price',
                     render: (text, record) => {
                         if (record.buy_url.length === 0) {
@@ -61,7 +64,8 @@ class TableList extends React.Component {
                     }
                 },
                 {
-                    title: 'MakeUp Alley\'s Reviews 💬',
+                    title: 'MakeUp Alley Reviews 💬',
+                    width: 250,
                     render: (text, record) => {
                         if (record.mua_url.length === 0) {
                             return (
@@ -86,13 +90,14 @@ class TableList extends React.Component {
                     }},
                     {
                         title: 'EWG Concerns 🧪',
+                        width: 220,
                         render: (text, record) => {
                             if ('overall_concerns' in record) {
-                                var Colors={'HIGH':'FireBrick','MODERATE':'SandyBrown','LOW_MODERATE':'Khaki','LOW':'MediumAquaMarine'}
+                                let Colors={'HIGH':'FireBrick','MODERATE':'SandyBrown','LOW_MODERATE':'Khaki','LOW':'MediumAquaMarine'};
                                 return (
                                 <div>
                                     <li>
-                                        <span>Cancer: </span> 
+                                        <span>Cancer: </span>
                                         <strong style={{color: Colors[record.overall_concerns.Cancer]}}>{record.overall_concerns.Cancer} </strong>
                                     </li>
                                     <li>
@@ -100,7 +105,7 @@ class TableList extends React.Component {
                                         <strong style={{color: Colors[record.overall_concerns['Developmental & reproductive toxicity']]}}>{record.overall_concerns['Developmental & reproductive toxicity']} </strong>
                                     </li>
                                     <li>
-                                        <span>Allergies: </span> 
+                                        <span>Allergies: </span>
                                         <strong style={{color: Colors[record.overall_concerns['Allergies & immunotoxicity']]}}>{record.overall_concerns['Allergies & immunotoxicity']}</strong>
                                     </li>
                                     </div>
@@ -112,7 +117,7 @@ class TableList extends React.Component {
                                     </div>
                                 )
                             }
-    
+
                         }},
                 {
                     title: 'Find Similar',

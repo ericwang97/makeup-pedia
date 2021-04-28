@@ -2,13 +2,17 @@ import React from 'react';
 import logo from '../logo.svg';
 import './App.css';
 import axios from 'axios' ;
-import {Layout, Menu, Pagination, Skeleton, Divider, Table, Select ,Button,Input , Card} from 'antd';
+import {Layout, Menu, Pagination, Skeleton, Divider, Table, Select ,Button,Input , Card, Radio } from 'antd';
 import 'antd/es/input/style/css';
 import { SearchOutlined } from '@ant-design/icons';
 import TableList from '../tableList/tableList.js';
 
 const { Search } = Input;
 const { Option } = Select;
+const options = [
+    { label: 'Table Display', value: "false" },
+    { label: 'Neo4J Visualization', value: "true" },
+];
 
 
 class App extends React.Component {
@@ -34,7 +38,9 @@ class App extends React.Component {
             loading: true,
             response_data: null,
 
-            history: []
+            history: [],
+
+            is_neo: "false"
 
         };
         this.handleResetClick = this.handleResetClick.bind(this);
@@ -53,6 +59,8 @@ class App extends React.Component {
         this.handleHairColorChange = this.handleHairColorChange.bind(this);
         this.handleEyeColorChange = this.handleEyeColorChange.bind(this);
         this.handleTopKChange = this.handleTopKChange.bind(this);
+
+        this.handleDisplayChange = this.handleDisplayChange.bind(this);
     }
 
     handleResetClick() {
@@ -70,7 +78,9 @@ class App extends React.Component {
             top_k: null,
             loading: true,
             response_data: null,
-            history: []
+            history: [],
+
+            is_neo: false
         })
     }
 
@@ -161,11 +171,10 @@ class App extends React.Component {
 
     }
 
-
     handleAutoFillClick() {
         this.setState({
             category: "Face Makeup",
-            subcategory: "Face Powder",
+            subcategory: "Bronzer",
             age: "19-24",
             skin_type: "Combination",
             skin_color: "Warm",
@@ -224,6 +233,10 @@ class App extends React.Component {
         this.setState({top_k: event.target.value, loading: true});
     }
 
+    handleDisplayChange(event) {
+        this.setState({is_neo: event.target.value, loading: false});
+    }
+
     render() {
 
         let select_subcategory = [];
@@ -240,12 +253,11 @@ class App extends React.Component {
                     placeholder="Select a Face Makeup!"
                     onChange={this.handleSubCategoryChange}
                     value={this.state.subcategory}>
+                    <Option value="Bronzer">Bronzer</Option>
                     <Option value="Cushion Foundation">Cushion Foundation</Option>
                     <Option value="Face Powder">Face Powder</Option>
                     <Option value="Highlighter">Highlighter</Option>
-
                     <Option value="Concealer">Concealer</Option>
-                    <Option value="Bronzer">Bronzer</Option>
                     <Option value="BB & CC Cream">BB & CC Cream</Option>
                     <Option value="Liquid Foundation">Liquid Foundation</Option>
                     <Option value="Blush">Blush</Option>
@@ -283,7 +295,6 @@ class App extends React.Component {
                         <Option value="Eye Primer">Eye Primer</Option>
                         <Option value="Mascara">Mascara</Option>
                         <Option value="Eyeshadow Palette">Eyeshadow</Option>
-                        <Option value="Eyeshadow">Eyeshadow</Option>
                         <Option value="Lash Serum">Lash Serum</Option>
                         <Option value="Brow Liner">Brow Liner</Option>
                         <Option value="Eyelash">Eyelash</Option>
@@ -304,20 +315,33 @@ class App extends React.Component {
             }
         }
         else {
-            return_result.push(<Divider/>);
+            // return_result.push(<Divider/>);
             if (this.state.product_id === null) {
                 return_result.push(<div style={{"font-size": "15px"}}>
                     Guessing what <b>{this.state.subcategory}</b> you like and dislike most! </div>);
             } else {
                 return_result.push(<div style={{"fontSize": "15px"}}>Here are the similar products of <b>{this.state.product_name}</b></div>);
             }
-
             return_result.push(<div>&nbsp;&nbsp;</div>);
-            return_result.push(<TableList title={"Best Choices for You ❤"} dataSource={this.state.response_data["Top"]}
-                                          handleHyperLinkClick = {this.handleHyperLinkClick}/>);
-            return_result.push(<div>&nbsp;&nbsp;</div>);
-            return_result.push(<TableList title={"Worst Choices for You 💔"} dataSource={this.state.response_data["Last"]}
-                                          handleHyperLinkClick = {this.handleHyperLinkClick}/>);
+            return_result.push(<Radio.Group
+                    options={options}
+                    defaultValue="false"
+                    onChange=
+                        {this.handleDisplayChange}
+                    // optionType="button"
+                />);
+            return_result.push(<Divider/>);
+            if (this.state.is_neo === "false") {
+                return_result.push(<div>&nbsp;&nbsp;</div>);
+                return_result.push(<TableList title={"Best Choices for You ❤"} dataSource={this.state.response_data["Top"]}
+                                              handleHyperLinkClick = {this.handleHyperLinkClick}/>);
+                return_result.push(<div>&nbsp;&nbsp;</div>);
+                return_result.push(<TableList title={"Worst Choices for You 💔"} dataSource={this.state.response_data["Last"]}
+                                              handleHyperLinkClick = {this.handleHyperLinkClick}/>);
+            } else {
+                return_result.push(<div style={{"fontSize": "15px"}}>TBD
+                    ... &nbsp;(*╹▽╹*)&nbsp;</div>);
+            }
 
         }
 
@@ -488,7 +512,6 @@ class App extends React.Component {
 
 
                 <div className="App-header">
-
                     <Button onClick=
                                 {this.handleGoBackClick}
                     >Go Back</Button>
