@@ -11,14 +11,11 @@ def read_nodes(data_path):
     Category = set()
     Subcategory = set()
     Ingredient = set() 
-    IngredientScore = set()
-    IngredientAvail = set()
     Pros = set()
     Cons = set()
-    Count = set()
+    Weight = set()
     BestFor = set()
     UserTags = set()
-    TagWeight = set()
     PurchaseLink = set()
     Colors = set()
     Concerns = set()
@@ -26,6 +23,7 @@ def read_nodes(data_path):
     product_details = []
     concerns_set = set()
     tags_set = set()
+    ingredient_set = set()
 
     # Relationships
     PRODUCED_BY = set() # Product,Brand
@@ -88,10 +86,11 @@ def read_nodes(data_path):
 
         category = record['category']
         Category.add(category)
-        BELONGS_TO.add((product_name,category))
+       
 
         sub_category = record['sub_category'][0]
         Subcategory.add(sub_category)
+        BELONGS_TO.add((product_name,sub_category))
         SUBCLASS_OF.add((sub_category,category))
 
         brand = record['brand']
@@ -103,34 +102,26 @@ def read_nodes(data_path):
             for ing in ingredients:
                 Ingredient.add(ing)
                 CONTAINS.add((product_name,ing))
+                ingredient_set.add(ing)
         else:
             ingredients = record['ewg_ingredient']
             for ing,ing_details in ingredients.items():
                 Ingredient.add(ing)
-                CONTAINS.add((product_name,ing))
-
-                IngredientScore.add(str(ing_details['Score']))
-                HAS_SCORE.add((ing,str(ing_details['Score'])))
-
-                IngredientAvail.add(ing_details['Data Availability'])
-                HAS_AVAILABILITY.add((ing,ing_details['Data Availability']))
+                CONTAINS.add((product_name,ing,str(ing_details['Score']),ing_details['Data Availability']))
+                ingredient_set.add((ing,str(ing_details['Score']),ing_details['Data Availability']))
 
         if record['user_reviews']['usr_review_summary'] is not None:
             pros_tags = record['user_reviews']['usr_review_summary']['usr_pros_summary']
             if pros_tags is not None:
                 for tag in pros_tags:
-                    Pros.add(tag[1].replace("\"","\'"))
-                    Count.add(str(tag[0]))
-                    HAS_PROS.add((product_name,tag[1].replace("\"","\'")))
-                    IN_NUMBER.add((tag[1].replace("\"","\'"),str(tag[0])))
-            
+                    Pros.add((tag[1].replace("\"","\'"),str(tag[0])))
+                    HAS_PROS.add((product_name,tag[1].replace("\"","\'"),str(tag[0])))
+
             cons_tags = record['user_reviews']['usr_review_summary']['usr_cons_summary']
             if cons_tags is not None:
                 for tag in cons_tags:
-                    Cons.add(tag[1].replace("\"","\'"))
-                    Count.add(str(tag[0]))
-                    HAS_CONS.add((product_name,tag[1].replace("\"","\'")))
-                    IN_NUMBER.add((tag[1].replace("\"","\'"),str(tag[0])))
+                    Cons.add((tag[1].replace("\"","\'"),str(tag[0])))
+                    HAS_CONS.add((product_name,tag[1].replace("\"","\'"),str(tag[0])))
         
         bestfor_tags = {}
         user_tags = {}
@@ -185,10 +176,10 @@ def read_nodes(data_path):
 
         if bestfor_tags != {}:
             for t,c in bestfor_tags.items():
-                BestFor.add(t)
-                TagWeight.add(c)
-                IN_NUMBER.add((t,str(c)))
-                IS_BEST_FOR.add((product_name,t))
+                BestFor.add((t,str(c)))
+                #Weight.add(str(c))
+                #IN_NUMBER.add((t,str(c)))
+                IS_BEST_FOR.add((product_name,t,str(c)))
         
         if record['buy_url'] != []:
             for url in record['buy_url']:
@@ -246,15 +237,15 @@ def read_nodes(data_path):
 
         if user_tags != {}:
             for t,c in user_tags.items():
-                UserTags.add(t)
-                TagWeight.add(c[0])
+                #UserTags.add(t)
+                Weight.add(str(c[0]))
                 IN_NUMBER.add((t,str(c[0])))
-                HAS_USER_TAG.add((product_name,t,c[1]))
-                tags_set.add((t,c[1]))
+                HAS_USER_TAG.add((product_name,t,c[1],str(c[0])))#product_name, tagname, tagtype, score
+                tags_set.add((t,c[1],str(c[0]))) #tagname, tagtype, score
 
         product_details.append(product_dict)
     
-    return Product,Brand,Category,Subcategory,Ingredient,IngredientScore,IngredientAvail,Pros,Cons,Count,BestFor,UserTags,TagWeight,PurchaseLink,Colors,Concerns,product_details,concerns_set,tags_set,PRODUCED_BY,BELONGS_TO,SUBCLASS_OF,CONTAINS,HAS_SCORE,HAS_AVAILABILITY,HAS_PROS,HAS_CONS,IN_NUMBER,IS_BEST_FOR,HAS_USER_TAG,PURCHASE_FROM,IN_COLOR,HAS_CONCERNS
+    return Product,Brand,Category,Subcategory,Ingredient,Pros,Cons,Weight,BestFor,UserTags,PurchaseLink,Colors,Concerns,product_details,concerns_set,tags_set,ingredient_set,PRODUCED_BY,BELONGS_TO,SUBCLASS_OF,CONTAINS,HAS_SCORE,HAS_AVAILABILITY,HAS_PROS,HAS_CONS,IS_BEST_FOR,HAS_USER_TAG,PURCHASE_FROM,IN_COLOR,HAS_CONCERNS
 
 def create_node(g,label,nodes):
     print("Generate Node",label)
@@ -265,25 +256,55 @@ def create_node(g,label,nodes):
     return
 
 def create_product_nodes(g,product_details):
+    print("Generate Node","Product")
     count = 0
     for product_dict in product_details:
         node = Node("Product",name=product_dict['name'],product_id =product_dict['product_id'],product_url=product_dict['url'],size=product_dict['size'],description=product_dict['description'],expert_rating=product_dict['expert_rating'],jar_package=product_dict['jar_package'],animal_test=product_dict['animal_test'],user_rating=product_dict['user_rating'],user_review_num=product_dict['user_review_num'],repurchase_rate=product_dict['repurchase_rate']
         )
         g.create(node)
+    print(len(product_details))
     return
 
 def create_concern_nodes(g,concerns_set):
+    print("Generate Node","Concerns")
     count = 0
     for concern in concerns_set:
         node = Node("Concerns",name=concern[0],type =concern[1],level=concern[2])
         g.create(node)
+    print(len(concerns_set))
     return
 
 def create_tag_nodes(g,tags_set):
+    print("Generate Node","User Tags")
     count = 0
     for tag in tags_set:
-        node = Node("UserTags",name=tag[0],attribute =tag[1])
+        node = Node("UserTags",name=tag[0],attribute =tag[1],score=tag[2])
         g.create(node)
+    print(len(tags_set))
+    return
+
+def create_ingredient_nodes(g,ingr_set):
+    print("Generate Node","Ingredient")
+    count = 0
+    for ingr in ingr_set:
+        if not isinstance(ingr, str):
+            #print(concern)
+            #print(isinstance(concern, str))
+            node = Node("Ingredient",name=ingr[0],score =ingr[1],availability=ingr[2])
+        else:
+            node = Node("Ingredient",name=ingr)
+        g.create(node)
+    print(len(ingr_set))
+    return
+
+def create_prb_nodes(g,prb,tag_set):
+    print("Generate Node",prb)
+    count = 0
+    for tag in set(tag_set):
+        #print(tag)
+        node = Node(prb,name=tag[0],score =tag[1])
+        g.create(node)
+    print(len(tag_set))
     return
 
 def create_relationship(g, start_node, end_node, edges, rel_type):
@@ -322,7 +343,23 @@ def create_tag_relationship(g, start_node, end_node, edges, rel_type):
         p = eg[0]
         q = eg[1]
         a = eg[2]
-        query = 'match(p:%s),(q:%s) where p.name="%s"and q.name="%s" and q.attribute="%s" create (p)-[rel:%s]->(q)'% (
+        s = eg[3]
+        query = 'match(p:%s),(q:%s) where p.name="%s"and q.name="%s" and q.attribute="%s" and q.score="%s" create (p)-[rel:%s]->(q)'% (
+            start_node, end_node, p, q, a, s, rel_type)
+        try:
+            g.run(query)
+        except Exception as e:
+            print(e)
+    return
+
+def create_pr_tag_relationship(g, start_node, end_node, edges, rel_type):
+    print("Generate Edge",rel_type)
+    print(len(edges))
+    for eg in edges:
+        p = eg[0]
+        q = eg[1]
+        a = eg[2]
+        query = 'match(p:%s),(q:%s) where p.name="%s"and q.name="%s" and q.score="%s"  create (p)-[rel:%s]->(q)'% (
             start_node, end_node, p, q, a, rel_type)
         try:
             g.run(query)
@@ -330,42 +367,59 @@ def create_tag_relationship(g, start_node, end_node, edges, rel_type):
             print(e)
     return
 
+def create_contain_relationship(g, start_node, end_node, edges, rel_type):
+    print("Generate Edge",rel_type)
+    print(len(edges))
+    for eg in edges:
+        if len(eg)==4:
+            p = eg[0]
+            q = eg[1]
+            a = eg[2]
+            s = eg[3]
+            query = 'match(p:%s),(q:%s) where p.name="%s"and q.name="%s" and q.score="%s" and q.availability="%s" create (p)-[rel:%s]->(q)'% (
+                start_node, end_node, p, q, a, s, rel_type)
+            try:
+                g.run(query)
+            except Exception as e:
+                print(e)
+        else:
+            p = eg[0]
+            q = eg[1]
+            query = 'match(p:%s),(q:%s) where p.name="%s"and q.name="%s" create (p)-[rel:%s]->(q)'% (
+                start_node, end_node, p, q, rel_type)
+            try:
+                g.run(query)
+            except Exception as e:
+                print(e)
+    return
+
 def create_graphnodes(g,nodes_data):
-    Product,Brand,Category,Subcategory,Ingredient,IngredientScore,IngredientAvail,Pros,Cons,Count,BestFor,UserTags,TagWeight,PurchaseLink,Colors,Concerns,product_details,concerns_set,tags_set,PRODUCED_BY,BELONGS_TO,SUBCLASS_OF,CONTAINS,HAS_SCORE,HAS_AVAILABILITY,HAS_PROS,HAS_CONS,IN_NUMBER,IS_BEST_FOR,HAS_USER_TAG,PURCHASE_FROM,IN_COLOR,HAS_CONCERNS= nodes_data
+    Product,Brand,Category,Subcategory,Ingredient,Pros,Cons,Weight,BestFor,UserTags,PurchaseLink,Colors,Concerns,product_details,concerns_set,tags_set,ingredient_set,PRODUCED_BY,BELONGS_TO,SUBCLASS_OF,CONTAINS,HAS_SCORE,HAS_AVAILABILITY,HAS_PROS,HAS_CONS,IS_BEST_FOR,HAS_USER_TAG,PURCHASE_FROM,IN_COLOR,HAS_CONCERNS = nodes_data
     create_product_nodes(g,product_details)
     create_concern_nodes(g,concerns_set)
     create_tag_nodes(g,tags_set)
+    create_ingredient_nodes(g,ingredient_set)
+    create_prb_nodes(g,'Pros',Pros)
+    create_prb_nodes(g,'Cons',Cons)
+    create_prb_nodes(g,'BestFor',BestFor)
     create_node(g,'Brand',Brand)
     create_node(g,'Category',Category)
     create_node(g,'Subcategory',Subcategory)
-    create_node(g,'Ingredient',Ingredient)
-    create_node(g,'IngredientScore',IngredientScore)
-    create_node(g,'IngredientAvail',IngredientAvail)
-    create_node(g,'Pros',Pros)
-    create_node(g,'Cons',Cons)
-    create_node(g,'Count',Count)
-    create_node(g,'BestFor',BestFor)
-    create_node(g,'TagWeight',TagWeight)
     create_node(g,'PurchaseLink',PurchaseLink)
     create_node(g,'Colors',Colors)
     return
 
 def create_graphrels(g,nodes_data):
-    Product,Brand,Category,Subcategory,Ingredient,IngredientScore,IngredientAvail,Pros,Cons,Count,BestFor,UserTags,TagWeight,PurchaseLink,Colors,Concerns,product_details,concerns_set,tags_set,PRODUCED_BY,BELONGS_TO,SUBCLASS_OF,CONTAINS,HAS_SCORE,HAS_AVAILABILITY,HAS_PROS,HAS_CONS,IN_NUMBER,IS_BEST_FOR,HAS_USER_TAG,PURCHASE_FROM,IN_COLOR,HAS_CONCERNS= nodes_data
+    Product,Brand,Category,Subcategory,Ingredient,Pros,Cons,Weight,BestFor,UserTags,PurchaseLink,Colors,Concerns,product_details,concerns_set,tags_set,ingredient_set,PRODUCED_BY,BELONGS_TO,SUBCLASS_OF,CONTAINS,HAS_SCORE,HAS_AVAILABILITY,HAS_PROS,HAS_CONS,IS_BEST_FOR,HAS_USER_TAG,PURCHASE_FROM,IN_COLOR,HAS_CONCERNS= nodes_data
     create_relationship(g,'Product', 'Brand', PRODUCED_BY, 'PRODUCED_BY')
     create_relationship(g,'Product', 'Subcategory', BELONGS_TO, 'BELONGS_TO')
     create_relationship(g,'Subcategory', 'Category', SUBCLASS_OF, 'SUBCLASS_OF')
-    create_relationship(g,'Product', 'Ingredient', CONTAINS, 'CONTAINS')
-    create_relationship(g,'Ingredient', 'IngredientScore', HAS_SCORE, 'HAS_SCORE')
-    create_relationship(g,'Ingredient', 'IngredientAvail', HAS_AVAILABILITY, 'HAS_AVAILABILITY')
-    create_relationship(g,'Product', 'Pros', HAS_PROS, 'HAS_PROS')
-    create_relationship(g,'Product', 'Cons', HAS_CONS, 'HAS_CONS')
-    create_relationship(g,'Pros', 'Count', IN_NUMBER, 'IN_NUMBER')
-    create_relationship(g,'Cons', 'Count', IN_NUMBER, 'IN_NUMBER')
-    create_relationship(g,'Product', 'BestFor', IS_BEST_FOR, 'IS_BEST_FOR')
+    create_contain_relationship(g,'Product', 'Ingredient', CONTAINS, 'CONTAINS')
+    create_pr_tag_relationship(g,'Product', 'Pros', HAS_PROS, 'HAS_PROS')
+    create_pr_tag_relationship(g,'Product', 'Cons', HAS_CONS, 'HAS_CONS')
+    create_pr_tag_relationship(g,'Product', 'BestFor', IS_BEST_FOR, 'IS_BEST_FOR')
     create_tag_relationship(g,'Product', 'UserTags', HAS_USER_TAG, 'HAS_USER_TAG')
     create_relationship(g,'Product', 'PurchaseLink', PURCHASE_FROM, 'PURCHASE_FROM')
-    create_relationship(g,'UserTags', 'TagWeight', IN_NUMBER, 'IN_NUMBER')
     create_relationship(g,'Product', 'Colors', IN_COLOR, 'IN_COLOR')
     create_concern_relationship(g,'Product', 'Concerns', HAS_CONCERNS, 'HAS_CONCERNS')
     return
