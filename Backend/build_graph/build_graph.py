@@ -383,13 +383,13 @@ def main():
 
     nodes_data = read_nodes(input_file)
 
-    # graph = Graph(
-    #     host="127.0.0.1",
-    #     http_port=7474,
-    #     user="neo4j",
-    #     password="makeuppedia")  # makeuppedia 1403 neo4j
+    graph = Graph(
+        host="127.0.0.1",
+        http_port=7474,
+        user="neo4j",
+        password="makeuppedia") 
 
-    graph = Graph('http://localhost:7474/', username='neo4j', password='makeuppedia')
+    # graph = Graph('http://localhost:7474/', username='neo4j', password='makeuppedia')
 
     nodes_data = read_nodes(input_file)
     create_graphnodes(graph, nodes_data)
