@@ -148,10 +148,11 @@ def reco_main(request, debug=False):
     # for each in top_K_score_list:
     #     result.update({each[0]: cleaned_input[each[0]]})
     # result = [{each[0]: cleaned_input[each[0]]} for each in top_K_score_list]
-    result = {'Top': [cleaned_input[each[0]] for each in top_K_score_list]}
+    result = {'Top': [cleaned_input[each[0]] for each in top_K_score_list],'ID':[cleaned_input[each[0]]['product_id'] for each in top_K_score_list]}
     
     last_K_score_list = score_list[-top_k:]
     result.update({'Last': [cleaned_input[each[0]] for each in last_K_score_list]})
+    result['ID'].extend([cleaned_input[each[0]]['product_id'] for each in last_K_score_list])
 
     # For Testing
     if debug:
