@@ -33,9 +33,10 @@ def search(cleaned_input, request):
         item_name = cleaned_input[item]['product_names']
 
         if subcategory == item_subcategory[0] and name == item_name:
-            result.insert(0, cleaned_input[item])
-            result_id_list.insert(0, (item, 1))
-            continue
+            # result.insert(0, cleaned_input[item])
+            # result_id_list.insert(0, item)
+            # print(result_id_list)
+            return [item]
 
         if category != item_category:
             continue
@@ -47,12 +48,17 @@ def search(cleaned_input, request):
         if subcategory_sim < sub_category_sim_thres:
             continue
 
-        name_sim = get_similarity(name, item_name)
-        if name_sim < name_sim_thres:
-            continue
+        if name == "":
+            result_id_list.append(item)
+        else:
+            name_sim = get_similarity(name, item_name)
+            if name_sim < name_sim_thres:
+                continue
 
-        result_id_list.append((item, name_sim))
+            result_id_list.append((item, name_sim))
 
+    if name == "":
+        return result_id_list
     result_id_list = sorted(result_id_list, key=lambda x: x[1], reverse=True)
     result_id_list = [item[0] for item in result_id_list]
 
@@ -83,7 +89,7 @@ if __name__ == "__main__":
     request = {
         'category': 'Face Makeup',
         'subcategory': 'Face Powder',  # 'Cushion Foundation',
-        'search_name': 'Pureness Matifying Compact Oil-Free'  # Pureness Matifying Compact Oil-Free SPF 16
+        'search_name': 'Pureness Matifying Compact Oil-Free SPF 16'  # Pureness Matifying Compact Oil-Free SPF 16
     }
 
     # Guess what you like!
