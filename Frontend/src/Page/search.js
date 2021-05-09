@@ -1,4 +1,7 @@
 import React from 'react';
+import * as D3 from 'd3';
+import {event as CurrentEvent} from 'd3';
+
 import PageTitle from '../Component/page-title.js';
 
 import './App.css';
@@ -91,6 +94,7 @@ class Search extends React.Component{
             search_name: currentComponent.state.search_name
         })
             .then(function (response) {
+
                 let status = response.data.status;
                 if (status === 0) {
                     let response_data = response.data.response
@@ -132,6 +136,8 @@ class Search extends React.Component{
                     let history = currentComponent.state.history;
                     history.push(currentComponent.state)
                     currentComponent.setState({history:history})
+
+
 
                 } else {
                     alert(response.data.msg);
@@ -263,7 +269,7 @@ class Search extends React.Component{
         else {
             // return_result.push(<Divider/>);
             if (this.state.product_id === null) {
-                return_result.push(<div style={{"font-size": "15px"}}>
+                return_result.push(<div style={{"fontSize": "15px"}}>
                     Here are the searching results of <b>{this.state.search_name}</b></div>);
             } else {
                 return_result.push(<div style={{"fontSize": "15px"}}>Here are the similar products of <b>{this.state.product_name}</b></div>);
@@ -277,6 +283,8 @@ class Search extends React.Component{
             />);
             return_result.push(<Divider/>);
             return_result.push(<div>&nbsp;&nbsp;</div>);
+
+
             if (this.state.is_neo === "false") {
                 if (this.state.product_id === null) {
                     return_result.push(<TableList title={"Best Results for You ❤"} dataSource={this.state.response_data["Result"]}
@@ -289,6 +297,267 @@ class Search extends React.Component{
                                                   handleHyperLinkClick = {this.handleHyperLinkClick}/>);
                 }
             } else {
+                    let currentComponent = this;
+                    return_result.push(<svg  style={{'width':1200,'height':'900'}}  id="disGraphSvg" ></svg>);
+
+                    axios.post('http://localhost:8000/search_graph',{
+                        id: currentComponent.state.response_data.ID
+                    }, {
+                        headers: {
+                            "Access-Control-Allow-Origin" : "",
+                            "Allow": "POST",
+                            "Content-type": "Application/json"
+                        }
+                    }).then(function (response) {
+                            let data = response.data;
+                            let initScale = 1;
+                            let relations_names = [
+                                'BELONGS_TO', 'CONTAINS','HAS_CONCERNS','HAS_CONS',
+                                'HAS_PROS', 'HAS_USER_TAG','IN_COLOR','IS_BEST_FOR',
+                                'PRODUCED_BY','PURCHASE_FROM', 'SUBCLASS_OF'
+                            ];
+                            let relations_colors = [
+                                '#636059','#636059','#636059','#636059',
+                                '#636059','#636059','#636059','#636059',
+                                '#636059','#636059','#636059'
+                            ];
+                            let names = [
+                                'BestFor','Brand','Category','Colors',
+                                'Concerns', 'Cons','Ingredient', 'Product',
+                                'Pros', 'PurchaseLink', 'Subcategory', 'UserTags'
+                            ];
+                            let colors = [
+                                '#B6E2D3', '#FAE8E0', '#B6E2D3', '#FBE5C8',
+                                '#FADCD9', '#F79489', '#A31563', '#EF7C8E',
+                                '#669DBA', '#B8D0DD', '#FCDCA9', '#B8D0DD',
+                            ];
+
+                            		        	    //全图缩放器
+		        		var zoom = D3.zoom()
+		        		.scaleExtent([0.25,2])
+		        		.on("zoom",zoomFn);
+
+		        		var svg = D3.select("#disGraphSvg");
+		        		//var width = svg.attr("width");
+		        		var width = 1200;
+		        		var height = 1000;
+		        		svg.call(zoom).on('dbclick.zoom',null);
+		        		//缩放层
+		        		var container = svg.append("g")
+		        		.attr('transform','scale(' + initScale + ')')
+		        		.attr('class','container');
+
+
+
+		        		var relation = [];
+		        		var labels = [];
+
+		        		var nodes_data = data.nodes;
+		        		var edges_data = data.links;
+		        		console.log(nodes_data);
+		        		console.log(edges_data);
+
+		        		//关系去重
+		        		for(var i=0; i<edges_data.length; i++){
+		        			if(relation.indexOf(edges_data[i].relation) == -1){
+		        				relation.push(edges_data[i].relation);
+		        			}
+		        		}
+		        		//标签去重
+		        		for(var i=0; i<nodes_data.length; i++){
+		        			if(labels.indexOf(nodes_data[i].label) == -1){
+		        				labels.push(nodes_data[i].label);
+		        			}
+		        		}
+
+		        		edges_data.forEach(function(link){
+		        			nodes_data.forEach(function(node){
+		        				if(link.source == node.inst_cd){
+		        					link.source = node;
+		        				}
+		        				if(link.target == node.inst_cd){
+		        					link.target = node;
+		        				}
+		        			})
+		        		});
+
+
+		        		//创建力图的模拟器
+		        		var forceSimulation = D3.forceSimulation()
+		        		.force("link",D3.forceLink().distance(200).strength(1))
+		        		.force("charge",D3.forceManyBody().strength(-200))
+                        .force('collide', D3.forceCollide(5))
+		        		.force("center",D3.forceCenter(width/2,height/2));
+
+		        		//转换节点数据
+		        		forceSimulation.nodes(nodes_data)
+		        		.on("tick",ticked);
+		        		//转换连线数据
+		        		forceSimulation.force("link")
+		        		.links(edges_data)
+		        		.distance(200 + Math.round(Math.random() * 50));
+
+		        		//画连线
+		        		var links = container.append("g")
+		        		.attr("class","links")
+	                    .selectAll("line")
+	                    .data(edges_data)
+	                    .enter()
+	                    .append("line")
+	                    .attr("stroke",function(d,i) {
+        					return relations_colors[relations_names.indexOf(d.relation)];
+        				})
+	                    .attr("x1",function(n){return n.source.x})
+	                    .attr("y1",function(n){return n.source.y})
+	                    .attr("x2",function(n){return n.target.x})
+	                    .attr("y2",function(n){return n.target.y})
+	                    .attr("marker-end","url(#marker)");
+
+		        		//画连线的文本
+		        		var links_text = container.append("g")
+		        		.attr("class","destexts")
+	                    .selectAll("text")
+	                    .data(edges_data)
+	                    .enter()
+	                    .append("text")
+	                    .attr("x",function(e){
+	                        return (e.source.x+e.target.x)/2;
+	                    })
+	                    .attr("y",function(e){
+	                        return (e.source.y+e.target.y)/2;
+	                    })
+	                    .attr("fontSize",7)
+	                    .text(function(e){return e.relation});
+
+
+		        		//定义箭头
+		        		container.append("svg:defs")
+		        		.data(edges_data)
+	                    .append("svg:marker")
+	                    .attr("id", "marker")
+	                    .attr('viewBox', '0 -5 10 10') //坐标系的区域
+	                    .attr("refX", 20) //箭头坐标
+	                    .attr("refY",0)
+	                    .attr('markerWidth', 15) //标识大小
+	                    .attr('markerHeight', 15)
+	                    .attr('orient','auto') //绘制方向，可设定为：auto（自动确认方向）和 角度值
+	                    .append('svg:path')
+	                    .attr('d', 'M0,-5L10,0L0,5')  //箭头的路径
+	                    .attr("fill","grey");
+
+		        		//画节点组
+		        		var nodes_g = container.append("g")
+		        		.attr("class","nodes")
+		        		.selectAll("circle")
+	                    .data(nodes_data)
+	                    .enter()
+	                    .append("circle")
+	                    .attr("transform",function(d,i){
+	                    	var cirX = d.x;
+	                    	var cirY = d.y;
+	                    	return "translate("+cirX + ","+cirY+")";
+	                    })
+	                    .attr("r",40)
+	                    .attr("fill",function(d,i){
+	                    	return colors[names.indexOf(d.label)];
+	                    })
+	                    .attr("name",function(d){
+        					return d.name;
+        				})
+/*	                    .attr("fill",function(d) {
+		        			return colors[names.indexOf(d.label)];*/
+	                    .call(D3.drag()
+	                        .on("start",started)
+	                        .on("drag",dragged)
+	                        .on("end",ended));
+        				//画节点
+        				/*nodes_g.append("circle").attr("r",15).attr("fill",function(d,i){
+        					return colors[names.indexOf(d.label)];
+        				}).attr("name",function(d){
+        					return d.name;
+        				});*/
+
+
+        				//画节点本文
+        				var nodes_text = container.append("g")
+        				.attr("class","nodes")
+        				.selectAll("text")
+        				.data(nodes_data)
+        				.enter()
+	                    .append("text")
+	                    .attr("x",function(e){
+	                    	return e.x;
+	                    })
+	                    .attr("y",function(e){
+		                    return e.y;
+	                    })
+	                    .attr("dx",-30)
+	                    .attr("dy",5)
+//	                    .attr("transform",function(d,i){
+//	                    	var dx = d.x;
+//	                    	var dy = d.y;
+//	                    	return "translate("+ dx + ","+ dy +")";
+//	                    })
+        				.attr("font-size",13)
+                        .style("central")
+        				.attr('name',function(d){return d.name;}).text(function(e){return e.name});
+
+		        		//该变量保证拖动鼠标时，不会影响图形变换，默认为false未选中鼠标
+		        		var dragging = false;
+
+		        		 function started(d){
+		                     if(!D3.event.active){
+		                         forceSimulation.alpha(0.8).restart(); //.alphaTarget(0.3).restart();
+		                     }
+		                     d.fx = d.x;
+		                     d.fy = d.y;
+		                     dragging = true;
+		                 }
+		                 function dragged(d){
+		                     d.fx = D3.event.x;
+		                     d.fy = D3.event.y;
+		                 }
+		                 function ended(d) {
+		                     if(!D3.event.active){
+		                         forceSimulation.alpha(0.8);//alphaTarget(0);
+		                     }
+		                     d.fx = null;
+		                     d.fy = null;
+		                     dragging = false;
+		                 }
+
+		                 function ticked(){
+		                     links
+		                         .attr("x1",function(n){return n.source.x})
+		                         .attr("y1",function(n){return n.source.y})
+		                         .attr("x2",function(n){return n.target.x})
+		                         .attr("y2",function(n){return n.target.y})
+		                     links_text
+		                         .attr("x",function(e){
+		                             return (e.source.x+e.target.x)/2;
+		                         })
+		                         .attr("y",function(e){
+		                             return (e.source.y+e.target.y)/2;
+		                         })
+		                     nodes_g
+		                     .attr("transform", function(d) {
+			        				return "translate(" + d.x + "," + d.y + ")";
+			        			});
+		                     nodes_text
+		                     .attr("x",function(e){return e.x})
+		                     .attr("y",function(e){return e.y})
+		                 }
+
+		                 function zoomFn() {
+		                	    const {
+		                	        transform,
+		                	        scale
+		                	    } = D3.event;
+		                	    container.attr('transform',  transform);
+		                	}
+
+                    })         
+
                 return_result.push(<div style={{"fontSize": "15px"}}>TBD
                     ... &nbsp;(*╹▽╹*)&nbsp;</div>);
             }

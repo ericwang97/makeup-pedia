@@ -1,7 +1,7 @@
 import flask
 from flask import request
 from flask_cors import CORS
-from Backend.main import reco_execution, search_execution, find_execution, rate_execution
+from Backend.main import reco_execution, search_execution, find_execution, rate_execution, search_graph_execution
 from gevent import pywsgi
 
 server = flask.Flask(__name__)
@@ -43,6 +43,14 @@ def rate():
         comment = data.get('comment')
 
     return rate_execution(rate_value, comment)
+
+
+@server.route('/search_graph', methods=['post'])
+def search_graph():
+    request_data = request.json['id']
+    print(request_data)
+
+    return search_graph_execution(request_data)
 
 
 if __name__ == '__main__':
